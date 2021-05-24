@@ -13,6 +13,12 @@
             font-weight:600;
             color:#f2f2f2;
         }
+        .nut{
+            font-size:30px !important;
+            font-weight:600 !important;
+            color:#f2f2f2 !important;
+            width:100px !important;
+        }
         .place-post__title a{
             color:#f2f2f2;
         }
@@ -80,38 +86,32 @@
                     </div>
                 </nav>
             </header>
-            <!-- End Header -->
 
-            <!-- explore-module
-                ================================================== -->
             <section style="margin:100px 0 0;" class="explore">
                 <div style="max-width:70%" class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="explore__box">
-                                <h2 class="explore__filter-title">
-                                    <span>Showing videos from</span> Halo 3
+                                <h2 class="explore__filter-title row">
+                                    <div style="margin-right:10px" class="">
+                                        <span>Showing videos from</span>
+                                    </div>
+                                    <ul class="navbar-nav mr-auto">
+                                        <li><a class="nut" style="padding:0px !important" href="">Halo 3</a>
+                                            <div class="megadropdown">
+                                                <div class="dropdown-box">
+                                                    <span>Explore pages</span>
+                                                    <ul class="dropdown-list">
+                                                        <li><a href="explore-sidebar-map.html">Explore map sidebar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
                                 </h2>
 
                                 <div class="explore__wrap iso-call list-version" style="position: relative; height: 1013.2px;">
-                                    <div class="item" style="position: relative; left: 0px; top: 0px;">
-                                        <div class="place-post list-style">
-                                            <div class="place-post__gal-box">
-                                                <img class="place-post__image" src="https://i.ytimg.com/vi/tY1TLZE1aLo/maxresdefault.jpg" alt="place-image">
-                                            </div>
-                                            <div style="display:flex; align-items: center;" class="place-post__content">
-                                                <div style="padding:2rem">
-                                                    <h2 class="place-post__title">
-                                                        <a href="listing-detail-large.html">Fifteen Restaurant &amp; Cheese bar</a>
-                                                    </h2>
-                                                    <p class="place-post__description">by Jump Theory</p>
-                                                    <p class="place-post__text">
-                                                        In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>	
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
         </div>
         <script>
             const req = new XMLHttpRequest();
-            const url=`https://raw.githubusercontent.com/Exhibitmark/ghst/main/h3.json`;
+            const url=`https://raw.githubusercontent.com/Exhibitmark/exhibitmark.github.io/main/js/halo_3.json`;
             req.open("GET", url);
             req.send();
             let occured = 0
