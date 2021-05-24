@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito:200,200i,300,300i,400,400i,600,600i,700,800,900|Permanent+Marker);
 .dropdown, .megadropdown ul, .place-gal__list, .reviews-list, .sidebar__listing-list {
-	margin: 0;
+	margin: 20px 0px;
 	padding: 0
 }
 p {
@@ -213,11 +213,11 @@ li:hover>.dropdown {
 	margin-top: -1px
 }
 .megadropdown {
-	border-top: 2px solid #f47955;
+	background-color: #131b24;
+	border-top: 2px solid #4773f5;
+	border-radius: 0px 0px 5px 5px;
 	position: absolute;
 	top: 100%;
-	left: -5.75rem;
-	width: 55rem;
 	visibility: hidden;
 	opacity: 0;
 	margin-top: .625rem;
@@ -230,7 +230,7 @@ li:hover>.dropdown {
 }
 .megadropdown .dropdown-box {
 	padding: .75rem 1rem;
-	width: 25%
+	width: 100%
 }
 .megadropdown span {
 	display: block;
@@ -246,12 +246,12 @@ li:hover>.dropdown {
 }
 .megadropdown ul>li a {
 	display: block;
-	color: #666;
-	font-size: .9375rem;
-	font-weight: 300
+	color: #f2f2f2;
+	font-size: 20px;
+	font-weight: 500
 }
 .megadropdown ul>li>a:hover {
-	color: #f47955
+	color: #4773f5
 }
 li:hover>.megadropdown {
 	visibility: visible;

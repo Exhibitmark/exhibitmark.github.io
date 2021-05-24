@@ -26,14 +26,14 @@
             border-radius: 5px;
         }
         .place-post__content{
-            background-color: #1a2026;
+            background-color: #181620;
             border-radius: 0px 5px 5px 0px;
         }
         .place-post.list-style .place-post__gal-box{
             max-height:300px;
         }
         .place-post.list-style .place-post__gal-box{
-            border:5px solid #1a2026;
+            border:5px solid #181620;
             border-radius:5px 0px 0px 5px;
             width:33.5%;
         }
@@ -47,6 +47,55 @@
             font-weight:600;
             font-size:40px;
         }
+        .megadropdown{
+            width:400px;
+            left:0px
+        }
+
+         /* Dropdown Button */
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: visible;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
 
     </style>
     </head>
@@ -68,15 +117,26 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
-                                <li>
-                                    <a class="active" href="index.html">Home <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                </li>
-                                <li><a href="">Pages <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <li><a href="">Games <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <div class="megadropdown">
-                                        <div class="dropdown-box">
-                                            <span>Explore pages</span>
+                                        <div style="width:100%" class="dropdown-box">
                                             <ul class="dropdown-list">
-                                                <li><a href="explore-sidebar-map.html">Explore map sidebar</a></li>
+                                                <li><a href="">Halo CE</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Halo 2</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Halo 3</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Halo Reach</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Halo 4</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Halo 5</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -94,24 +154,12 @@
                             <div class="explore__box">
                                 <h2 class="explore__filter-title row">
                                     <div style="margin-right:10px" class="">
-                                        <span>Showing videos from</span>
+                                        <span>Showing videos from </span>Halo 3
                                     </div>
-                                    <ul class="navbar-nav mr-auto">
-                                        <li><a class="nut" style="padding:0px !important" href="">Halo 3</a>
-                                            <div class="megadropdown">
-                                                <div class="dropdown-box">
-                                                    <span>Explore pages</span>
-                                                    <ul class="dropdown-list">
-                                                        <li><a href="explore-sidebar-map.html">Explore map sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
                                     
                                 </h2>
 
-                                <div class="explore__wrap iso-call list-version" style="position: relative; height: 1013.2px;">
+                                <div class="explore__wrap iso-call list-version" style="position: relative; height: 1013.2px;z-index:-1">
                                 </div>
                             </div>
                         </div>
@@ -141,9 +189,9 @@
         
             function buildElement(res){
                 let element = `<div class="item" style="position: relative; left: 0px; top: 0px;"><div class="place-post list-style"><div class="place-post__gal-box"><img style="max-width:100%;max-height:100%"class="place-post__image" src=${res.thumbnail}  alt="place-image"></div><div style="display:flex; align-items: center;" class="place-post__content"><div style="padding:2rem"><h2 class="place-post__title"><a href="${res.link}">${res.title}</a></h2><p class="place-post__description">by ${res.author}</p><p class="place-post__text">In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh </p></div></div></div></div>`
-
                 $( ".explore__wrap" ).prepend(element); 
             }
+
         </script>
     </body>
 </html>
