@@ -181,7 +181,7 @@
     "ChaotiK": [
         {
             "title": "Nothing Personal",
-            "link": "https://youtube.com/watch?v=EcwfVp3ydrM&amp;feature=youtu.be",
+            "link": "https://youtu.be/EcwfVp3ydrM",
             "thumbnail": "https://i.ytimg.com/vi/EcwfVp3ydrM/hqdefault.jpg"
         }
     ],
@@ -1495,6 +1495,20 @@
             "title": "Ricochets n’ Rockets",
             "link": "https://youtu.be/ZQj0jozS54g",
             "thumbnail": "https://i.ytimg.com/vi/ZQj0jozS54g/hqdefault.jpg"
+        }
+    ],
+    "Mark, Joshington, Nate Pahlow, Kevin, Resix": [
+        {
+            "title": "Mint",
+            "link": "https://youtu.be/ZVqlQCZJKwM",
+            "thumbnail": "https://i.ytimg.com/vi/ZVqlQCZJKwM/hqdefault.jpg"
+        }
+    ],
+    "Gary UK, Mark, Joshington, Nate Pahlow": [
+        {
+            "title": "Tangerine",
+            "link": "https://youtu.be/eoV-2YCQhm4",
+            "thumbnail": "https://i.ytimg.com/vi/eoV-2YCQhm4/hqdefault.jpg"
         }
     ]
 }
