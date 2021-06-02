@@ -143,58 +143,45 @@
             let data;
 
             function getData(game){
-                const req = new XMLHttpRequest();
-                const url=`https://raw.githubusercontent.com/Exhibitmark/exhibitmark.github.io/main/js/halo_${game}.json`;
-                req.open("GET", url);
-                req.send();
-                let occured = 0
-                req.onload = function() {
-                    if (req.status != 200) {
-                    } else {
-                        let test = JSON.parse(req.response)
-                        data = test
-                        Object.keys(test).forEach((e, i) => {
-                            test[e].forEach(function(x){
-                                    x.author = e
-                                    buildElement(x)
-                            })
-                        });
-                    }
-                };
+                $.getJSON(`js/halo_${game}.json`, function(json) {
+                    data = json
+                    Object.keys(json).forEach((e, i) => {
+                        json[e].forEach(function(x){
+                                x.author = e
+                                buildElement(x)
+                        })
+                    });
+                });
             }
 
             function returnVids(term){
                 $( "#showing" ).html(`<span>Search results for </span>${term}`);
                 $( ".explore__wrap" ).empty();
-                let test = []
+                let authors = []
                 let vids = []
                 Object.keys(data).forEach(function(e){
                     let f = e.toLowerCase()
                     let t = term.toLowerCase()
+                    
                     if(f.includes(t)){
-                        test.push(data[e])
-                        data[e].forEach(function(y){
-                            let n = y.title.toLowerCase()
-                            if(n.includes(t)){
-                                vids.push(y)
-                            }
-                        })
+                        buildElement(data[e])
                     }
-                })
-                test.forEach(function(e){
-                    e.forEach(function(x){
-                        buildElement(x)
+
+                    data[e].forEach(function(y){
+                        let n = y.title.toLowerCase()
+                        if(n.includes(t)){
+                            buildElement(y)
+                        }
                     })
-                })
-                vids.forEach(function(e){
-                    buildElement(e)
                 })
             }
 
         
             function buildElement(res){
-                let element = `<div class="item" style="position: relative; left: 0px; top: 0px;"><div class="place-post list-style"><div class="place-post__gal-box"><a href="${res.link}"><img style="max-width:100%;max-height:100%"class="place-post__image" src=${res.thumbnail}  alt="place-image"></a></div><div style="display:flex; align-items: center;" class="place-post__content"><div style="padding:2rem"><h2 class="place-post__title"><a href="${res.link}">${res.title}</a></h2><p class="place-post__description">by ${res.author}</p><p class="place-post__text"></p></div></div></div></div>`
-                $( ".explore__wrap" ).prepend(element); 
+                if(res.title !== undefined){
+                    let element = `<div class="item" style="position: relative; left: 0px; top: 0px;"><div class="place-post list-style"><div class="place-post__gal-box"><a href="${res.link}"><img style="max-width:100%;max-height:100%"class="place-post__image" src=${res.thumbnail}  alt="place-image"></a></div><div style="display:flex; align-items: center;" class="place-post__content"><div style="padding:2rem"><h2 class="place-post__title"><a href="${res.link}">${res.title}</a></h2><p class="place-post__description">by ${res.author}</p><p class="place-post__text"></p></div></div></div></div>`
+                    $( ".explore__wrap" ).prepend(element); 
+                }
             }
             function switchGame(id){
                 $( "#showing" ).html(`<span>Showing videos from </span>Halo ${id}`);
