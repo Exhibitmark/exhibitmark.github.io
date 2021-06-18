@@ -83,7 +83,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav col-10">
                                 <li><a href="">Games <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <div class="megadropdown">
@@ -109,6 +109,9 @@
                                         </div>
                                     </div>
                                 </li>
+                                <li style="padding: 18px; margin-left:2rem">
+                                    <span style="color:#fff !important; cursor: pointer;" onclick="getRandom()">Random Video</span>
+                                </li>
                             </ul>
                             <div class="form-group has-search">
                                 <span class="fa fa-search form-control-feedback"></span>
@@ -128,7 +131,6 @@
                                     <div id="showing" style="margin-right:10px" class="">
                                         <span>Showing videos from </span>Halo 3
                                     </div>
-                                    
                                 </h2>
                                 <div class="explore__wrap iso-call list-version" style="position: relative; height: 1013.2px"></div>
                             </div>
@@ -141,16 +143,18 @@
         <script>
             getData('3')
             let data;
-
+            let vids = []
             function getData(game){
                 $.getJSON(`js/halo_${game}.json`, function(json) {
                     data = json
                     Object.keys(json).forEach((e, i) => {
                         json[e].forEach(function(x){
                                 x.author = e
+                                vids.push(x)
                                 buildElement(x)
                         })
                     });
+                    shuffle()
                 });
             }
 
@@ -158,7 +162,7 @@
                 $( "#showing" ).html(`<span>Search results for </span>${term}`);
                 $( ".explore__wrap" ).empty();
                 let authors = []
-                let vids = []
+                data = 
                 Object.keys(data).forEach(function(e){
                     let f = e.toLowerCase()
                     let t = term.toLowerCase()
@@ -175,7 +179,6 @@
                     })
                 })
             }
-
         
             function buildElement(res){
                 if(res.title !== undefined){
@@ -183,6 +186,7 @@
                     $( ".explore__wrap" ).prepend(element); 
                 }
             }
+
             function switchGame(id){
                 $( "#showing" ).html(`<span>Showing videos from </span>Halo ${id}`);
                 $( ".explore__wrap" ).empty();
@@ -190,9 +194,25 @@
             }
             $( "#search" ).change(function() {
                 let term = $( this ).val()
-                
                 returnVids(term)
             });
+
+            function getRandom(){
+                function getRandomInt(max) {
+                    return Math.floor(Math.random() * max);
+                }
+                let e = vids[getRandomInt(vids.length-1)]
+               
+                $( ".explore__wrap" ).empty();
+                buildElement(e)
+            }
+
+            function shuffle() {
+                var item = document.querySelector('.explore__wrap');
+                for (var i = item.children.length; i >= 0; i--) {
+                    item.appendChild(item.children[Math.random() * i | 0]);
+                }
+            }
         </script>
     </body>
 </html>
