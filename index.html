@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <style>
         body{
             background-color: #101015;
@@ -89,7 +88,7 @@
                                     <div class="megadropdown">
                                         <div style="width:100%" class="dropdown-box">
                                             <ul class="dropdown-list">
-                                                <li><a id="CE" onclick="switchGame(this.id)">Halo CE</a></li>
+                                                <li><a id="ce" onclick="switchGame(this.id)">Halo CE</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
                                                 <li><a id="2" onclick="switchGame(this.id)">Halo 2</a></li>
@@ -98,7 +97,7 @@
                                                 <li><a id="3" onclick="switchGame(this.id)">Halo 3</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
-                                                <li><a id="Reach" onclick="switchGame(this.id)">Halo Reach</a></li>
+                                                <li><a id="reach" onclick="switchGame(this.id)">Halo Reach</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
                                                 <li><a id="4" onclick="switchGame(this.id)">Halo 4</a></li>
@@ -109,7 +108,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="padding: 18px; margin-left:2rem">
+                                <li><a href="">Submit Video</a>
+
+                                <li style="padding: 18px;">
                                     <span style="color:#fff !important; cursor: pointer;" onclick="getRandom()">Random Video</span>
                                 </li>
                             </ul>
@@ -141,34 +142,23 @@
             
         </div>
         <script>
-            getData('3')
+            get(3)
             let data;
             let vids = []
-            function getData(game){
-                $.getJSON(`js/halo_${game}.json`, function(json) {
-                    data = json
-                    Object.keys(json).forEach((e, i) => {
-                        json[e].forEach(function(x){
-                                x.author = e
-                                vids.push(x)
-                                buildElement(x)
-                        })
-                    });
-                    shuffle()
-                });
-            }
 
             function returnVids(term){
                 $( "#showing" ).html(`<span>Search results for </span>${term}`);
                 $( ".explore__wrap" ).empty();
                 let authors = []
-                data = 
                 Object.keys(data).forEach(function(e){
                     let f = e.toLowerCase()
                     let t = term.toLowerCase()
                     
                     if(f.includes(t)){
-                        buildElement(data[e])
+                        data[e].forEach(function(x){
+                            buildElement(x)
+                        })
+                        
                     }
 
                     data[e].forEach(function(y){
@@ -190,8 +180,9 @@
             function switchGame(id){
                 $( "#showing" ).html(`<span>Showing videos from </span>Halo ${id}`);
                 $( ".explore__wrap" ).empty();
-                getData(id.toLowerCase())
+                get(id)
             }
+
             $( "#search" ).change(function() {
                 let term = $( this ).val()
                 returnVids(term)
@@ -201,10 +192,12 @@
                 function getRandomInt(max) {
                     return Math.floor(Math.random() * max);
                 }
-                let e = vids[getRandomInt(vids.length-1)]
-               
                 $( ".explore__wrap" ).empty();
-                buildElement(e)
+
+                for(var i = 0; i < 3; i++){
+                    let e = vids[getRandomInt(vids.length-1)]
+                    buildElement(e)
+                }
             }
 
             function shuffle() {
@@ -212,6 +205,24 @@
                 for (var i = item.children.length; i >= 0; i--) {
                     item.appendChild(item.children[Math.random() * i | 0]);
                 }
+            }
+
+            function get(id){
+                fetch(`https://acute-ginger-appeal.glitch.me/vids?ids=${id}`)
+                    .then(response => response.json())
+                    .then(commits => create(commits));
+            }
+
+            function create(json){
+                data = json
+                Object.keys(json).forEach((e, i) => {
+                    json[e].forEach(function(x){
+                        x.author = e
+                        vids.push(x)
+                        buildElement(x)
+                    });
+                });
+                shuffle()
             }
         </script>
     </body>
