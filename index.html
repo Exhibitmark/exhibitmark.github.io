@@ -25,11 +25,14 @@
             border-radius: 5px;
         }
         .place-post__content{
+            display:flex;
+            align-items: center;
             background-color: #181620;
             border-radius: 0px 5px 5px 0px;
         }
         .place-post.list-style .place-post__gal-box{
-            max-height:300px;
+            max-width:400px;
+            max-height:300px
         }
         .place-post.list-style .place-post__gal-box{
             border:5px solid #181620;
@@ -37,7 +40,7 @@
             width:33.5%;
         }
         .place-post.list-style .place-post__content{
-            width:66.6%;
+            width:75%;
         }
         .place-post__title a:hover{
             color:#f2f2f2;
@@ -64,7 +67,17 @@
             background-repeat: no-repeat;
             padding:1rem;
         }
+        .item{
+            position: relative; 
+            left: 0px; 
+            top: 0px;
+        }
 
+        img{
+            max-width:400px;
+            max-height:300px
+        }
+    
     </style>
     </head>
     <body>
@@ -83,27 +96,27 @@
                         </button>
 
                         <div class="navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav col-10">
+                            <ul class="navbar-nav col-9">
                                 <li><a href="">Games <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     <div class="megadropdown">
                                         <div style="width:100%" class="dropdown-box">
                                             <ul class="dropdown-list">
-                                                <li><a id="ce" onclick="switchGame(this.id)">Halo CE</a></li>
+                                                <li><a id="ce" href="./index.html?game=ce">Halo CE</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
-                                                <li><a id="2" onclick="switchGame(this.id)">Halo 2</a></li>
+                                                <li><a id="2" href="./index.html?game=2">Halo 2</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
-                                                <li><a id="3" onclick="switchGame(this.id)">Halo 3</a></li>
+                                                <li><a id="3" href="./index.html?game=3">Halo 3</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
-                                                <li><a id="reach" onclick="switchGame(this.id)">Halo Reach</a></li>
+                                                <li><a id="reach" href="./index.html?game=reach">Halo Reach</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
-                                                <li><a id="4" onclick="switchGame(this.id)">Halo 4</a></li>
+                                                <li><a id="4" href="./index.html?game=4">Halo 4</a></li>
                                             </ul>
                                             <ul class="dropdown-list">
-                                                <li><a id="5" onclick="switchGame(this.id)">Halo 5</a></li>
+                                                <li><a id="5" href="./index.html?game=5">Halo 5</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -114,7 +127,7 @@
                                     <span style="color:#fff !important; cursor: pointer;" onclick="getRandom()">Random Video</span>
                                 </li>
                             </ul>
-                            <div class="form-group has-search">
+                            <div class="form-group has-search col-3">
                                 <span class="fa fa-search form-control-feedback"></span>
                                 <input id="search" type="text" class="form-control" placeholder="Search">
                             </div>
@@ -133,7 +146,8 @@
                                         <span>Showing videos from </span>Halo 3
                                     </div>
                                 </h2>
-                                <div class="explore__wrap iso-call list-version" style="position: relative; height: 1013.2px"></div>
+                                <div class="explore__wrap iso-call list-version" style="position: relative; height: 1013.2px">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,7 +156,15 @@
             
         </div>
         <script>
-            get(3)
+            const queryString = window.location.search
+            const urlParams = new URLSearchParams(queryString);
+            const product = urlParams.get('game')
+            if(!urlParams.has('game') && !urlParams.has('search')){
+                window.location.href = "./index.html?game=3";
+            } else {
+                get(product)
+            }
+
             let data;
             let vids = []
 
@@ -150,20 +172,19 @@
                 $( "#showing" ).html(`<span>Search results for </span>${term}`);
                 $( ".explore__wrap" ).empty();
                 let authors = []
-                Object.keys(data).forEach(function(e){
+                Object.keys(data[product]).forEach(function(e){
                     let f = e.toLowerCase()
-                    let t = term.toLowerCase()
+                    let title = term.toLowerCase()
                     
-                    if(f.includes(t)){
-                        data[e].forEach(function(x){
+                    if(f.includes(title)){
+                        data[product][e].forEach(function(x){
                             buildElement(x)
                         })
-                        
                     }
 
-                    data[e].forEach(function(y){
-                        let n = y.title.toLowerCase()
-                        if(n.includes(t)){
+                    data[product][e].forEach(function(y){
+                        let n = y.t.toLowerCase()
+                        if(n.includes(title)){
                             buildElement(y)
                         }
                     })
@@ -171,20 +192,14 @@
             }
         
             function buildElement(res){
-                if(res.title !== undefined){
-                    let element = `<div class="item" style="position: relative; left: 0px; top: 0px;"><div class="place-post list-style"><div class="place-post__gal-box"><a href="${res.link}"><img style="max-width:100%;max-height:100%"class="place-post__image" src=${res.thumbnail}  alt="place-image"></a></div><div style="display:flex; align-items: center;" class="place-post__content"><div style="padding:2rem"><h2 class="place-post__title"><a href="${res.link}">${res.title}</a></h2><p class="place-post__description">by ${res.author}</p><p class="place-post__text"></p></div></div></div></div>`
+                if(res.t !== undefined){
+                    let element = `<div class="item"><div class="place-post list-style"><div class="place-post__gal-box"><a href="https://youtu.be/${res.l}"><img class="place-post__image" src="https://i.ytimg.com/vi/${res.l}/hqdefault.jpg"  alt="place-image"></a></div><div class="place-post__content"><div style="padding:2rem"><h2 class="place-post__title"><a href="https://youtu.be/${res.l}">${res.t}</a></h2><p class="place-post__description">by ${res.author}</p><p class="place-post__text"></p></div></div></div></div>`
                     $( ".explore__wrap" ).prepend(element); 
                 }
             }
 
-            function switchGame(id){
-                $( "#showing" ).html(`<span>Showing videos from </span>Halo ${id}`);
-                $( ".explore__wrap" ).empty();
-                get(id)
-            }
-
             $( "#search" ).change(function() {
-                let term = $( this ).val()
+                let term = $(this).val()
                 returnVids(term)
             });
 
@@ -208,15 +223,21 @@
             }
 
             function get(id){
-                fetch(`https://acute-ginger-appeal.glitch.me/vids?ids=${id}`)
+                fetch(`https://acute-ginger-appeal.glitch.me/vids`)
                     .then(response => response.json())
-                    .then(commits => create(commits));
+                    .then(commits => {
+                        data = commits
+                        build(id)
+                    });
             }
 
-            function create(json){
-                data = json
-                Object.keys(json).forEach((e, i) => {
-                    json[e].forEach(function(x){
+            function build(id){
+                let build_data = data[id]
+                $( ".explore__wrap" ).empty();
+                $( "#showing" ).html(`<span>Showing videos from </span>Halo ${id}`);
+                vids = []
+                Object.keys(build_data).forEach((e, i) => {
+                    build_data[e].forEach(function(x){
                         x.author = e
                         vids.push(x)
                         buildElement(x)
@@ -224,6 +245,7 @@
                 });
                 shuffle()
             }
+
         </script>
     </body>
 </html>
