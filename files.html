@@ -1,0 +1,689 @@
+<html lang="en">
+    <head>
+        <title>Halo Videos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <style>
+        body{
+            background-color: #101015;
+        }
+        h2{
+            font-weight:600;
+            color:#f2f2f2;
+        }
+        .nut{
+            font-size:30px !important;
+            font-weight:600 !important;
+            color:#f2f2f2 !important;
+            width:100px !important;
+        }
+        .place-post__title a{
+            color:#f2f2f2;
+        }
+        .place-post__gal-box{
+            border-radius: 5px;
+        }
+        .place-post__content{
+            display:flex;
+            align-items: center;
+            background-color: #181620;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .place-post.list-style .place-post__gal-box{
+            max-width:400px;
+            max-height:300px
+        }
+        .place-post.list-style .place-post__gal-box{
+            border:5px solid #181620;
+            border-radius:5px 0px 0px 5px;
+            width:33.5%;
+        }
+        .place-post.list-style .place-post__content{
+            width:75%;
+        }
+        .place-post__title a:hover{
+            color:#f2f2f2;
+        }
+        .place-post__title{
+            font-weight:600;
+            font-size:40px;
+        }
+        .megadropdown{
+            width:400px;
+            left:0px
+        }
+        .login_fields__user{
+            position: relative;
+        }
+        input[type=text]{
+            box-sizing: border-box;
+            color:#f2f2f2;
+            border: 1px solid #cccccc12;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color:#181620;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding:1rem;
+        }
+        .item{
+            position: relative; 
+            left: 0px; 
+            top: 0px;
+        }
+
+        img{
+            max-width:400px;
+            max-height:300px
+        }
+            ul {
+                list-style-type: none;
+            }
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+            body {
+                background: #1C1F2B;
+                color: #fff;
+                margin: 0px;
+                font-family: "Open Sans", sans-serif;
+            }
+            a {
+                color: #2196f3;
+                transition: color 200ms;
+            }
+            .shill {
+                position: fixed;
+                background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/726875/profile/profile-512.jpg?100000");
+                background-size: cover;
+                width: 40px;
+                height: 40px;
+                bottom: 15px;
+                right: 15px;
+                border-radius: 20px;
+                opacity: 0.4;
+                filter: blur(0.5px);
+                -webkit-filter: blur(0.5px);
+                transition: opacity 200ms, blur 200ms;
+                user-drag: none;
+                -webkit-user-drag: none;
+            }
+            .shill:hover {
+                opacity: 1;
+                filter: none;
+                box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.6);
+            }
+            :root {
+                --background: #1C1F2B;
+                --primary: #2196f3;
+                --secondary: #1de9b6;
+            }
+            html {
+                font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                line-height: 1.15;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                padding-top: 50px;
+                line-height: 1.5;
+                font-size: 14px;
+                overflow-x: hidden;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: inherit;
+                font-weight: 300;
+                line-height: 1.1;
+            }
+            h2 {
+                font-size: 32px;
+            }
+            h4 {
+                font-size: 24px;
+            }
+            hr {
+                border: none;
+                border-top: 1px solid #30354a;
+            }
+            .form-control {
+                background-color: #30354a;
+                color: #fff;
+                padding: 8px 12px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                border-radius: 4px;
+                line-height: 1.25;
+                font-size: 14px;
+                font-family: inherit;
+                outline: none;
+                transition: box-shadow 200ms, border-color 200ms;
+                box-sizing: content-box;
+            }
+            .form-control:hover {
+                border-color: rgba(255, 255, 255, 0.3);
+            }
+            .form-control:focus {
+                border-color: transparent;
+                box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.8);
+            }
+            .form-control::placeholder, .form-control::-moz-placeholder {
+                color: rgba(255, 255, 255, 0.6);
+                opacity: 1;
+            }
+            .container {
+                display: flex;
+                max-width: 1100px;
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-shrink: 0;
+            }
+            .row:not(.fluid) {
+                margin: 0 -15px;
+            }
+            .row.top {
+                align-items: flex-start;
+            }
+            .col {
+                flex: 1 1 0px;
+                display: flex;
+                flex-direction: column;
+                padding: 0 15px;
+            }
+            .row.header {
+                margin-bottom: -15px;
+            }
+            .label span {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 12px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+                line-height: 13px;
+            }
+           
+            .list {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                box-sizing: border-box;
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 1.5;
+                flex-direction: column;
+                margin-bottom: 1rem;
+                width: 100%;
+                background: transparent;
+            }
+            .list>* {
+                border: 1px solid #30354a;
+                margin-bottom: -1px;
+            }
+            .list h6 {
+                padding: 1rem 1.25rem;
+            }
+            h6 {
+                padding: 1rem 1.25rem;
+            }
+            .list a {
+                position: relative;
+                padding: 0.75rem 1.25rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                box-sizing: border-box;
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            .list div {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                box-sizing: border-box;
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            .list a .progress {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                display: block;
+                background-color: #171923;
+                border-radius: inherit;
+            }
+            .list a span:last-child {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            .list a:hover, .list a:focus {
+                background: #30354a;
+            }
+            .list a:active {
+                background: #2196f3;
+                color: #1C1F2B;
+            }
+            .list a:active span:last-child {
+                color: #1C1F2B;
+            }
+            .list> :first-child {
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+            .list> :last-child {
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            .list+a {
+                align-self: flex-start;
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 30px;
+            }
+            .btn {
+                display: inline-block;
+                text-decoration: none;
+                background: transparent;
+                border-radius: 4px;
+                padding: 8px 16px;
+                transition: background 200ms, color 200ms;
+            }
+            .btn.primary {
+                color: #2196f3;
+                border: 1px solid #2196f3;
+            }
+            .btn.primary:hover {
+                background: #2196f3;
+                color: #fff;
+            }
+            .divider {
+                position: relative;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .divider h3 {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                background-color: #1C1F2B;
+                color: rgba(255, 255, 255, 0.6);
+                padding: 0 12px;
+            }
+            .divider::before {
+                position: absolute;
+                top: 50%;
+                display: block;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #30354a;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                margin-right: 40px;
+            }
+            nav .header {
+                display: flex;
+                justify-content: space-between;
+                box-sizing: border-box;
+                min-width: 360px;
+                padding-bottom: 20px;
+                line-height: 37px;
+            }
+            nav .brand {
+                color: #30354a;
+                text-decoration: none;
+                font-size: 40px;
+                transition: color 200ms;
+            }
+            nav .brand:hover {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            nav .brand:focus {
+                color: #2196f3;
+            }
+            nav ul li.nav-text {
+                font-size: 12px;
+                color: #30354a;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+                padding: 0 15px;
+            }
+            nav ul li a {
+                display: block;
+                padding: 7px 15px;
+                border-radius: 4px;
+                text-decoration: none;
+                line-height: 1.5;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 14px;
+            }
+            nav ul li a:hover {
+                color: #fff;
+            }
+            nav ul li a.active {
+                background: #2196f3;
+                color: #1C1F2B;
+                cursor: default;
+            }
+            nav ul li+.nav-text {
+                margin-top: 20px;
+            }
+            .search {
+                position: relative;
+            }
+            #sidebar {
+                flex: 0 0 auto;
+                width: 245px;
+            }
+            
+            #menu {
+                display: none;
+                background: transparent;
+                color: #30354a;
+                padding-bottom: 2px;
+                border: 1px solid #30354a;
+                border-radius: 4px;
+                font-size: 28px;
+                cursor: pointer;
+                transition: color 200ms, border-color 200ms;
+            }
+            #menu:hover, #menu:focus {
+                color: #fff;
+                border-color: #fff;
+            }
+            .btn-search {
+                background: transparent;
+                border: none;
+                color: #fff;
+                position: absolute;
+                height: 100%;
+                top: 0;
+                right: 0;
+            }
+            @media (max-width: 1100px) {
+                .container {
+                    width: 800px;
+                }
+                #sidebar {
+                    width: 175px;
+                }
+                #sidebar nav {
+                    margin-right: 0;
+                }
+                .sparkline {
+                    flex-basis: 50%;
+                    width: 50%;
+                }
+            }
+            @media (max-width: 800px) {
+                body {
+                    padding-top: 100px;
+                }
+                .container {
+                    width: 575px;
+                    flex-wrap: wrap;
+                }
+                .container>.col {
+                    flex-basis: auto;
+                }
+                nav .header {
+                    display: flex;
+                    position: fixed;
+                    width: 100%;
+                    height: 70px;
+                    background: #1C1F2B;
+                    top: 0;
+                    left: 0;
+                    border-bottom: 1px solid #30354a;
+                    align-items: center;
+                    z-index: 10;
+                    padding: 0 15px;
+                }
+                nav .header #menu {
+                    display: block;
+                }
+                nav.open ul {
+                    top: 70px;
+                }
+                nav ul {
+                    position: fixed;
+                    transition: top 500ms;
+                    left: 0px;
+                    top: -500px;
+                    background: #1C1F2B;
+                    width: 100%;
+                    padding: 0;
+                    z-index: 2;
+                    padding: 15px 15px 0;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #30354a;
+                }
+                nav ul .divider {
+                    display: none;
+                }
+                .list-container {
+                    flex-basis: 100%;
+                    width: 100%;
+                }
+            }
+            @media (max-width: 800px) and (max-height: 500px) {
+                nav ul {
+                    overflow-y: scroll;
+                    height: calc(100% - 70px);
+                }
+            }
+            @media (max-width: 575px) {
+                .container {
+                    width: 100%;
+                    min-width: 360px;
+                }
+            }
+
+            .item{
+                padding: 15px;
+            }
+            .item-name{
+                margin:0px;
+                padding:5px 0px 0px 0px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Container -->
+        <div style="width: 90%;" id="container" class="active">
+            <!-- Header-->
+            <header class="clearfix">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img style="max-height:30px" src="./logo.png" alt="">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav col-9">
+                                <li><a href="">Games <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <div class="megadropdown">
+                                        <div style="width:100%" class="dropdown-box">
+                                            <ul class="dropdown-list">
+                                                <li><a id="ce" href="./index.html?game=ce">Halo CE</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a id="2" href="./index.html?game=2">Halo 2</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a id="3" href="./index.html?game=3">Halo 3</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a id="reach" href="./index.html?game=reach">Halo Reach</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a id="4" href="./index.html?game=4">Halo 4</a></li>
+                                            </ul>
+                                            <ul class="dropdown-list">
+                                                <li><a id="5" href="./index.html?game=5">Halo 5</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="files.html">Files</a>
+                                <li><a href="">Submit Video</a>
+                                <li style="color:#fff !important; cursor: pointer;" onclick="getRandom()"><a>Random Video</a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container">
+                <div class="col" id="sidebar">
+                  <nav>
+                    <ul style="margin-left: -50px;">
+                      <li class="nav-text">GHST Files</li>
+                      <li><a class="active" href="#">Maps</a></li>
+                      <li><a onclick="console.log('nut')" href="">DLLs</a></li>
+                      <li><a href="#">Gametypes</a></li>
+                      <li><a href="#">Forge Variants</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col">
+                  <div class="fluid header">
+                    <div style="margin-bottom: 1rem;" class="label">
+                        <span>Dashboards</span>
+                        <h2 id="title">Maps</h2>
+                    </div>
+                  </div>
+                  <div class="row top">
+                    <div class="col flex-start">
+                      <div class="list">
+                          <div>
+                            <h6 style="width: 80%;">Halo 3 Maps </h6>
+                            <a style="width: 130px;" href="https://drive.google.com/drive/folders/1VJyqtRJeMZI8QUkEHoGN2RgYqHdjmLMH?usp=sharing">Download All</a>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        <script>
+            const queryString = window.location.search
+            const urlParams = new URLSearchParams(queryString);
+            const product = urlParams.get('game')
+            $.getJSON("./js/h3_links.json", function(json) {
+                json.forEach((e) => {
+                    buildElement(e)
+                }); 
+            });
+            let data;
+            let vids = []
+
+            function returnVids(term){
+                $( "#showing" ).html(`<span>Search results for </span>${term}`);
+                $( ".explore__wrap" ).empty();
+                let authors = []
+                Object.keys(data[product]).forEach(function(e){
+                    let f = e.toLowerCase()
+                    let title = term.toLowerCase()
+                    
+                    if(f.includes(title)){
+                        data[product][e].forEach(function(x){
+                            buildElement(x)
+                        })
+                    }
+
+                    data[product][e].forEach(function(y){
+                        let n = y.t.toLowerCase()
+                        if(n.includes(title)){
+                            buildElement(y)
+                        }
+                    })
+                })
+            }
+        
+            function buildElement(res){
+                if(res.Map !== undefined){
+                    let element = `<a class="item" href="${res.Link}"> <p class="item-name">${res.Map}</p><div style="width:100px" class="btn primary" href="${res.Link}">Download</div></a>`
+                    $( ".list" ).append(element); 
+                }
+            }
+
+            $( "#search" ).change(function() {
+                let term = $(this).val()
+                returnVids(term)
+            });
+
+            function getRandom(){
+                function getRandomInt(max) {
+                    return Math.floor(Math.random() * max);
+                }
+                $( ".explore__wrap" ).empty();
+
+                for(var i = 0; i < 3; i++){
+                    let e = vids[getRandomInt(vids.length-1)]
+                    buildElement(e)
+                }
+            }
+
+            function shuffle() {
+                var item = document.querySelector('.explore__wrap');
+                for (var i = item.children.length; i >= 0; i--) {
+                    item.appendChild(item.children[Math.random() * i | 0]);
+                }
+            }
+
+            function get(id){
+                fetch(`./js/h3_links.json`)
+                    .then(response => response.json())
+                    .then(commits => {
+                        console.log(commits)
+                        //data = commits
+                        //build(id)
+                    });
+            }
+
+            function build(id){
+                let build_data = data[id]
+                $( ".explore__wrap" ).empty();
+                $( "#showing" ).html(`<span>Showing videos from </span>Halo ${id}`);
+                vids = []
+                Object.keys(build_data).forEach((e, i) => {
+                    build_data[e].forEach(function(x){
+                        x.author = e
+                        vids.push(x)
+                        buildElement(x)
+                    });
+                });
+                shuffle()
+            }
+
+        </script>
+    </body>
+</html>

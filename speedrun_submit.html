@@ -1,0 +1,408 @@
+<html lang="en">
+    <head>
+        <title>Halo Videos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        input{
+            max-width: 100%;
+        }
+        body{
+            background-color: #101015;
+        }
+        h2{
+            font-weight:600;
+            color:#f2f2f2;
+        }
+        .nut{
+            font-size:30px !important;
+            font-weight:600 !important;
+            color:#f2f2f2 !important;
+            width:100px !important;
+        }
+        .place-post__title a{
+            color:#f2f2f2;
+        }
+        .place-post__gal-box{
+            border-radius: 5px;
+        }
+        .place-post__content{
+            display:flex;
+            align-items: center;
+            background-color: #181620;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .place-post.list-style .place-post__gal-box{
+            max-width:400px;
+            max-height:300px
+        }
+        .place-post.list-style .place-post__gal-box{
+            border:5px solid #181620;
+            border-radius:5px 0px 0px 5px;
+            width:33.5%;
+        }
+        .place-post.list-style .place-post__content{
+            width:75%;
+        }
+        .place-post__title a:hover{
+            color:#f2f2f2;
+        }
+        .place-post__title{
+            font-weight:600;
+            font-size:40px;
+        }
+        .megadropdown{
+            width:400px;
+            left:0px
+        }
+        .login_fields__user{
+            position: relative;
+        }
+        input[type=text]{
+            box-sizing: border-box;
+            color:#f2f2f2;
+            border: 1px solid #cccccc12;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color:#181620;
+            background-repeat: no-repeat;
+            padding:1rem;
+        }
+        .item{
+            position: relative; 
+            left: 0px; 
+            top: 0px;
+        }
+
+        img{
+            max-width:400px;
+            max-height:300px
+        }
+        input[type=text]{
+            box-sizing: border-box;
+            color:#f2f2f2;
+            border: 1px solid #cccccc12;
+            border-radius: 3px;
+            font-size: 14px;
+            background-color:#181620;
+            background-repeat: no-repeat;
+            padding:1rem;
+        }
+        label{
+            color:#f2f2f2;
+        }
+        @import url("https://fonts.googleapis.com/css?family=Lato");
+        .left {
+            text-align:left
+        }
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h1 span {
+  font-size: 13px;
+  display: block;
+  padding-left: 4px;
+}
+
+p a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #b83729;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+p a:hover {
+  background-color: #ab3326;
+}
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 400px;
+  height: 40px;
+}
+
+.select-styled {
+    border-radius: 3px;
+    border: 1px solid #cccccc12;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #181620;
+    padding: 8px 15px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  background-color: #181620;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #181620;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #181620;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid #cccccc12;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+.preview {
+    padding-left: 5%;
+    border-left: 1px solid #cccccc12;
+}
+
+
+    </style>
+    </head>
+    <body>
+        <!-- Container -->
+        <div id="container" class="active">
+            <!-- Header-->
+            <header class="clearfix">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img style="max-height:30px" src="./logo.png" alt="">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav col-9">
+                                <li><a href="./speedruns.html">Leaderboard</a>
+                                <li><a href="./speedrun_submit.html">Submit Run</a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div style="text-align:center;  max-width:95%; padding: 15% 0px;" class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div style="margin-bottom: 1rem;">
+                            <h2>
+                                Submit run to GHST archive
+                            </h2>
+                        </div>
+                        <div autocomplete="off" class="form">
+
+                            <select style="padding-bottom:1rem" id="maps">
+                                <option value="hide">Map</option>
+                            </select>
+                            <form autocomplete="off" style="margin-top:1rem"class="">
+                                <input id="gamertag" type="text" placeholder="Gamertag"/>
+                            </form>
+                            <div class="col-12">
+                                <div class="row">
+                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
+                                        <input  id="hour" type="text" placeholder="HH"/>
+                                    </form>
+                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
+                                        <input  id="minute" type="text" placeholder="MM"/>
+                                    </form>
+                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
+                                        <input  id="second" type="text" placeholder="SS"/>
+                                    </form>
+                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
+                                        <input  id="millisecond" type="text" placeholder="MS"/>
+                                    </form>
+                                </div> 
+                            </div>
+                            <div>
+                                <form autocomplete="off" class="">
+                                    <input id="link" type="text" placeholder="Video URL"/>
+                                </form>
+                            </div>
+    
+                            <div style="margin-top:1rem;">
+                                <button onclick="nut()">Submit</button>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+        </div>
+        <script>
+            const submit = {
+                "map":"pa_levels_v2",
+                "gamertag":null,
+                "link":"www.nut.com",
+                "hour":00,
+                "minute":02,
+                "second":12,
+                "millisecond":25
+            }
+
+            get(`https://acute-ginger-appeal.glitch.me/submit_info`, build)
+
+            function build(data){
+                let select = document.getElementById('maps');
+                data.forEach((e, i) => {
+                    let opt = document.createElement('option');
+                    opt.value = e[0];
+                    opt.innerHTML = e[0];
+                    opt.id = e[1]
+                    
+                    select.appendChild(opt);
+                   // $( ".maps" ).prepend(name); 
+                });
+
+                $('select').each(function(){
+                    let $this = $(this), numberOfOptions = $(this).children('option').length;
+                
+                    $this.addClass('select-hidden'); 
+                    $this.wrap('<div class="select"></div>');
+                    $this.after('<div class="select-styled"></div>');
+
+                    var $styledSelect = $this.next('div.select-styled');
+                    $styledSelect.text($this.children('option').eq(0).text());
+                
+                    var $list = $('<ul />', {
+                        'class': 'select-options'
+                    }).insertAfter($styledSelect);
+                
+                    for (var i = 0; i < numberOfOptions; i++) {
+                        $('<li />', {
+                            text: $this.children('option').eq(i).text(),
+                            rel: $this.children('option').eq(i).val(),
+                            id: $this.children('option').eq(i)[0].id
+                        }).appendTo($list);
+                    }
+                
+                    var $listItems = $list.children('li');
+                
+                    $styledSelect.click(function(e) {
+                        e.stopPropagation();
+                        $('div.select-styled.active').not(this).each(function(){
+                            $(this).removeClass('active').next('ul.select-options').hide();
+                        });
+                        $(this).toggleClass('active').next('ul.select-options').toggle();
+                    });
+                
+                    $listItems.click(function(e) {
+                        e.stopPropagation();
+                        $styledSelect.text($(this).text()).removeClass('active');
+                        $this.val($(this).attr('rel'));
+                        $list.hide();
+                        submit.map = e.target.id
+                    });
+                
+                    $(document).click(function() {
+                        $styledSelect.removeClass('active');
+                        $list.hide();
+                    });
+                });
+            }
+
+
+            function get(url,cb){
+                fetch(url)
+                    .then(response => response.json())
+                    .then(commits => {
+                        cb(commits,url)
+                    });
+            }
+
+            $( "#gamertag" ).change(function(e) {
+                submit[e.target.id] = e.target.value
+            });
+
+            $( ".time" ).change(function(e) {
+                let n = e.target.value
+                n = "00".substr(n.length) + n;
+                submit[e.target.id] = n
+            });
+
+            $( "#link" ).change(function(e) {
+                submit[e.target.id] = e.target.value
+            });
+
+            function nut(){
+                post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
+            }
+
+            function post(url, data) {
+                fetch(url, {
+                    method: "POST", 
+                    body: data,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then((response) => {
+                    response.json().then((data) => {
+                        console.log(data);
+                    });
+                });
+            }
+
+        </script>
+    </body>
+</html>

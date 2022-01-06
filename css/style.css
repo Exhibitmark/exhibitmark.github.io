@@ -615,24 +615,7 @@ li:hover>.megadropdown {
 .explore__filter-title span {
 	color: #666
 }
-.explore__filter-title a {
-	float: right;
-	width: 2.5rem;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	color: #ccc;
-	font-size: 1.0625rem;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	border-radius: 2px;
-	text-align: center;
-	margin-left: .25rem
-}
-.explore__filter-title a.active {
-	color: #f47955;
-	border-color: #f47955
-}
+
 .explore__box:after {
 	content: '';
 	position: absolute;
