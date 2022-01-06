@@ -260,16 +260,16 @@ p a:hover {
                             <div class="col-12">
                                 <div class="row">
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input  id="hour" type="text" placeholder="HH"/>
+                                        <input class="time"  id="hour" type="text" placeholder="HH"/>
                                     </form>
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input  id="minute" type="text" placeholder="MM"/>
+                                        <input class="time" id="minute" type="text" placeholder="MM"/>
                                     </form>
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input  id="second" type="text" placeholder="SS"/>
+                                        <input class="time" id="second" type="text" placeholder="SS"/>
                                     </form>
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input  id="millisecond" type="text" placeholder="MS"/>
+                                        <input class="time" id="millisecond" type="text" placeholder="MS"/>
                                     </form>
                                 </div> 
                             </div>
@@ -294,7 +294,7 @@ p a:hover {
             const submit = {
                 "map":"pa_levels_v2",
                 "gamertag":null,
-                "link":"www.nut.com",
+                "link": null,
                 "hour":00,
                 "minute":02,
                 "second":12,
@@ -378,7 +378,7 @@ p a:hover {
             $( ".time" ).change(function(e) {
                 let n = e.target.value
                 n = "00".substr(n.length) + n;
-                submit[e.target.id] = n
+                submit[e.target.id] = Number(n)
             });
 
             $( "#link" ).change(function(e) {

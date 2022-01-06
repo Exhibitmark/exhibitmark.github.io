@@ -4,3 +4,9 @@ js/node_modules
 js/nodePull.js
 js/package.json
 js/package-lock.json
+./server
+server/sort_test.js
+server/server.js
+server/records.json
+css/prism.css
+js/prism.js

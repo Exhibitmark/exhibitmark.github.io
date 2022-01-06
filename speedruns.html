@@ -205,7 +205,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Map</th>
-                                                        <th>Author</th>
+                                                        <th>Map Author</th>
                                                         <th>Record Holder</th>
                                                         <th>Time</th>
                                                         <th>Video</th>
@@ -244,7 +244,7 @@
             function tableElement(data){
                 let map = `<td style="cursor:pointer;" class="table_item" id="${data.id}">${data.name}</td>`
                 let author = `<td>${data.author}</td>`
-                let record_holder = `<td>${data.records["1"].name}</td>`
+                let record_holder = `<td>${data.records[0].gamertag}</td>`
                 data.record_time = data.record_time.replace(/:/g, " : ")
                 let time = `<td>${data.record_time}</td>`
                 let video = `<td><a href="${data.link}">Video</a></td>`
@@ -252,12 +252,13 @@
             }
 
             function tableRecord(data){
-             //   console.log(data)
-                let record_holder = `<td>${data.name}</td>`
-                data.record_time = data.time.replace(/:/g, " : ")
-                let time = `<td>${data.time}</td>`
+                let record_holder = `<td>${data.gamertag}</td>`
+                data.record_time = data.time
+                let time = `<td>${msToTime(data.time)}</td>`
                 let video = `<td><a href="${data.link}">Video</a></td>`
-                return `<tr>${record_holder}\n${time}\n${video}</tr>`
+                let full_date = new Date(Date.parse(data.time_submitted)).toString()
+                let date = `<td>${full_date.slice(0,full_date.lastIndexOf(":")+3)}</td>`
+                return `<tr>${record_holder}\n${time}\n${video}\n${date}</tr>`
             }
 
             function get(url,cb){
@@ -268,10 +269,27 @@
                     });
             }
 
+            function msToTime(s) {
+                // Pad to 2 or 3 digits, default is 2
+                function pad(n, z) {
+                z = z || 2;
+                return ('00' + n).slice(-z);
+                }
+
+                var ms = s % 1000;
+                s = (s - ms) / 1000;
+                var secs = s % 60;
+                s = (s - secs) / 60;
+                var mins = s % 60;
+                var hrs = (s - mins) / 60;
+
+                return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
+            }
+
             function build(data){
                 Object.keys(data).forEach((e, i) => {
-                   e.record = data[e].records["1"].name
-                   $( "#tablebody" ).prepend(tableElement(data[e])); 
+                   e.record = data[e].records[0].gamertag
+                   $( "#tablebody" ).append(tableElement(data[e])); 
                 });
 
                 var elements = document.getElementsByClassName("table_item");
@@ -284,14 +302,14 @@
             }
 
             function build_map(data, url){
-                console.log(data)
+               // console.log(data)
                 let d = data.records
                 $("#table-head").empty();
                 $( "#tablebody" ).empty();
-                let new_head = '<thead><tr><th>Record Holder</th><th>Time</th><th>Video</th></tr></thead>'
+                let new_head = '<thead><tr><th>Record Holder</th><th>Time</th><th>Video</th><th>Date</th></tr></thead>'
                 $( "#table-head" ).prepend(new_head); 
                 Object.keys(d).forEach((e, i) => {
-                    $( "#tablebody" ).prepend(tableRecord(d[e])); 
+                    $( "#tablebody" ).append(tableRecord(d[e])); 
                 });
             }
         </script>
