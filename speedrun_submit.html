@@ -251,31 +251,31 @@ p a:hover {
                         </div>
                         <div autocomplete="off" class="form">
 
-                            <select style="padding-bottom:1rem" id="maps">
+                            <select style="padding-bottom:1rem" id="maps" required>
                                 <option value="hide">Map</option>
                             </select>
                             <form autocomplete="off" style="margin-top:1rem"class="">
-                                <input id="gamertag" type="text" placeholder="Gamertag"/>
+                                <input id="gamertag" type="text" placeholder="Gamertag" required/>
                             </form>
                             <div class="col-12">
                                 <div class="row">
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time"  id="hour" type="text" placeholder="HH"/>
+                                        <input class="time"  id="hour" type="text" placeholder="Hours" required/>
                                     </form>
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time" id="minute" type="text" placeholder="MM"/>
+                                        <input class="time" id="minute" type="text" placeholder="Minutes" required/>
                                     </form>
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time" id="second" type="text" placeholder="SS"/>
+                                        <input class="time" id="second" type="text" placeholder="Seconds" required/>
                                     </form>
                                     <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time" id="millisecond" type="text" placeholder="MS"/>
+                                        <input class="time" id="millisecond" type="text" placeholder="Milliseconds" required/>
                                     </form>
                                 </div> 
                             </div>
                             <div>
                                 <form autocomplete="off" class="">
-                                    <input id="link" type="text" placeholder="Video URL"/>
+                                    <input id="link" type="text" placeholder="Video URL" required/>
                                 </form>
                             </div>
     
@@ -292,7 +292,7 @@ p a:hover {
         </div>
         <script>
             const submit = {
-                "map":"pa_levels_v2",
+                "map":null,
                 "gamertag":null,
                 "link": null,
                 "hour":00,
@@ -398,7 +398,9 @@ p a:hover {
                     }
                 }).then((response) => {
                     response.json().then((data) => {
-                        console.log(data);
+                        if(data.status == 'error'){
+                            console.log(data.status)
+                        }
                     });
                 });
             }
