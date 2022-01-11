@@ -1,410 +1,261 @@
-<html lang="en">
-    <head>
-        <title>Halo Videos</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<html class="dark" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>GHST Submit</title>
+    <link href="./main.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
-        input{
-            max-width: 100%;
+        .red {
+            color:#e61748;
         }
-        body{
-            background-color: #101015;
+        .red-border {
+            border-color:#e61748 !important;
         }
-        h2{
-            font-weight:600;
-            color:#f2f2f2;
+        .blue {
+            color:#6769eb;
         }
-        .nut{
-            font-size:30px !important;
-            font-weight:600 !important;
-            color:#f2f2f2 !important;
-            width:100px !important;
+        .blue-bg {
+            background-color:#6769eb;
         }
-        .place-post__title a{
-            color:#f2f2f2;
+        .hidden {
+            display:none;
         }
-        .place-post__gal-box{
-            border-radius: 5px;
+        .justify-end {
+            justify-content: flex-end;
         }
-        .place-post__content{
-            display:flex;
-            align-items: center;
-            background-color: #181620;
-            border-radius: 0px 5px 5px 0px;
+        .disabled {
+            pointer-events: none;
+            background-color:#25242b ;
+            color:#ffffff4f
         }
-        .place-post.list-style .place-post__gal-box{
-            max-width:400px;
-            max-height:300px
-        }
-        .place-post.list-style .place-post__gal-box{
-            border:5px solid #181620;
-            border-radius:5px 0px 0px 5px;
-            width:33.5%;
-        }
-        .place-post.list-style .place-post__content{
-            width:75%;
-        }
-        .place-post__title a:hover{
-            color:#f2f2f2;
-        }
-        .place-post__title{
-            font-weight:600;
-            font-size:40px;
-        }
-        .megadropdown{
-            width:400px;
-            left:0px
-        }
-        .login_fields__user{
-            position: relative;
-        }
-        input[type=text]{
-            box-sizing: border-box;
-            color:#f2f2f2;
-            border: 1px solid #cccccc12;
-            border-radius: 3px;
-            font-size: 14px;
-            background-color:#181620;
-            background-repeat: no-repeat;
-            padding:1rem;
-        }
-        .item{
-            position: relative; 
-            left: 0px; 
-            top: 0px;
-        }
-
-        img{
-            max-width:400px;
-            max-height:300px
-        }
-        input[type=text]{
-            box-sizing: border-box;
-            color:#f2f2f2;
-            border: 1px solid #cccccc12;
-            border-radius: 3px;
-            font-size: 14px;
-            background-color:#181620;
-            background-repeat: no-repeat;
-            padding:1rem;
-        }
-        label{
-            color:#f2f2f2;
-        }
-        @import url("https://fonts.googleapis.com/css?family=Lato");
-        .left {
-            text-align:left
-        }
-
-h1 {
-  font-weight: normal;
-  font-size: 40px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-h1 span {
-  font-size: 13px;
-  display: block;
-  padding-left: 4px;
-}
-
-p a {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 0 5px;
-  background-color: #b83729;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-p a:hover {
-  background-color: #ab3326;
-}
-
-.select-hidden {
-  display: none;
-  visibility: hidden;
-  padding-right: 10px;
-}
-
-.select {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  width: 400px;
-  height: 40px;
-}
-
-.select-styled {
-    border-radius: 3px;
-    border: 1px solid #cccccc12;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #181620;
-    padding: 8px 15px;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-.select-styled:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 7px solid transparent;
-  border-color: #fff transparent transparent transparent;
-  position: absolute;
-  top: 16px;
-  right: 10px;
-}
-.select-styled:hover {
-  background-color: #181620;
-}
-.select-styled:active, .select-styled.active {
-  background-color: #181620;
-}
-.select-styled:active:after, .select-styled.active:after {
-  top: 9px;
-  border-color: transparent transparent #fff transparent;
-}
-
-.select-options {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #181620;
-}
-.select-options li {
-  margin: 0;
-  padding: 12px 0;
-  text-indent: 15px;
-  border-top: 1px solid #cccccc12;
-  -moz-transition: all 0.15s ease-in;
-  -o-transition: all 0.15s ease-in;
-  -webkit-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
-}
-.select-options li:hover {
-
-}
-.select-options li[rel="hide"] {
-  display: none;
-}
-
-.preview {
-    padding-left: 5%;
-    border-left: 1px solid #cccccc12;
-}
-
 
     </style>
-    </head>
-    <body>
-        <!-- Container -->
-        <div id="container" class="active">
-            <!-- Header-->
-            <header class="clearfix">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                            <img style="max-height:30px" src="./logo.png" alt="">
-                        </a>
+</head>
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav col-9">
-                                <li><a href="./speedruns.html">Leaderboard</a>
-                                <li><a href="./speedrun_submit.html">Submit Run</a>
-                            </ul>
-                        </div>
-                    </div>
+<body class="main">
+    <div id="app">
+        <div>
+            <div class="flex">
+                <nav class="side-nav">
+                    <a href="/" class="router-link-active intro-x flex items-center pl-5 pt-4">
+                        <img style="width:4rem" src="./logo.png">
+                    </a>
+                    <div class="side-nav__devider my-6"></div>
+                    <ul>
+                        <li>
+                            <a href="./speedruns.html" class="side-menu">
+                                <div class="side-menu__icon"></div>
+                                <div class="side-menu__title">Leaderboard</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./speedrun_submit.html" style="background-color:#e8e8e8 ;"  class="side-menu">
+                                <div style="color:#6769eb; font-weight:600" class="side-menu__title">Submit Run</div>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-            </header>
-
-            <div style="text-align:center;  max-width:95%; padding: 15% 0px;" class="container">
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6">
-                        <div style="margin-bottom: 1rem;">
-                            <h2>
-                                Submit run to GHST Leaderboards
-                            </h2>
+                <div class="content">
+                    <!--TOP BAR COMMENTED OUT-->
+                    <!--<div class="top-bar"></div>-->
+                    <!--MAIN CONTENT-->
+                    <div>
+                        <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
+                            <h2 id="leaderboard_title" class="intro-y text-lg font-medium mt-10">GHST Run Submission</h2>
+                            <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto">
+                                <div style="display:flex" class="w-56 relative text-gray-700 dark:text-gray-300 justify-end">
+                                    <h3 id="status" class="intro-y text-sm font-medium mt-10 red">Server Loading</h3>
+                                </div>
+                            </div>
                         </div>
-                        <div autocomplete="off" class="form">
-
-                            <select style="padding-bottom:1rem" id="maps" required>
-                                <option value="hide">Map</option>
-                            </select>
-                            <form autocomplete="off" style="margin-top:1rem"class="">
-                                <input id="gamertag" type="text" placeholder="Gamertag" required/>
-                            </form>
-                            <div class="col-12">
-                                <div class="row">
-                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time"  id="hour" type="text" placeholder="Hours" required/>
-                                    </form>
-                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time" id="minute" type="text" placeholder="Minutes" required/>
-                                    </form>
-                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time" id="second" type="text" placeholder="Seconds" required/>
-                                    </form>
-                                    <form autocomplete="off" style="margin-top:1rem" class="col-3">
-                                        <input class="time" id="millisecond" type="text" placeholder="Milliseconds" required/>
-                                    </form>
-                                </div> 
-                            </div>
-                            <div>
-                                <form autocomplete="off" class="">
-                                    <input id="link" type="text" placeholder="Video URL" required/>
-                                </form>
-                            </div>
+                        <div>
+                            <div class="grid grid-cols-12 gap-6 mt-5">
+                                <div class="intro-y col-span-12">
+                                    <div class="intro-y box p-5">
+                                        <div>
+                                            <label for="crud-form-1" class="form-label">Gamertag</label>
+                                            <input autocomplete="off" id="gamertag" type="text" class="form-control w-full" placeholder="ex. Gary UK (max 16 characters)">
+                                        </div>
+                                        <div class="mt-5">
+                                            <label for="crud-form-2-tomselected" class="form-label" id="crud-form-2-ts-label">Map</label>
     
-                            <div style="margin-top:1rem;">
-                                <button onclick="nut()">Submit</button>
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <select autocomplete="off" id="maps" class="form-select form-select-lg sm:mt-2 sm:mr-2" aria-label=".form-select-lg example">
+                                                    <option value="" disabled selected>Select your map</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <label for="crud-form-3" class="form-label">Video URL (Youtube links only)</label>
+                                            <div class="input-group">
+                                                <input autocomplete="off" id="link" type="text" class="form-control" placeholder="ex.https://www.youtube.com/watch?v=eoV-2YCQhm4">
+                                            </div>
+                                        </div>
+                                        <div class="mt-5"><label class="form-label">Time</label>
+                                            <div class="sm:grid grid-cols-4 gap-2">
+                                                <div class="input-group">
+                                                    <div id="input-group-3" class="input-group-text">HH</div>
+                                                    <input id="hour" autocomplete="off"  type="number" class="form-control" placeholder="Hours" min="0" max="24">
+                                                </div>
+                                                <div class="input-group mt-2 sm:mt-0">
+                                                    <div id="input-group-4" class="input-group-text">MM</div>
+                                                    <input  id="minute" autocomplete="off"  type="number" class="form-control" placeholder="Minutes" min="0" max="60">
+                                                </div>
+                                                <div class="input-group mt-2 sm:mt-0">
+                                                    <div id="input-group-4" class="input-group-text">SS</div>
+                                                    <input  id="second" autocomplete="off"  type="number" class="form-control" placeholder="Seconds" min="0" max="60">
+                                                </div>
+                                                <div class="input-group mt-2 sm:mt-0">
+                                                    <div id="input-group-4" class="input-group-text">MS</div>
+                                                    <input id="millisecond" autocomplete="off" type="number" class="form-control" placeholder="Milliseconds" min="0" max="1000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-right mt-8">
+                                            <button id="submit" type="button" class="btn disabled blue-bg w-24">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            
-                          </div>
+                        </div>
+
                     </div>
-                    <div class="col-3"></div>
                 </div>
             </div>
-            
         </div>
-        <script>
-            const submit = {
-                "map":null,
-                "gamertag":null,
-                "link": null,
-                "hour":00,
-                "minute":02,
-                "second":12,
-                "millisecond":25
-            }
+    </div>
+    <script>
+        const submit = {
+            "map":null,
+            "gamertag":null,
+            "link": null,
+            "hour":null,
+            "minute":null,
+            "second":null,
+            "millisecond":null
+        }
 
-            get(`https://acute-ginger-appeal.glitch.me/submit_info`, build)
+        $(".form-control").change(function(e){
+            let id = e.target.id;
+            let val = e.target.value;
+            submit[id] = val
+            checkFields()
+        })
 
-            function build(data){
-                let select = document.getElementById('maps');
-                data.forEach((e, i) => {
-                    let opt = document.createElement('option');
-                    opt.value = e[0];
-                    opt.innerHTML = e[0];
-                    opt.id = e[1]
-                    
-                    select.appendChild(opt);
-                   // $( ".maps" ).prepend(name); 
+        get(`https://acute-ginger-appeal.glitch.me/submit_info`, build)
+
+        function get(url,cb){
+            $('#status').removeClass('blue')
+            fetch(url)
+                .then(response => response.json())
+                .then(commits => {
+                    $('#status').toggleClass('blue').text('Server Online')
+                    cb(commits,url)
                 });
+        }
 
-                $('select').each(function(){
-                    let $this = $(this), numberOfOptions = $(this).children('option').length;
-                
-                    $this.addClass('select-hidden'); 
-                    $this.wrap('<div class="select"></div>');
-                    $this.after('<div class="select-styled"></div>');
+        function linkParse(url){
+            let regExp = /^https?\:\/\/(?:www\.youtube(?:\-nocookie)?\.com\/|m\.youtube\.com\/|youtube\.com\/)?(?:ytscreeningroom\?vi?=|youtu\.be\/|vi?\/|user\/.+\/u\/\w{1,2}\/|embed\/|watch\?(?:.*\&)?vi?=|\&vi?=|\?(?:.*\&)?vi?=)([^#\&\?\n\/<>"']*)/i;
+            let match = url.match(regExp);
+            return (match && match[1].length==11)? match[1] : null;
+        }
 
-                    var $styledSelect = $this.next('div.select-styled');
-                    $styledSelect.text($this.children('option').eq(0).text());
-                
-                    var $list = $('<ul />', {
-                        'class': 'select-options'
-                    }).insertAfter($styledSelect);
-                
-                    for (var i = 0; i < numberOfOptions; i++) {
-                        $('<li />', {
-                            text: $this.children('option').eq(i).text(),
-                            rel: $this.children('option').eq(i).val(),
-                            id: $this.children('option').eq(i)[0].id
-                        }).appendTo($list);
+        function build(data){
+            let select = document.getElementById('maps');
+            data.forEach((e, i) => {
+                let opt = document.createElement('option');
+                opt.value = e[0];
+                opt.innerHTML = e[0];
+                opt.id = e[1]
+                select.appendChild(opt);
+            });
+
+            $('select').click(function(e){
+                if(e.target.id !== 'map'){
+                    submit.map = e.target.id
+                }
+                checkFields()
+            });
+        }
+        $('#submit').click(function(e){
+            submit.gamertag = submit.gamertag.slice(0,16)
+            post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
+        });
+
+        function post(url, data) {
+            fetch(url, {
+                method: "POST", 
+                body: data,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then((response) => {
+                response.json().then((data) => {
+                    if(data.status == 'error'){
+                        console.log(data.status)
                     }
-                
-                    var $listItems = $list.children('li');
-                
-                    $styledSelect.click(function(e) {
-                        e.stopPropagation();
-                        $('div.select-styled.active').not(this).each(function(){
-                            $(this).removeClass('active').next('ul.select-options').hide();
-                        });
-                        $(this).toggleClass('active').next('ul.select-options').toggle();
-                    });
-                
-                    $listItems.click(function(e) {
-                        e.stopPropagation();
-                        $styledSelect.text($(this).text()).removeClass('active');
-                        $this.val($(this).attr('rel'));
-                        $list.hide();
-                        submit.map = e.target.id
-                    });
-                
-                    $(document).click(function() {
-                        $styledSelect.removeClass('active');
-                        $list.hide();
-                    });
                 });
-            }
-
-
-            function get(url,cb){
-                fetch(url)
-                    .then(response => response.json())
-                    .then(commits => {
-                        cb(commits,url)
-                    });
-            }
-
-            $( "#gamertag" ).change(function(e) {
-                submit[e.target.id] = e.target.value
             });
+        }
 
-            $( ".time" ).change(function(e) {
-                let n = e.target.value
-                n = "00".substr(n.length) + n;
-                submit[e.target.id] = Number(n)
+        //More checks are done on the server, these are just to know whether to throw an error before submitting incorrect data.
+        function checkFields(){
+            let fields = Object.values(submit)
+            if(submit.link !== null){
+                if(linkParse(submit.link) == null){
+                    $('#submit').addClass('disabled')
+                    $('#link').addClass('red-border')
+                } else{
+                    $('#link').removeClass('red-border')
+                }
+            }
+            if(!fields.includes(null)){
+                
+                $('#submit').toggleClass('disabled')
+                return false
+            }
+            if(submit.map == null){
+                $('#maps').addClass('red-border')
+            } else{
+                $('#maps').removeClass('red-border')
+            }
+            return true
+        }
+
+        function build_map(data, url){
+            let d = data.records
+            
+            $('#leaderboard_title').text(data.name + " Leaderboard")
+            $("#table_header").empty();
+            $( "#table_body" ).empty();
+            
+            $( "#table_header" ).prepend(mapTableHeader()); 
+            Object.keys(d).forEach((e, i) => {
+                $( "#table_body" ).append(recordItem(d[e],i)); 
             });
+        }
 
-            $( "#link" ).change(function(e) {
-                submit[e.target.id] = e.target.value
-            });
-
-            function nut(){
-                post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
+        function msToTime(s) {
+            // Pad to 2 or 3 digits, default is 2
+            function pad(n, z) {
+            z = z || 2;
+            return ('00' + n).slice(-z);
             }
 
-            function post(url, data) {
-                fetch(url, {
-                    method: "POST", 
-                    body: data,
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                }).then((response) => {
-                    response.json().then((data) => {
-                        if(data.status == 'error'){
-                            console.log(data.status)
-                        }
-                    });
-                });
-            }
+            var ms = s % 1000;
+            s = (s - ms) / 1000;
+            var secs = s % 60;
+            s = (s - secs) / 60;
+            var mins = s % 60;
+            var hrs = (s - mins) / 60;
 
-        </script>
-    </body>
+            return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
+        }
+
+    </script>
+</body>
 </html>

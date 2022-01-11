@@ -1,317 +1,262 @@
-<html lang="en">
-    <head>
-        <title>Halo Videos</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        
+<html class="dark" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>GHST Leaderboard</title>
+    <link href="./main.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
-        body{
-            background-color: #101015;
+        .red {
+            color:#e61748;
         }
-        h2{
-            font-weight:600;
-            color:#f2f2f2;
+        .blue {
+            color:#6769eb;
         }
-        .nut{
-            font-size:30px !important;
-            font-weight:600 !important;
-            color:#f2f2f2 !important;
-            width:100px !important;
-        }
-        .place-post__title a{
-            color:#f2f2f2;
-        }
-        .place-post__gal-box{
-            border-radius: 5px;
-        }
-        .place-post__content{
-            display:flex;
-            align-items: center;
-            background-color: #181620;
-            border-radius: 0px 5px 5px 0px;
-        }
-        .place-post.list-style .place-post__gal-box{
-            max-width:400px;
-            max-height:300px
-        }
-        .place-post.list-style .place-post__gal-box{
-            border:5px solid #181620;
-            border-radius:5px 0px 0px 5px;
-            width:33.5%;
-        }
-        .place-post.list-style .place-post__content{
-            width:75%;
-        }
-        .place-post__title a:hover{
-            color:#f2f2f2;
-        }
-        .place-post__title{
-            font-weight:600;
-            font-size:40px;
-        }
-        .megadropdown{
-            width:400px;
-            left:0px
-        }
-        .login_fields__user{
-            position: relative;
-        }
-        input[type=text]{
-            box-sizing: border-box;
-            color:#f2f2f2;
-            border: 1px solid #cccccc12;
-            border-radius: 3px;
-            font-size: 14px;
-            background-color:#181620;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding:1rem;
-        }
-        .item{
-            position: relative; 
-            left: 0px; 
-            top: 0px;
+        .hidden {
+            display:none;
         }
 
-        img{
-            max-width:400px;
-            max-height:300px
-        }
-    
     </style>
-    <style>
-        table {
-            border-collapse: collapse;
-            border-radius: 5px;
-            border-style: hidden; /* hide standard table (collapsed) border */
-            box-shadow: 0 0 0 1px #666; /* this draws the table border  */ 
-        }
-        
-        h1 {
-            font-size: 30px;
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: 300;
-            text-align: center;
-            margin-bottom: 15px;
-        }
+</head>
 
-        table {
-            width: 100%;
-            table-layout: fixed;
-        }
-
-        .tbl-header {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .tbl-content {
-            height: 300px;
-            overflow-x: auto;
-            margin-top: 0px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        th {
-            padding: 20px 15px;
-            text-align: left;
-            font-weight: 500;
-            font-size: 12px;
-            color: #fff;
-            text-transform: uppercase;
-        }
-
-        td {
-            padding: 15px;
-            text-align: left;
-            vertical-align: middle;
-            font-weight: 400;
-            font-size: 16px;
-            color: #fff;
-            border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-        }
-
-        .table a
-        {
-            display:block;
-            text-decoration:none;
-        }
-
-
-        /* demo styles */
-
-        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-
-        body {
-            background-color: #101015;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        section {
-            margin: 50px;
-        }
-
-        /* for custom scrollbar for webkit browser*/
-
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        }
-    </style>
-    </head>
-    <body>
-        <!-- Container -->
-        <div id="container" class="active">
-            <!-- Header-->
-            <header class="clearfix">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                            <img style="max-height:30px" src="./logo.png" alt="">
-                        </a>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav col-9">
-                                <li><a href="./speedruns.html">Leaderboard</a>
-                                <li><a href="./speedrun_submit.html">Submit Run</a>
-                            </ul>
-                        </div>
-                    </div>
+<body class="main">
+    <div id="app">
+        <div>
+            <div class="flex">
+                <nav class="side-nav">
+                    <a href="/" class="router-link-active intro-x flex items-center pl-5 pt-4">
+                        <img style="width:4rem" src="./logo.png">
+                    </a>
+                    <div class="side-nav__devider my-6"></div>
+                    <ul>
+                        <li>
+                            <a href="./speedruns.html" style="background-color:#e8e8e8 ;" class="side-menu">
+                                <div class="side-menu__icon"></div>
+                                <div style="color:#6769eb; font-weight:600" class="side-menu__title">Leaderboard</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./speedrun_submit.html" class="side-menu">
+                                <div class="side-menu__title">Submit Run</div>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-            </header>
+                <div class="content">
+                    <!--TOP BAR COMMENTED OUT-->
+                    <!--<div class="top-bar"></div>-->
+                    <!--MAIN CONTENT-->
+                    <div>
+                        <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
+                            <svg style="cursor:pointer; overflow:visible; margin-top:2rem" id="back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left mr-5" viewBox="0 0 10 10">
+                                <path fill-rule="evenodd" stroke-width="3" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                            </svg>
 
-            <section style="margin:50px 0 0;" class="explore">
-                <div style="max-width:70%" class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="explore__box">
-                                <h2 class="explore__filter-title row">
-                                    <div id="showing" style="margin-right:10px" class="">
-                                        <h2 style="padding-bottom: 1rem;">Leaderboards</h2>
-                                        <div id="table-header" class="tbl-header">
-                                            <table id="table-head" cellpadding="0" cellspacing="0" border="0" >
-                                                <thead>
-                                                    <tr>
-                                                        <th>Map</th>
-                                                        <th>Map Author</th>
-                                                        <th>Record Holder</th>
-                                                        <th>Time</th>
-                                                        <th>Video</th>
-                                                    </tr>
-                                                </thead>
-                                            </table>
-                                        </div>
-                                        <div id="table-body" class="tbl-content">
-                                            <table cellpadding="0" cellspacing="0" border="0">
-                                                <tbody id="tablebody">
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </h2>
-                                <div class="explore__wrap iso-call list-version" style="position: relative; height: 1013.2px">
+                            <h2 id="leaderboard_title" class="intro-y text-lg font-medium mt-10">Leaderboard</h2>
+                            <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+                                <div style="display:flex" class="w-56 relative text-gray-700 dark:text-gray-300 justify-end">
+                                    <h3 id="status" class="intro-y text-sm font-medium mt-10 red">Server Loading</h3>
                                 </div>
                             </div>
                         </div>
+                        <div class="grid grid-cols-12 gap-6 mt-5">
+                            <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
+                                <table class="table table-report -mt-2">
+                                    <thead>
+                                        <tr id="table_header">
+                                            <th class="whitespace-nowrap">Map</th>
+                                            <th class="whitespace-nowrap">Map Author</th>
+                                            <th class="text-center whitespace-nowrap">Record Holder</th>
+                                            <th class="text-center whitespace-nowrap">Time</th>
+                                            <th class="text-center whitespace-nowrap">Record Run</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table_body">
+                                        <!--
+                                        <tr class="intro-x">
+                                            <td class="w-40">
+                                                <a href="" class="font-medium whitespace-nowrap">PA Levels v2</a>
+                                            </td>
+                                            <td>
+                                                <div href="" class="font-medium whitespace-nowrap">Joshington</div>
+                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">snappy8516</div>
+                                            </td>
+                                            <td class="text-center">👑 aKidNamedMark</td>
+                                            <td class="w-40">
+                                                <div class="flex items-center justify-center">00:01:23.24</div>
+                                            </td>
+                                            <td class=" w-56">
+                                                <div class="flex justify-center items-center">
+                                                    <a href="" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                                                </div>
+                                            </td>
+                                        </tr>-->
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </section>
-            
+            </div>
         </div>
-        <script>
+    </div>
+    <script>
+        get(`https://acute-ginger-appeal.glitch.me/runs`, build)
+
+        function view_map(data){
+            $( "#table_body" ).empty();
+        }
+
+        function table_click(e){
+            console.log(e)
+        }
+
+        $('#back').click(function(e){
             get(`https://acute-ginger-appeal.glitch.me/runs`, build)
+        })
 
-            function view_map(data){
-                $( "#tablebody" ).empty();
+        //For the high level leaderboard elements
+        function tableElement(data){
+            return `<tr class="intro-x">
+                    <td class="w-40 table_item">
+                        <div style="cursor:pointer;" id=${data.id} class="font-medium whitespace-nowrap">${data.name}</div>
+                    </td>
+                    <td>
+                        <div href="" class="font-medium whitespace-nowrap tooltip">${data.author}</div>
+                        <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">${data.fileshare}</div>
+                    </td>
+                    <td class="text-center">👑 ${data.records[0].gamertag}</td>
+                    <td class="w-40">
+                        <div class="flex items-center justify-center">${data.record_time}</div>
+                    </td>
+                    <td class=" w-56">
+                        <div class="flex justify-center items-center">
+                            <a href="${data.link}" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                        </div>
+                    </td>
+                </tr>`
+        }
+         
+        //For the individual run elements
+        function recordItem(data,index){
+            let full_date = new Date(Date.parse(data.time_submitted)).toString()
+            if(index == 0){
+                data.gamertag = "👑 " + data.gamertag
             }
+            return `<tr class="intro-x">
+                <td>
+                    <div href="" class="font-medium whitespace-nowrap">${data.gamertag}</div>
+                    <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">${ordinal_suffix_of(index+1)} place</div>
+                </td>
+                <td class="w-40">
+                    <div class="flex items-center justify-center">${msToTime(data.time)}</div>
+                </td>
+                <td class="w-56">
+                    <div class="flex items-center justify-center">
+                        <a href="https://www.youtube.com/watch?v=${data.link}" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                    </div>
+                </td>
+                <td class="items-center justify-center" >${full_date.slice(0,full_date.lastIndexOf(":")+3)}</td>
+            </tr>`
+        }
+        // For the individual map table headers
+        function mapTableHeader(){
+            return `
+                <th class="whitespace-nowrap">Record Holder</th>
+                <th class="text-center whitespace-nowrap">Time</th>
+                <th class="text-center whitespace-nowrap">Video</th>
+                <th class="text-center whitespace-nowrap">Date</th>`
+        }
 
-            function table_click(e){
-                console.log(e)
-            }
+        // For the leaderboard table headers
+        function leaderboardHeader(){
+            return `  
+            <th class="whitespace-nowrap">Map</th>
+            <th class="whitespace-nowrap">Map Author</th>
+            <th class="text-center whitespace-nowrap">Record Holder</th>
+            <th class="text-center whitespace-nowrap">Time</th>
+            <th class="text-center whitespace-nowrap">Record Run</th>`
+        }
 
-            function tableElement(data){
-                let map = `<td style="cursor:pointer;" class="table_item" id="${data.id}">${data.name}</td>`
-                let author = `<td>${data.author}</td>`
-                let record_holder = `<td>${data.records[0].gamertag}</td>`
-                data.record_time = data.record_time.replace(/:/g, " : ")
-                let time = `<td>${data.record_time}</td>`
-                let video = `<td><a href="${data.link}">Video</a></td>`
-                return `<tr>${map}\n${author}\n${record_holder}\n${time}\n${video}</tr>`
-            }
-
-            function tableRecord(data){
-                let record_holder = `<td>${data.gamertag}</td>`
-                data.record_time = data.time
-                let time = `<td>${msToTime(data.time)}</td>`
-                let video = `<td><a href="${data.link}">Video</a></td>`
-                let full_date = new Date(Date.parse(data.time_submitted)).toString()
-                let date = `<td>${full_date.slice(0,full_date.lastIndexOf(":")+3)}</td>`
-                return `<tr>${record_holder}\n${time}\n${video}\n${date}</tr>`
-            }
-
-            function get(url,cb){
-                fetch(url)
-                    .then(response => response.json())
-                    .then(commits => {
-                        cb(commits,url)
-                    });
-            }
-
-            function msToTime(s) {
-                // Pad to 2 or 3 digits, default is 2
-                function pad(n, z) {
-                z = z || 2;
-                return ('00' + n).slice(-z);
-                }
-
-                var ms = s % 1000;
-                s = (s - ms) / 1000;
-                var secs = s % 60;
-                s = (s - secs) / 60;
-                var mins = s % 60;
-                var hrs = (s - mins) / 60;
-
-                return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
-            }
-
-            function build(data){
-                Object.keys(data).forEach((e, i) => {
-                   e.record = data[e].records[0].gamertag
-                   $( "#tablebody" ).append(tableElement(data[e])); 
+        function get(url,cb){
+            $('#status').removeClass('blue')
+            fetch(url)
+                .then(response => response.json())
+                .then(commits => {
+                    $('#status').toggleClass('blue').text('Server Online')
+                    cb(commits,url)
                 });
+        }
 
-                var elements = document.getElementsByClassName("table_item");
+        function build(data){
+            $('#leaderboard_title').text("Leaderboard")
+            $('#back').toggle()
+            $( "#table_body" ).empty();
+            $("#table_header").empty()
+            $( "#table_header" ).prepend(leaderboardHeader()); 
+            Object.keys(data).forEach((e, i) => {
+               e.record = data[e].records[0].gamertag
+               $( "#table_body" ).append(tableElement(data[e])); 
+            });
 
-                for (var i = 0; i < elements.length; i++) {
-                    elements[i].addEventListener("click", function(e){
-                        get(`https://acute-ginger-appeal.glitch.me/maps?map=${e.originalTarget.id}`,build_map)
-                    }); 
-                }
+            let elements = document.getElementsByClassName("table_item");
+
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].addEventListener("click", function(e){
+                    get(`https://acute-ginger-appeal.glitch.me/maps?map=${e.originalTarget.id}`,build_map)
+                }); 
+            }
+        }
+
+        function build_map(data, url){
+            let d = data.records
+            $('#back').toggle()
+            $('#leaderboard_title').text(data.name + " Leaderboard")
+            $("#table_header").empty();
+            $( "#table_body" ).empty();
+            
+            $( "#table_header" ).prepend(mapTableHeader()); 
+            Object.keys(d).forEach((e, i) => {
+                $( "#table_body" ).append(recordItem(d[e],i)); 
+            });
+        }
+
+        function msToTime(s) {
+            // Pad to 2 or 3 digits, default is 2
+            function pad(n, z) {
+            z = z || 2;
+            return ('00' + n).slice(-z);
             }
 
-            function build_map(data, url){
-               // console.log(data)
-                let d = data.records
-                $("#table-head").empty();
-                $( "#tablebody" ).empty();
-                let new_head = '<thead><tr><th>Record Holder</th><th>Time</th><th>Video</th><th>Date</th></tr></thead>'
-                $( "#table-head" ).prepend(new_head); 
-                Object.keys(d).forEach((e, i) => {
-                    $( "#tablebody" ).append(tableRecord(d[e])); 
-                });
+            var ms = s % 1000;
+            s = (s - ms) / 1000;
+            var secs = s % 60;
+            s = (s - secs) / 60;
+            var mins = s % 60;
+            var hrs = (s - mins) / 60;
+
+            return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
+        }
+
+        function ordinal_suffix_of(i) {
+            var j = i % 10,
+                k = i % 100;
+            if (j == 1 && k != 11) {
+                return i + "st";
             }
-        </script>
-    </body>
+            if (j == 2 && k != 12) {
+                return i + "nd";
+            }
+            if (j == 3 && k != 13) {
+                return i + "rd";
+            }
+            return i + "th";
+        }
+    </script>
+</body>
 </html>
