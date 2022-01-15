@@ -1,0 +1,138 @@
+<html class="dark" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>GHST Rules</title>
+    <link href="./main.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .red {
+            color:#e61748;
+        }
+        .blue {
+            color:#6769eb;
+        }
+        .hidden {
+            display:none;
+        }
+
+    </style>
+</head>
+
+<body class="main">
+    <div id="app">
+        <div>
+            <div class="flex">
+                <nav class="side-nav">
+                    <a href="/" class="router-link-active intro-x flex items-center pl-5 pt-4">
+                        <img style="width:4rem" src="./logo.png">
+                    </a>
+                    <div class="side-nav__devider my-6"></div>
+                    <ul>
+                        <li>
+                            <a href="./speedruns.html" class="side-menu">
+                                <div class="side-menu__title">Leaderboard</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./speedrun_submit.html" class="side-menu">
+                                <div class="side-menu__title">Submit Run</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./rules.html" style="background-color:#e8e8e8 ;" class="side-menu">
+                                <div class="side-menu__icon"></div>
+                                <div style="color:#6769eb; font-weight:600" class="side-menu__title">Rules</div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <div class="content">
+                    <div>
+                        <div class="intro-y flex items-center mt-8">
+                            <h2 class="text-lg font-medium mr-auto">
+                                Rules
+                            </h2>
+                        </div>
+                        <div class="grid grid-cols-12 gap-6 mt-5">
+                            <div class="intro-y col-span-12 lg:col-span-12">
+                                <div class="box">
+                                    <div class="flex items-center p-5 border-b border-gray-200 dark:border-dark-5">
+                                        <h2 class="font-medium text-base mr-auto">
+                                            Rules for Submitting
+                                        </h2>
+                                    </div>
+                                    <div class="accordion p-5" id="faq-accordion-1">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="faq-accordion-content-2">
+                                                <span style="font-weight: 500;">1. Run Submissions</span>
+                                            </div>
+                                            <div aria-labelledby="faq-accordion-content-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion-1" id="faq-accordion-collapse-1">
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - All submission videos should be first person with hud turned on.
+                                                    - Submitted gameplay must not be obscured by stream elements.
+                                                    - All runs must be single segment ONLY. Any segmented runs will be rejected.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="faq-accordion-content-2">
+                                                <span style="font-weight: 500;">2. Game mode</span>
+                                            </div>
+                                            <div aria-labelledby="faq-accordion-content-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion-1" id="faq-accordion-collapse-1">
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - Runs can be done in either a private custom game or a custom game browser game lobby.
+                                                </div>
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - Any help from other players will disqualify the run. This means no jumping off other players, toe ghosting, or other interactions with another player.
+                                                    If the map contains moveable objects, they must remain untouched by any other player but the runner.
+                                                </div>
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - Runs must be completed on an unmodified version of the forged map, map file, and Halo 3 DLL.
+                                                </div>
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - Runs must be completed using the gametype "GHST Oddball". Which can be found on the fileshare of "aKidNamedMark".
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="faq-accordion-content-2">
+                                                <span style="font-weight: 500;">3. Map Variant</span>
+                                            </div>
+                                            <div aria-labelledby="faq-accordion-content-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion-1" id="faq-accordion-collapse-1">
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - Runs should be performed only on the map variant specified in the leaderboard from the file share listed below "Map Author".
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="faq-accordion-content-2">
+                                                <span style="font-weight: 500;">4. Timing</span>
+                                            </div>
+                                            <div aria-labelledby="faq-accordion-content-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion-1" id="faq-accordion-collapse-1">
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - Timing begins on moment the player gains control.
+                                                </div>
+                                                <div class="accordion-body text-gray-700 dark:text-gray-600 leading-relaxed">
+                                                    - Time ends the first frame of picking up the oddball.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
