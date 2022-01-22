@@ -128,6 +128,12 @@
 
         //For the high level leaderboard elements
         function tableElement(data){
+            if(data.records[0] == undefined){
+                data.records.push({
+                    "gamertag":"No Records",
+                    "time":"00:00:00.00"
+                })
+            }
             return `<tr class="intro-x">
                     <td class="w-40 table_item">
                         <div style="cursor:pointer;" id=${data.id} class="font-medium whitespace-nowrap">${data.name}</div>
@@ -206,6 +212,12 @@
             $("#table_header").empty()
             $( "#table_header" ).prepend(leaderboardHeader()); 
             Object.keys(data).forEach((e, i) => {
+                if(data[e].records[0] == undefined){
+                    data[e].records.push({
+                        "gamertag":"No Records",
+                        "time":"00:00:00.00"
+                    })
+                }
                e.record = data[e].records[0].gamertag
                $( "#table_body" ).append(tableElement(data[e])); 
             });
