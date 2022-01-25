@@ -146,11 +146,14 @@
         }
 
         $(".form-control").change(function(e){
-            let id = e.target.id;
-            let val = e.target.value;
-            submit[id] = val
+            submit[e.target.id] = e.target.value
             checkFields()
-        })
+        });
+
+        $('#submit').click(function(e){
+            submit.gamertag = submit.gamertag.slice(0,16)
+            post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
+        });
 
         get(`https://acute-ginger-appeal.glitch.me/submit_info`, build)
 
@@ -162,12 +165,6 @@
                     $('#status').toggleClass('blue').text('Server Online')
                     cb(commits,url)
                 });
-        }
-
-        function linkParse(url){
-            let regExp = /^https?\:\/\/(?:www\.youtube(?:\-nocookie)?\.com\/|m\.youtube\.com\/|youtube\.com\/)?(?:ytscreeningroom\?vi?=|youtu\.be\/|vi?\/|user\/.+\/u\/\w{1,2}\/|embed\/|watch\?(?:.*\&)?vi?=|\&vi?=|\?(?:.*\&)?vi?=)([^#\&\?\n\/<>"']*)/i;
-            let match = url.match(regExp);
-            return (match && match[1].length==11)? match[1] : null;
         }
 
         function build(data){
@@ -182,15 +179,13 @@
 
             $('select').click(function(e){
                 if(e.target.id !== 'map'){
-                    submit.map = e.target.id
+                    let map = $('#maps').val()
+                    map = map.replace(/ /g, '_').toLowerCase()
+                    submit.map = map
                 }
                 checkFields()
             });
         }
-        $('#submit').click(function(e){
-            submit.gamertag = submit.gamertag.slice(0,16)
-            post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
-        });
 
         function post(url, data) {
             fetch(url, {
@@ -201,8 +196,8 @@
                 }
             }).then((response) => {
                 response.json().then((data) => {
-                    if(data.status == 'error'){
-                        console.log(data.status)
+                    if(data.type == 'error'){
+                        alert(data.status)
                     }
                 });
             });
@@ -210,17 +205,13 @@
 
         //More checks are done on the server, these are just to know whether to throw an error before submitting incorrect data.
         function checkFields(){
-            let fields = Object.values(submit)
             if(submit.link !== null){
-                if(linkParse(submit.link) == null){
-                    $('#submit').addClass('disabled')
-                    $('#link').addClass('red-border')
-                } else{
-                    $('#link').removeClass('red-border')
-                }
+                $('#link').removeClass('red-border')
+            } else {
+                $('#submit').addClass('disabled')
+                $('#link').addClass('red-border')
             }
-            if(!fields.includes(null)){
-                
+            if(!Object.values(submit).includes(null)){
                 $('#submit').toggleClass('disabled')
                 return false
             }
@@ -233,33 +224,14 @@
         }
 
         function build_map(data, url){
-            let d = data.records
-            
             $('#leaderboard_title').text(data.name + " Leaderboard")
             $("#table_header").empty();
             $( "#table_body" ).empty();
             
             $( "#table_header" ).prepend(mapTableHeader()); 
-            Object.keys(d).forEach((e, i) => {
-                $( "#table_body" ).append(recordItem(d[e],i)); 
+            Object.keys(data.records).forEach((e, i) => {
+                $( "#table_body" ).append(recordItem(data.records[e],i)); 
             });
-        }
-
-        function msToTime(s) {
-            // Pad to 2 or 3 digits, default is 2
-            function pad(n, z) {
-            z = z || 2;
-            return ('00' + n).slice(-z);
-            }
-
-            var ms = s % 1000;
-            s = (s - ms) / 1000;
-            var secs = s % 60;
-            s = (s - secs) / 60;
-            var mins = s % 60;
-            var hrs = (s - mins) / 60;
-
-            return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
         }
 
     </script>

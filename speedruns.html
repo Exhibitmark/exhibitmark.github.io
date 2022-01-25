@@ -80,27 +80,7 @@
                                             <th class="text-center whitespace-nowrap">Record Run</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="table_body">
-                                        <!--
-                                        <tr class="intro-x">
-                                            <td class="w-40">
-                                                <a href="" class="font-medium whitespace-nowrap">PA Levels v2</a>
-                                            </td>
-                                            <td>
-                                                <div href="" class="font-medium whitespace-nowrap">Joshington</div>
-                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">snappy8516</div>
-                                            </td>
-                                            <td class="text-center">👑 aKidNamedMark</td>
-                                            <td class="w-40">
-                                                <div class="flex items-center justify-center">00:01:23.24</div>
-                                            </td>
-                                            <td class=" w-56">
-                                                <div class="flex justify-center items-center">
-                                                    <a href="" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
-                                                </div>
-                                            </td>
-                                        </tr>-->
-                                    </tbody>
+                                    <tbody id="table_body"></tbody>
                                 </table>
 
                             </div>
@@ -112,27 +92,20 @@
         </div>
     </div>
     <script>
+        let run_data;
         get(`https://acute-ginger-appeal.glitch.me/runs`, build)
 
-        function view_map(data){
-            $( "#table_body" ).empty();
-        }
-
-        function table_click(e){
-            console.log(e)
-        }
-
         $('#back').click(function(e){
-            get(`https://acute-ginger-appeal.glitch.me/runs`, build)
+            build(run_data)
         })
 
         //For the high level leaderboard elements
-        function tableElement(data){
+        function mainLeaderboardElement(data){
             if(data.records[0] == undefined){
                 data.records.push({
                     "gamertag":"No Records",
                     "time":"00:00:00.00"
-                })
+                });
             }
             return `<tr class="intro-x">
                     <td class="w-40 table_item">
@@ -160,15 +133,16 @@
             if(index == 0){
                 data.gamertag = "👑 " + data.gamertag
             }
-            return `<tr class="intro-x">
-                <td>
+            return `
+            <tr class="intro-x">
+                <td class="w-40">
                     <div href="" class="font-medium whitespace-nowrap">${data.gamertag}</div>
                     <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">${ordinal_suffix_of(index+1)} place</div>
                 </td>
                 <td class="w-40">
                     <div class="flex items-center justify-center">${msToTime(data.time)}</div>
                 </td>
-                <td class="w-56">
+                <td class="w-40">
                     <div class="flex items-center justify-center">
                         <a href="https://www.youtube.com/watch?v=${data.link}" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
                     </div>
@@ -176,23 +150,55 @@
                 <td class="items-center justify-center" >${full_date.slice(0,full_date.lastIndexOf(":")+3)}</td>
             </tr>`
         }
-        // For the individual map table headers
-        function mapTableHeader(){
-            return `
-                <th class="whitespace-nowrap">Record Holder</th>
-                <th class="text-center whitespace-nowrap">Time</th>
-                <th class="text-center whitespace-nowrap">Video</th>
-                <th class="text-center whitespace-nowrap">Date</th>`
-        }
 
-        // For the leaderboard table headers
-        function leaderboardHeader(){
-            return `  
-            <th class="whitespace-nowrap">Map</th>
-            <th class="whitespace-nowrap">Map Author</th>
-            <th class="text-center whitespace-nowrap">Record Holder</th>
-            <th class="text-center whitespace-nowrap">Time</th>
-            <th class="text-center whitespace-nowrap">Record Run</th>`
+        let map_table_fields = [
+            {
+                "class":"whitespace-nowrap",
+                "name":"Record Holder"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Time"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Video"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Date"
+            }
+        ]
+
+        let leaderboard_fields = [
+            {
+                "class":"whitespace-nowrap",
+                "name":"Map"
+            },
+            {
+                "class":"whitespace-nowrap",
+                "name":"Map Author"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Record Holder"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Time"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Record Run"
+            }
+        ]
+
+        function buildTableHeader(data){
+            let head_string = ''
+            data.forEach(function(e){
+                head_string += `<th class="${e.class}">${e.name}</th>`
+            })
+            return head_string
         }
 
         function get(url,cb){
@@ -200,6 +206,7 @@
             fetch(url)
                 .then(response => response.json())
                 .then(commits => {
+                    run_data = commits
                     $('#status').toggleClass('blue').text('Server Online')
                     cb(commits,url)
                 });
@@ -210,7 +217,7 @@
             $('#back').toggle()
             $( "#table_body" ).empty();
             $("#table_header").empty()
-            $( "#table_header" ).prepend(leaderboardHeader()); 
+            $( "#table_header" ).prepend(buildTableHeader(leaderboard_fields)); 
             Object.keys(data).forEach((e, i) => {
                 if(data[e].records[0] == undefined){
                     data[e].records.push({
@@ -219,50 +226,48 @@
                     })
                 }
                e.record = data[e].records[0].gamertag
-               $( "#table_body" ).append(tableElement(data[e])); 
+               $( "#table_body" ).append(mainLeaderboardElement(data[e])); 
             });
 
             let elements = document.getElementsByClassName("table_item");
-
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].addEventListener("click", function(e){
-                    get(`https://acute-ginger-appeal.glitch.me/maps?map=${e.target.id}`,build_map)
-                }); 
-            }
+            $(".table_item").each(function(e) {
+                this.addEventListener("click", function(e){
+                    build_map_records(run_data[this.firstElementChild.id])
+                });
+            });
         }
 
-        function build_map(data, url){
+        function build_map_records(data, url){
             let d = data.records
             $('#back').toggle()
             $('#leaderboard_title').text(data.name + " Leaderboard")
             $("#table_header").empty();
             $( "#table_body" ).empty();
             
-            $( "#table_header" ).prepend(mapTableHeader()); 
+            $( "#table_header" ).prepend(buildTableHeader(map_table_fields)); 
             Object.keys(d).forEach((e, i) => {
                 $( "#table_body" ).append(recordItem(d[e],i)); 
             });
         }
 
         function msToTime(s) {
-            // Pad to 2 or 3 digits, default is 2
             function pad(n, z) {
-            z = z || 2;
-            return ('00' + n).slice(-z);
+                z = z || 2;
+                return ('00' + n).slice(-z);
             }
 
-            var ms = s % 1000;
+            let ms = s % 1000;
             s = (s - ms) / 1000;
-            var secs = s % 60;
+            let secs = s % 60;
             s = (s - secs) / 60;
-            var mins = s % 60;
-            var hrs = (s - mins) / 60;
+            let mins = s % 60;
+            let hrs = (s - mins) / 60;
 
             return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
         }
 
         function ordinal_suffix_of(i) {
-            var j = i % 10,
+            let j = i % 10,
                 k = i % 100;
             if (j == 1 && k != 11) {
                 return i + "st";
