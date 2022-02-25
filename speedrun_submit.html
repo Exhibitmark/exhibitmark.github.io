@@ -188,6 +188,7 @@
         }
 
         function post(url, data) {
+            $('#submit').addClass('disabled')
             fetch(url, {
                 method: "POST", 
                 body: data,
@@ -197,7 +198,10 @@
             }).then((response) => {
                 response.json().then((data) => {
                     if(data.type == 'error'){
-                        alert(data.status)
+                        $('#submit').removeClass('disabled')
+                        alert('❌ A field was either not filled out or there was a server error ❌')
+                    } else {
+                        alert('👍 Submitted successfully 👍')
                     }
                 });
             });
