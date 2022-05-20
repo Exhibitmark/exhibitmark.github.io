@@ -12,3 +12,12 @@ css/prism.css
 js/prism.js
 old_speedrun_submit.html
 main.css
+map_variants/.env
+map_variants/bitstream.js
+map_variants/node_modules
+map_variants/package.json
+map_variants/package-lock.json
+map_variants/map_rename.js
+map_variants/map_variant_mvar.js
+map_variants/mvar_parse.js
+map_variants/xuids.json

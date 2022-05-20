@@ -1,0 +1,354 @@
+{
+  "Foundry": [
+    {
+      "file": "jtc_jump_race.mvar",
+      "name": "JTC Jump Race",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "l KILLERxJAKE l"
+    },
+    {
+      "file": "jumpman_v1.mvar",
+      "name": "Jumpman v1",
+      "description": "You have 2 minutes to complete. Good luck Jump FX Productions.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "x1337xBLAZ3R"
+    },
+    {
+      "file": "jumprz_jumps_v1.mvar",
+      "name": "Jumprz Jumps v1",
+      "description": "New trick jumping map!! There are some secret routes and a hidden spiker. Hope everyone enjoys!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "jump_basic.mvar",
+      "name": "Jump Basic",
+      "description": "Basic Training for the Recruits",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bo mwwmwmwmm"
+    },
+    {
+      "file": "jump_journey_4.mvar",
+      "name": "Jump Journey #4",
+      "description": "Use gametype Puzzled Jumper   Made by WickedSOADMAN2",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    },
+    {
+      "file": "jump_map_easy_.mvar",
+      "name": "Jump Map Easy ",
+      "description": "For beginners to Learn the basics to jumping",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bo mwwmwmwmm"
+    },
+    {
+      "file": "jump_map_medium.mvar",
+      "name": "Jump Map Medium",
+      "description": "Medium trick jumping Map for Advanced Jumpers",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bo mwwmwmwmm"
+    },
+    {
+      "file": "jump_mexican.mvar",
+      "name": "Jump Mexican",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "shuteyebeats"
+    },
+    {
+      "file": "lf_day_shift.mvar",
+      "name": "LF Day Shift",
+      "description": "Made by Likely Faded, thanks for playing!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "m1.mvar",
+      "name": "M1",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs v2"
+    },
+    {
+      "file": "new_jumpz.mvar",
+      "name": "New Jumpz",
+      "description": "Ooo",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "peephole.mvar",
+      "name": "Peephole",
+      "description": "Another Jump Voyage Trick Jump map. Made by WickedSOADMAN. Use gametype Shimmy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    },
+    {
+      "file": "phyisck_menacer.mvar",
+      "name": "Phyisck Menacer",
+      "description": "Halo 3 physic & jump map made by. Phyisck and t f aaren. Settings 100% movement speed 100% jump height 100% damage/unchanged",
+      "difficulty": 0,
+      "tags": [],
+      "author": "t f aaren"
+    },
+    {
+      "file": "tentative.mvar",
+      "name": "Tentative",
+      "description": "A Jump Voyage trick jump map. Made by WickedSOADMAN. Use gametype Shimmy or any trick jump map gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    }
+  ],
+  "Icebox": [
+    {
+      "file": "lfys_icy_nipz.mvar",
+      "name": "LF-YS Icy Nipz",
+      "description": "Made by Likely Faded & Ysplatty, enjoy! ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    }
+  ],
+  "Sandbox": [
+    {
+      "file": "1337s_challenge.mvar",
+      "name": "1337s CHaLLeNGe",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "x1337xBLAZ3R"
+    },
+    {
+      "file": "eklouveseasy.mvar",
+      "name": "EklouvesEasy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Eklouve"
+    },
+    {
+      "file": "eklouveseasy_bb.mvar",
+      "name": "EklouvesEasy BB",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Eklouve"
+    },
+    {
+      "file": "fadedsserotonin.mvar",
+      "name": "FadedsSerotonin",
+      "description": "Made by Likely Faded, thanks for playing!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "fadeds_therapy.mvar",
+      "name": "Faded's Therapy",
+      "description": "Made by Likely Faded, thanks for playing! (Final)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "infitastic_v3.mvar",
+      "name": "Infitastic v3",
+      "description": "Jump map made by JuicedStl, use any oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "jgd_expedition_.mvar",
+      "name": "JGD Expedition ",
+      "description": "Multiple routes with jumps all over. Some obvious, some hidden. Made by Jagged Nade, HAVE FUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JGD Jumper"
+    },
+    {
+      "file": "jumpamanjaro_v2.mvar",
+      "name": "Jumpamanjaro v2",
+      "description": "Funky jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "jumptacular.mvar",
+      "name": "Jumptacular",
+      "description": "Chill jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "jump_tower_xxxl.mvar",
+      "name": "Jump Tower XXXL",
+      "description": "jump as far as you can",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "masochamber.mvar",
+      "name": "MasoChamber",
+      "description": "Made by Nate Pahlow - How long will you last before your left thumb grows weak?",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Nate Paylow"
+    },
+    {
+      "file": "parkour_4_noobs.mvar",
+      "name": "PARKOUR 4 NOOBS",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Laytonomus"
+    },
+    {
+      "file": "pa_big_kahuna.mvar",
+      "name": "PA Big Kahuna",
+      "description": "Either 2 ez or 2 hard. Play with Oddball. Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "pa_dimension.mvar",
+      "name": "PA Dimension",
+      "description": "Created By Joshington. Use with Oddball gametype. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Snappy8516"
+    },
+    {
+      "file": "pa_levels_v2.mvar",
+      "name": "PA Levels V2",
+      "description": "Jump course with over 60 jumps. Created by Joshington",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Snappy8516"
+    },
+    {
+      "file": "pa_mimic.mvar",
+      "name": "PA Mimic",
+      "description": "Created by Joshington. Play with Oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Snappy8516"
+    },
+    {
+      "file": "pa_mutation.mvar",
+      "name": "PA Mutation",
+      "description": "Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "pa_nautilus.mvar",
+      "name": "PA Nautilus",
+      "description": "Created by Mark. Play with Oddball",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "pa_nimbus.mvar",
+      "name": "PA Nimbus",
+      "description": "Created by Joshington. Use oddball gametype. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Snappy8516"
+    },
+    {
+      "file": "pa_stacka.mvar",
+      "name": "PA Stacka",
+      "description": "Created by Joshington. Use with Stack Jumper Oddball gametype ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Snappy8516"
+    },
+    {
+      "file": "pa_wagoo.mvar",
+      "name": "PA Wagoo",
+      "description": "Created By Joshington. Use with Oddball Gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Snappy8516"
+    },
+    {
+      "file": "pa_waka_waka.mvar",
+      "name": "PA Waka Waka",
+      "description": "Created By Joshington. Use with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Snappy8516"
+    },
+    {
+      "file": "pirates_shanty.mvar",
+      "name": "PIRATES SHANTY",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OneHappyBlonde"
+    },
+    {
+      "file": "safe_sandbox.mvar",
+      "name": "Safe Sandbox++",
+      "description": "Safe version of Sandbox+ Canvas, no guardians. Created by Faulk Smash. Modified by Mark *REUSE EVERY OBJECT ON MAP!*",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "serotonin_jumps.mvar",
+      "name": "Serotonin Jumps",
+      "description": "DGF Jumps (DIVIN3 JUSTICE) ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "FondestEar61033"
+    },
+    {
+      "file": "slides.mvar",
+      "name": "Slides",
+      "description": "3 paths leading to one destination: More Slides. Have fun!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Iamtheplague007"
+    },
+    {
+      "file": "tele_sandbox.mvar",
+      "name": "Tele Sandbox++",
+      "description": "Safe version of Sandbox+ Canvas, no guardians, teleporter bounds. Made by Faulk Smash. Mod by Mark USE ALL OBJECTS ON MAP!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    }
+  ],
+  "Waterfall": [
+    {
+      "file": "lf_cold_toes.mvar",
+      "name": "LF Cold Toes",
+      "description": "Made by Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    }
+  ]
+}
