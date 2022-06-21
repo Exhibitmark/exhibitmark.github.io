@@ -7,6 +7,7 @@
     <link rel="icon" href="./favicon.ico">
     <title>Speedrun Leaderboard</title>
     <link href="./main.min.css" rel="stylesheet">
+    <link href="./css/fa.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         .red {
@@ -17,6 +18,9 @@
         }
         .hidden {
             display:none;
+        }
+        .slate {
+            background-color:#2f353d;
         }
 
     </style>
@@ -35,9 +39,6 @@
                     </ul>
                 </nav>
                 <div class="content">
-                    <!--TOP BAR COMMENTED OUT-->
-                    <!--<div class="top-bar"></div>-->
-                    <!--MAIN CONTENT-->
                     <div>
                         <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
                             <svg style="cursor:pointer; overflow:visible; margin-top:2rem" id="back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left mr-5" viewBox="0 0 10 10">
@@ -51,25 +52,71 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-12 gap-6 mt-5">
-                            <div class="hidden top-bar">
-                                <h2 id="rules_title" class="intro-y text-lg font-medium mt-10">Rules</h2>
+
+                        <div style="padding:6rem 1rem;" class="intro-y slate col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-10">
+                            <h2 id="page_title" class="intro-y text-lg font-medium">Halo 3 Videos</h2>
+                            <div class="ml-4 relative inline-block mb-20">
+                                
                             </div>
+                            <h2 id="random" class="intro-y text-sm ml-auto mr-4 font-medium pointer justify-end">Random Videos</h2>
+                        </div>
+
+                        <div class="grid gap-6 mt-5">
                             <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
                                 <table class="table table-report -mt-2">
                                     <thead>
-                                        <tr id="table_header">
-                                            <th class="whitespace-nowrap">Map</th>
-                                            <th class="whitespace-nowrap">Map Author</th>
-                                            <th class="text-center whitespace-nowrap">Record Holder</th>
-                                            <th class="text-center whitespace-nowrap">Time</th>
-                                            <th class="text-center whitespace-nowrap">Record Run</th>
-                                        </tr>
+                                        <tr id="table_header"><th class="whitespace-nowrap">Record Holder</th><th class="text-center whitespace-nowrap">Time</th><th class="text-center whitespace-nowrap">Video</th><th class="text-center whitespace-nowrap">Date</th></tr>
                                     </thead>
-                                    <tbody id="table_body"></tbody>
+                                    <tbody id="table_body">
+                                        <tr class="intro-x">
+                                            <td class="w-40">
+                                                <div href="" class="font-medium whitespace-nowrap">👑 Johnny2Dirty</div>
+                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">1st place</div>
+                                            </td>
+                                            <td class="w-40">
+                                                <div class="flex items-center justify-center">00:01:36.00</div>
+                                            </td>
+                                            <td class="w-40">
+                                                <div class="flex items-center justify-center">
+                                                    <a href="https://www.youtube.com/watch?v=K1656D8CwpY" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                                                </div>
+                                            </td>
+                                            <td class="items-center justify-center">Thu May 26 2022 22:51:12</td>
+                                        </tr>
+                                        <tr class="intro-x">
+                                            <td class="w-40">
+                                                <div href="" class="font-medium whitespace-nowrap">Im Sleepy</div>
+                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">2nd place</div>
+                                            </td>
+                                            <td class="w-40">
+                                                <div class="flex items-center justify-center">00:01:42.00</div>
+                                            </td>
+                                            <td class="w-40">
+                                                <div class="flex items-center justify-center">
+                                                    <a href="https://www.youtube.com/watch?v=G_OnaE-Pxf4" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                                                </div>
+                                            </td>
+                                            <td class="items-center justify-center">Mon May 23 2022 10:59:53</td>
+                                        </tr>
+                                        <tr class="intro-x">
+                                            <td class="w-40">
+                                                <div href="" class="font-medium whitespace-nowrap">Im Sleepy</div>
+                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">3rd place</div>
+                                            </td>
+                                            <td class="w-40">
+                                                <div class="flex items-center justify-center">00:02:11.15</div>
+                                            </td>
+                                            <td class="w-40">
+                                                <div class="flex items-center justify-center">
+                                                    <a href="https://www.youtube.com/watch?v=moE-CbYX-N8" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                                                </div>
+                                            </td>
+                                            <td class="items-center justify-center">Mon Apr 18 2022 00:45:01</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
-
                             </div>
+
                         </div>
 
                     </div>
@@ -79,7 +126,7 @@
     </div>
     <script>
         let run_data;
-        get(`https://acute-ginger-appeal.glitch.me/runs`, build)
+        //get(`https://acute-ginger-appeal.glitch.me/runs`, build)
 
         $('#back').click(function(e){
             build(run_data)

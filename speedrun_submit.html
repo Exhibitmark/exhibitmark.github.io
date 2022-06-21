@@ -82,7 +82,13 @@
                                         <div class="mt-5">
                                             <label for="crud-form-3" class="form-label">Video URL (Youtube links only)</label>
                                             <div class="input-group">
-                                                <input autocomplete="off" id="link" type="text" class="form-control" placeholder="ex.https://www.youtube.com/watch?v=eoV-2YCQhm4">
+                                                <input autocomplete="off" id="link" type="text" class="form-control" placeholder="e.g.https://www.youtube.com/watch?v=eoV-2YCQhm4">
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <label for="crud-form-3" class="form-label">Discord ID (used to give the speedyGHST role to record holders)</label>
+                                            <div class="input-group">
+                                                <input autocomplete="off" id="discord" type="text" class="form-control" placeholder="e.g Exhibit#0457">
                                             </div>
                                         </div>
                                         <div class="mt-5"><label class="form-label">Time</label>
@@ -122,6 +128,7 @@
         const submit = {
             "map":null,
             "gamertag":null,
+            "discord":null,
             "link": null,
             "hour":null,
             "minute":null,
@@ -136,7 +143,8 @@
 
         $('#submit').click(function(e){
             submit.gamertag = submit.gamertag.slice(0,16)
-            post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
+            console.log(JSON.stringify(submit))
+            //post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
         });
 
         get(`https://acute-ginger-appeal.glitch.me/submit_info`, build)
