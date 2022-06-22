@@ -53,7 +53,7 @@
                             </div>
                         </div>
 
-                        <div style="padding:6rem 1rem;" class="intro-y slate col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-10">
+                        <div style="padding:6rem 1rem;" class="hidden intro-y slate col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-10">
                             <h2 id="page_title" class="intro-y text-lg font-medium">Halo 3 Videos</h2>
                             <div class="ml-4 relative inline-block mb-20">
                                 
@@ -83,36 +83,6 @@
                                             </td>
                                             <td class="items-center justify-center">Thu May 26 2022 22:51:12</td>
                                         </tr>
-                                        <tr class="intro-x">
-                                            <td class="w-40">
-                                                <div href="" class="font-medium whitespace-nowrap">Im Sleepy</div>
-                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">2nd place</div>
-                                            </td>
-                                            <td class="w-40">
-                                                <div class="flex items-center justify-center">00:01:42.00</div>
-                                            </td>
-                                            <td class="w-40">
-                                                <div class="flex items-center justify-center">
-                                                    <a href="https://www.youtube.com/watch?v=G_OnaE-Pxf4" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
-                                                </div>
-                                            </td>
-                                            <td class="items-center justify-center">Mon May 23 2022 10:59:53</td>
-                                        </tr>
-                                        <tr class="intro-x">
-                                            <td class="w-40">
-                                                <div href="" class="font-medium whitespace-nowrap">Im Sleepy</div>
-                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">3rd place</div>
-                                            </td>
-                                            <td class="w-40">
-                                                <div class="flex items-center justify-center">00:02:11.15</div>
-                                            </td>
-                                            <td class="w-40">
-                                                <div class="flex items-center justify-center">
-                                                    <a href="https://www.youtube.com/watch?v=moE-CbYX-N8" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
-                                                </div>
-                                            </td>
-                                            <td class="items-center justify-center">Mon Apr 18 2022 00:45:01</td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -126,7 +96,7 @@
     </div>
     <script>
         let run_data;
-        //get(`https://acute-ginger-appeal.glitch.me/runs`, build)
+        get(`https://acute-ginger-appeal.glitch.me/runs`, build)
 
         $('#back').click(function(e){
             build(run_data)
