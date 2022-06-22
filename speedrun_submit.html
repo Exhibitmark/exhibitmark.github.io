@@ -143,8 +143,7 @@
 
         $('#submit').click(function(e){
             submit.gamertag = submit.gamertag.slice(0,16)
-            console.log(JSON.stringify(submit))
-            //post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
+            post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
         });
 
         get(`https://acute-ginger-appeal.glitch.me/submit_info`, build)
