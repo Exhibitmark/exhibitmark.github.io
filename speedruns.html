@@ -68,21 +68,6 @@
                                         <tr id="table_header"><th class="whitespace-nowrap">Record Holder</th><th class="text-center whitespace-nowrap">Time</th><th class="text-center whitespace-nowrap">Video</th><th class="text-center whitespace-nowrap">Date</th></tr>
                                     </thead>
                                     <tbody id="table_body">
-                                        <tr class="intro-x">
-                                            <td class="w-40">
-                                                <div href="" class="font-medium whitespace-nowrap">👑 Johnny2Dirty</div>
-                                                <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">1st place</div>
-                                            </td>
-                                            <td class="w-40">
-                                                <div class="flex items-center justify-center">00:01:36.00</div>
-                                            </td>
-                                            <td class="w-40">
-                                                <div class="flex items-center justify-center">
-                                                    <a href="https://www.youtube.com/watch?v=K1656D8CwpY" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
-                                                </div>
-                                            </td>
-                                            <td class="items-center justify-center">Thu May 26 2022 22:51:12</td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -103,7 +88,7 @@
         })
 
         //For the high level leaderboard elements
-        function mainLeaderboardElement(data){
+        function mainLeaderboardElement(data,game){
             if(data.records[0] == undefined){
                 data.records.push({
                     "gamertag":"No Records",
@@ -111,8 +96,8 @@
                 });
             }
             return `<tr class="intro-x">
-                    <td class="w-40 table_item">
-                        <div style="cursor:pointer;" id=${data.id} class="font-medium whitespace-nowrap">${data.name}</div>
+                    <td game="${game}" class="w-40 table_item">
+                        <div game="${game}" style="cursor:pointer;" id=${data.id} class="font-medium whitespace-nowrap">${data.name}</div>
                     </td>
                     <td>
                         <div href="" class="font-medium whitespace-nowrap tooltip">${data.author}</div>
@@ -216,31 +201,32 @@
         }
 
         function build(data){
+            let runs = data['3']
             $('#leaderboard_title').text("Leaderboard")
             $('#back').toggle()
             $( "#table_body" ).empty();
             $("#table_header").empty()
             $( "#table_header" ).prepend(buildTableHeader(leaderboard_fields)); 
-            Object.keys(data).forEach((e, i) => {
-                if(data[e].records[0] == undefined){
-                    data[e].records.push({
+            Object.keys(runs).forEach((e, i) => {
+                if(runs[e].records[0] == undefined){
+                    runs[e].records.push({
                         "gamertag":"No Records",
                         "time":"00:00:00.00"
                     })
                 }
-               e.record = data[e].records[0].gamertag
-               $( "#table_body" ).append(mainLeaderboardElement(data[e])); 
+               e.record = runs[e].records[0].gamertag
+               $( "#table_body" ).append(mainLeaderboardElement(runs[e],'3')); 
             });
 
             let elements = document.getElementsByClassName("table_item");
             $(".table_item").each(function(e) {
                 this.addEventListener("click", function(e){
-                    build_map_records(run_data[this.firstElementChild.id])
+                    build_map_records(run_data[e.target.getAttribute('game').toString()][this.firstElementChild.id])
                 });
             });
         }
 
-        function build_map_records(data, url){
+        function build_map_records(data, game){
             let d = data.records
             $('#back').toggle()
             $('#leaderboard_title').text(data.name + " Leaderboard")

@@ -82,13 +82,13 @@
                                         <div class="mt-5">
                                             <label for="crud-form-3" class="form-label">Video URL (Youtube links only)</label>
                                             <div class="input-group">
-                                                <input autocomplete="off" id="link" type="text" class="form-control" placeholder="e.g.https://www.youtube.com/watch?v=eoV-2YCQhm4">
+                                                <input id="link" autocomplete="off" type="text" class="form-control" placeholder="e.g.https://www.youtube.com/watch?v=eoV-2YCQhm4">
                                             </div>
                                         </div>
                                         <div class="mt-5">
                                             <label for="crud-form-3" class="form-label">Discord ID (used to give the speedyGHST role to record holders)</label>
                                             <div class="input-group">
-                                                <input autocomplete="off" id="discord" type="text" class="form-control" placeholder="e.g Exhibit#0457">
+                                                <input id="discord" autocomplete="off" type="text" class="form-control" placeholder="e.g Exhibit#0457">
                                             </div>
                                         </div>
                                         <div class="mt-5"><label class="form-label">Time</label>
@@ -112,7 +112,7 @@
                                             </div>
                                         </div>
                                         <div class="text-right mt-8">
-                                            <button id="submit" type="button" class="btn disabled blue-bg w-24">Submit</button>
+                                            <button id="submit" type="button" class="btn blue-bg w-24">Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -126,6 +126,7 @@
     </div>
     <script>
         const submit = {
+            "game":'3',
             "map":null,
             "gamertag":null,
             "discord":null,
@@ -142,7 +143,6 @@
         });
 
         $('#submit').click(function(e){
-            submit.gamertag = submit.gamertag.slice(0,16)
             post("https://acute-ginger-appeal.glitch.me/add_record", JSON.stringify(submit))
         });
 
@@ -160,19 +160,24 @@
 
         function build(data){
             let select = document.getElementById('maps');
-            data.forEach((e, i) => {
-                let opt = document.createElement('option');
-                opt.value = e[0];
-                opt.innerHTML = e[0];
-                opt.id = e[1]
-                select.appendChild(opt);
-            });
+            for(var game in data){
+                data[game].forEach(function(e){
+                    let opt = document.createElement('option');
+                    opt.value = e.name;
+                    opt.innerHTML = e.name;
+                    opt.id = e.id
+                    opt.setAttribute('game', game);
+                    select.appendChild(opt);
+                });
+            }
 
             $('select').click(function(e){
                 if(e.target.id !== 'map'){
                     let map = $('#maps').val()
-                    map = map.replace(/ /g, '_').toLowerCase()
-                    submit.map = map
+                    if(map){
+                        submit.game = e.target.getAttribute('game').toString()
+                        submit.map = e.target.getAttribute('id')
+                    }
                 }
                 checkFields()
             });
@@ -189,7 +194,7 @@
             }).then((response) => {
                 response.json().then((data) => {
                     if(data.type == 'error'){
-                        $('#submit').removeClass('disabled')
+                        //$('#submit').removeClass('disabled')
                         alert('❌ A field was either not filled out or there was a server error ❌')
                     } else {
                         alert('👍 Submitted successfully 👍')
@@ -203,11 +208,11 @@
             if(submit.link !== null){
                 $('#link').removeClass('red-border')
             } else {
-                $('#submit').addClass('disabled')
+                //$('#submit').addClass('disabled')
                 $('#link').addClass('red-border')
             }
             if(!Object.values(submit).includes(null)){
-                $('#submit').toggleClass('disabled')
+               // $('#submit').toggleClass('disabled')
                 return false
             }
             if(submit.map == null){
