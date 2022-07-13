@@ -1,23 +1,23 @@
 const nav = {
     "videos":{
         "title":"Videos",
-        "url":"./index.html"
+        "url":"./index"
     },
     "fileshare":{
         "title":"Fileshare",
-        "url":"./fileshare.html"
+        "url":"./fileshare"
     },
     "leaderboard":{
         "title":"Leaderboard",
-        "url":"./speedruns.html"
+        "url":"./speedruns"
     },
     "submit":{
         "title":"Submit Run",
-        "url":"./speedrun_submit.html"
+        "url":"./speedrun_submit"
     },
     "rules":{
         "title":"Rules",
-        "url":"./rules.html"
+        "url":"./rules"
     }
 }
 
