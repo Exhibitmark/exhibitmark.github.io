@@ -4,7 +4,9 @@ js/node_modules
 js/nodePull.js
 js/package.json
 js/package-lock.json
-./server
+server/
+ghstle/
+ghst-bot/
 server/sort_test.js
 server/server.js
 server/records.json
@@ -27,3 +29,4 @@ old/old_videos.html
 old_speedrun.html
 old_speedrun.html
 server/node_modules/
+ghst-bot/
