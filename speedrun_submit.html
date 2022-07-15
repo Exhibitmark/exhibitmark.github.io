@@ -159,24 +159,24 @@
         }
 
         function build(data){
-            let select = document.getElementById('maps');
             for(var game in data){
                 data[game].forEach(function(e){
-                    let opt = document.createElement('option');
-                    opt.value = e.name;
-                    opt.innerHTML = e.name;
-                    opt.id = e.id
-                    opt.setAttribute('game', game);
-                    select.appendChild(opt);
+                    let newOption = $('<option>', {
+                        value: e.id,
+                        text: e.name
+                    });
+                    newOption.attr('game',game);
+                    $('#maps').append(newOption);
                 });
             }
 
             $('select').click(function(e){
                 if(e.target.id !== 'map'){
                     let map = $('#maps').val()
-                    if(map){
-                        submit.game = e.target.getAttribute('game').toString()
-                        submit.map = e.target.getAttribute('id')
+                    let value = $('#maps option:selected').val()
+                    if(value !== undefined){
+                        submit.game = $('#maps option:selected').attr('game')
+                        submit.map = value
                     }
                 }
                 checkFields()
