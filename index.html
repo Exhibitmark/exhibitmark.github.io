@@ -201,7 +201,7 @@
                                 </div>
                             </div>
                             <h2 id="random" class="intro-y text-sm ml-auto mr-4 font-medium pointer justify-end " onclick="getRandom()">Random Videos</h2>
-                            <div id="search" class="hidden w-full sm:w-auto mt-3 sm:mt-0 ml-8">
+                            <div id="search_div" class="hidden w-full sm:w-auto mt-3 sm:mt-0 ml-8">
                                 <div class="form-group has-search justify-end ">
                                     <span class="fa fa-search form-control-feedback"></span>
                                     <input autocomplete="off" id="search" type="text" class="form-control" placeholder="Search">
@@ -235,8 +235,7 @@
         });
 
         $( "#search" ).change(function() {
-            let term = $(this).val()
-            returnVids(term)
+            returnVids($(this).val())
         });
         
         const queryString = window.location.search
@@ -279,7 +278,7 @@
                 .then(commits => {
                     data = commits
                     $('#status').toggleClass('hidden')
-                    $('#search').toggleClass('hidden')
+                    $('#search_div').toggleClass('hidden')
                     build(id)
             });
         }
@@ -338,7 +337,6 @@
         }
 
         function returnVids(term){
-            
             $( "#page_title" ).text(`Search results for ${term}`);
             $( "#video_grid" ).empty();
             let authors = []

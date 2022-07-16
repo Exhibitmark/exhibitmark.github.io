@@ -173,11 +173,8 @@
             $('select').click(function(e){
                 if(e.target.id !== 'map'){
                     let map = $('#maps').val()
-                    let value = $('#maps option:selected').val()
-                    if(value !== undefined){
-                        submit.game = $('#maps option:selected').attr('game')
-                        submit.map = value
-                    }
+                    submit.game = $('#maps option:selected').attr('game')
+                    submit.map = $('#maps option:selected').val()
                 }
                 checkFields()
             });
