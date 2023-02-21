@@ -22,6 +22,13 @@
         .slate {
             background-color:#2f353d;
         }
+        .on-top {
+            position:relative;
+            z-index:9999;
+        }
+        .clickable {
+            cursor:pointer;
+        }
 
     </style>
 </head>
@@ -40,12 +47,31 @@
                 </nav>
                 <div class="content">
                     <div>
-                        <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
+                        <div style="z-index: 9999999; position: relative;" class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
                             <svg style="cursor:pointer; overflow:visible; margin-top:2rem" id="back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left mr-5" viewBox="0 0 10 10">
                                 <path fill-rule="evenodd" stroke-width="3" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                             </svg>
 
                             <h2 id="leaderboard_title" class="intro-y text-lg font-medium mt-10">Leaderboard</h2>
+                            <div class="ml-4 relative inline-block mb-20 mt-10">
+                                <!-- Dropdown toggle button -->
+                                <button id="dropdown_toggle" style="border-color:transparent" class="relative z-10 flex items-center p-2 text-sm border rounded-md bg-gray-800">
+                                    <span id="dropdown_toggle" class="dropdown_title mx-1">Halo 3</span>
+                                    <svg id="dropdown_toggle" class="w-5 h-5 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                        
+                                <!-- Dropdown menu -->
+                                <div id="dropdown" style="background-color: #25242b; display: none;" class="absolute right-0 w-56 py-2 mt-2 overflow-hidden bg-gray-800 rounded-md shadow-xl dark:bg-gray-800">
+                                    <div href="" id="3" class="clickable drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo 3
+                                    </div>
+                                    <div href="" id="reach" class="clickable drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo Reach
+                                    </div>
+                                </div>
+                            </div>
                             <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
                                 <div style="display:flex" class="w-56 relative text-gray-700 dark:text-gray-300 justify-end">
                                     <h3 id="status" class="intro-y text-sm font-medium mt-10 red">Server Loading</h3>
@@ -53,17 +79,9 @@
                             </div>
                         </div>
 
-                        <div style="padding:6rem 1rem;" class="hidden intro-y slate col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-10">
-                            <h2 id="page_title" class="intro-y text-lg font-medium">Halo 3 Videos</h2>
-                            <div class="ml-4 relative inline-block mb-20">
-                                
-                            </div>
-                            <h2 id="random" class="intro-y text-sm ml-auto mr-4 font-medium pointer justify-end">Random Videos</h2>
-                        </div>
-
                         <div class="grid gap-6 mt-5">
                             <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
-                                <table class="table table-report -mt-2">
+                                <table style="z-index: -1; " class="table table-report -mt-2">
                                     <thead>
                                         <tr id="table_header"><th class="whitespace-nowrap">Record Holder</th><th class="text-center whitespace-nowrap">Time</th><th class="text-center whitespace-nowrap">Video</th><th class="text-center whitespace-nowrap">Date</th></tr>
                                     </thead>
@@ -81,11 +99,32 @@
     </div>
     <script>
         let run_data;
-        get(`https://acute-ginger-appeal.glitch.me/runs`, build)
+        get(`https://acute-ginger-appeal.glitch.me/runs`, build, '3')
 
         $('#back').click(function(e){
-            build(run_data)
-        })
+            build(run_data, '3')
+        });
+
+        $('#dropdown_toggle').click(function(){
+            $('#dropdown').show();
+        });
+
+        $('.drop_element').click(function(e){
+            let id = e.target.id
+            $('.dropdown_title').text(`Halo ${id}`)
+            get(`https://acute-ginger-appeal.glitch.me/runs`, build,id)
+        });
+
+        $(function() {
+            $(document).on('click', function(e) {
+                if (e.target.id === 'dropdown_toggle') {
+                    $('#dropdown').show();
+                } else {
+                    $('#dropdown').hide();
+                }
+
+            })
+        });
 
         //For the high level leaderboard elements
         function mainLeaderboardElement(data,game){
@@ -189,19 +228,21 @@
             return head_string
         }
 
-        function get(url,cb){
+        function get(url,cb, id){
             $('#status').removeClass('blue')
             fetch(url)
                 .then(response => response.json())
                 .then(commits => {
                     run_data = commits
                     $('#status').toggleClass('blue').text('Server Online')
-                    cb(commits,url)
+                    cb(commits,id)
                 });
         }
 
-        function build(data){
-            let runs = data['3']
+        function build(data,id){
+            let runs = data[id]
+            console.log(id)
+            console.log(runs)
             $('#leaderboard_title').text("Leaderboard")
             $('#back').toggle()
             $( "#table_body" ).empty();

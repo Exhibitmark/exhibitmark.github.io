@@ -1,0 +1,3964 @@
+{
+  "Sandbox": [
+    {
+      "file": "A Box in a Tree - ST arena tag.mvar",
+      "name": "ST arena tag",
+      "description": "RUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "A Box in a Tree"
+    },
+    {
+      "file": "A Box in a Tree - ST CORE ORIGIN.mvar",
+      "name": " ST CORE ORIGIN",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "A Box in a Tree"
+    },
+    {
+      "file": "A Box in a Tree - ST CORE.mvar",
+      "name": "ST CORE",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "A Box in a Tree"
+    },
+    {
+      "file": "A Box in a Tree - ST REBORN.mvar",
+      "name": "ST REBORN",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "A Box in a Tree"
+    },
+    {
+      "file": "A Box in a Tree - ST RESOLVE.mvar",
+      "name": "ST RESOLVE",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "A Box in a Tree"
+    },
+    {
+      "file": "A Box in a Tree - St Wave.mvar",
+      "name": " ST WAVE ",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "A Box in a Tree"
+    },
+    {
+      "file": "ACEthetics - DeadmansCatwalk (V7).mvar",
+      "name": "DeadmansCatwalk",
+      "description": "Version 7 / FINAL - First jump map by ACEthetics",
+      "difficulty": 0,
+      "tags": [],
+      "author": "ACEthetics"
+    },
+    {
+      "file": "Adwuh - 50 Ghosts.mvar",
+      "name": "50 Ghosts",
+      "description": "50 consecutive ghosts built by OG ChickenWings : edited by Adwuh",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Adwuh"
+    },
+    {
+      "file": "Adwuh - ADW JMP V1.mvar",
+      "name": "ADW JMP V1",
+      "description": "Made By Adwuh",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Adwuh"
+    },
+    {
+      "file": "Adwuh - ADW JMP V2.mvar",
+      "name": "ADW JMP V2 ",
+      "description": "Made by Adwuh",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Adwuh"
+    },
+    {
+      "file": "AiffyUwU - Kitty Meow Meow.mvar",
+      "name": "Kitty Meow Meow",
+      "description": "NYA NYA jumpin like a lil kittyy... uwu. Easy ghost jump map yayyy c:",
+      "difficulty": 0,
+      "tags": [],
+      "author": "AiffyUwU"
+    },
+    {
+      "file": "akidNamedMark - PA Big Kahuna.mvar",
+      "name": "PA Big Kahuna",
+      "description": "Either 2 ez or 2 hard. Play with Oddball. Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": "akidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA High Low++.mvar",
+      "name": " PA High Low++",
+      "description": "Created by Joshington. Use with oddball ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA Levels v2++.mvar",
+      "name": "PA Levels v2++",
+      "description": "Jump course with over 60 jumps. Created by Joshington",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA Mutation.mvar",
+      "name": "PA Mutation",
+      "description": "Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA Nautilus.mvar",
+      "name": "PA Nautilus",
+      "description": "Created by Mark. Play with Oddball",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA Pickles++.mvar",
+      "name": "PA Pickles++",
+      "description": "Created by Joshington. Use oddball gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA Tempo++.mvar",
+      "name": "PA Tempo++",
+      "description": "Created By Joshington. Use with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA Wagoo++.mvar",
+      "name": "PA Wagoo++",
+      "description": "Created By Joshington. Use with Oddball Gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "aKidNamedMark - PA Zen++.mvar",
+      "name": "PA Zen++",
+      "description": "Jump map created by Joshington. Play with Oddball gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "aKidNamedMark"
+    },
+    {
+      "file": "Bells Reign - Bells ColumnsV2.mvar",
+      "name": "Bells ColumnsV2",
+      "description": "As Advertised... With a few extras",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bells Reign"
+    },
+    {
+      "file": "Bells Reign - Bells SpiresV2.mvar",
+      "name": "Bells SpiresV2",
+      "description": "Too many ghosts ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bells Reign"
+    },
+    {
+      "file": "Bells Reign - Climb4BriannaV2.mvar",
+      "name": "Climb4BriannaV2",
+      "description": "Original Map: 50 Ghost jumps, Ruined by Brianna Bell x",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bells Reign"
+    },
+    {
+      "file": "Bignog ttv - Jnog Clover.mvar",
+      "name": "Jnog Clover",
+      "description": "Jumpnog 7 Clover",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jnog Goliath.mvar",
+      "name": "Jnog Goliath",
+      "description": "Jumpnog 6 Goliath",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - JNOG Odyssey p1.mvar",
+      "name": "JNOG Odyssey p1",
+      "description": "JNOG Odyssey part one",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - JNOG Odyssey p2.mvar",
+      "name": "JNOG Odyssey p2",
+      "description": "JNOG Odyssey part two",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - JNOG Odyssey p3.mvar",
+      "name": "JNOG Odyssey p3",
+      "description": "JNOG Odyssey part three",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jnog Pluto.mvar",
+      "name": "Jnog Pluto",
+      "description": "Jumpnog 9 Pluto",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jnog Rosy.mvar",
+      "name": "Jnog Rosy",
+      "description": "Jumpnog 8 Rosy",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - JNOG Trials.mvar",
+      "name": "JNOG Trials",
+      "description": "Jumpnog 11 Trials",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jnog Uncharted.mvar",
+      "name": "Jnog Uncharted",
+      "description": "Jumpnog 10 Uncharted",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jumpnog 4.mvar",
+      "name": "Jumpnog 4",
+      "description": "Jumpnog 4 harder",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jumpnog 5.mvar",
+      "name": "Jumpnog 5",
+      "description": "Jumpnog 5",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jumpnog 6.mvar",
+      "name": "Jumpnog 6",
+      "description": "Jumpnog 6",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jumpnog 7.mvar",
+      "name": "Jumpnog 7",
+      "description": "Jumpnog 7",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Jumpnog noob.mvar",
+      "name": "Jumpnog noob",
+      "description": "Jump map",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Nog Run Jump 2.mvar",
+      "name": "Nog Run Jump 2",
+      "description": "Nog run jump 2",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "Bignog ttv - Nog Run Jump 3.mvar",
+      "name": "Nog Run Jump 3",
+      "description": "Jump to survive!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bignog ttv"
+    },
+    {
+      "file": "CosyLuv - Gazpacho.mvar",
+      "name": "Gazpacho",
+      "description": "Please serve cold. do NOT eat at room temp. Made with love, by CosyLuv.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "CosyLuv"
+    },
+    {
+      "file": "CosyLuv - mariposa v2.mvar",
+      "name": " mariposa v2",
+      "description": "made with luv.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "CosyLuv"
+    },
+    {
+      "file": "CrazyEyes28 - Potential.mvar",
+      "name": "Potential",
+      "description": "This a map forged by A Jewish Dino. This is Team Endorphin`s 1st Trick Jumping Map. Use with the gametype Endorphin Jumps.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "CrazyEyes28"
+    },
+    {
+      "file": "Desecrated - MLP Jump; Hard.mvar",
+      "name": "MLP Jump Hard",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Desecrated"
+    },
+    {
+      "file": "Desecrated - MLP Jump;Expert.mvar",
+      "name": "MLP JumpExpert",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Desecrated"
+    },
+    {
+      "file": "DIVIN3 JUSTICE - Harmony Parkour.mvar",
+      "name": "Harmony Parkour",
+      "description": "Made by DIVIN3 JUSTICE ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTICE"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- DIVIN3 HOPS.mvar",
+      "name": "DIVIN3 HOPS",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- DIVIN3 JUMPS {v2}.mvar",
+      "name": "DIVIN3 JUMPS",
+      "description": "Mid Tear Parkour by DIVIN3 JUSTICE ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- Dopamine Jumps.mvar",
+      "name": "Dopamine Jumps ",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- DV3 Jumpmate.mvar",
+      "name": "DV3 Jumpmate ",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- DV3 Parkour.mvar",
+      "name": "DV3 Parkour ",
+      "description": "Mid Tear Parkour by DIVIN3 JUSTICE",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- Endorphin Jumps.mvar",
+      "name": "Endorphin Jumps",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- Justice Parkour.mvar",
+      "name": "Justice Parkour",
+      "description": "Mid Tear Parkour Map ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DIVIN3 JUSTICE- Serotinin Jumps.mvar",
+      "name": "Serotonin Jumps",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DIVIN3 JUSTIC"
+    },
+    {
+      "file": "DryerBox - Box Parkour v2.mvar",
+      "name": "Box Parkour v2",
+      "description": "Box Parkour v2 - fixed",
+      "difficulty": 0,
+      "tags": [],
+      "author": "DryerBox"
+    },
+    {
+      "file": "Eiterial - JL Yellow (3 07 2022 746pm).mvar",
+      "name": "JL YELLOW",
+      "description": "Jump Legacy Presents Yellow, a time trial trick jumping map. 1-16 Players",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Eiterial"
+    },
+    {
+      "file": "Eklouve - EklouvesEasiest.mvar",
+      "name": "EklouvesEasiest",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Eklouve"
+    },
+    {
+      "file": "Eklouve - EklouvesEasy BB [BigBounceEnd].mvar",
+      "name": "EklouvesEasy BB",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Eklouve"
+    },
+    {
+      "file": "Eklouve - EklouvesEasy.mvar",
+      "name": "EklouvesEasy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Eklouve"
+    },
+    {
+      "file": "Eklouve - EklouvesMiddle.mvar",
+      "name": "EklouvesMiddle",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Eklouve"
+    },
+    {
+      "file": "Enslyn - Air Lab V2.mvar",
+      "name": " Air Lab V2",
+      "description": "Air device testing facility",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - EN Boom.mvar",
+      "name": "EN Boom",
+      "description": "Explosive jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - EN Flow.mvar",
+      "name": "EN Flow",
+      "description": "Created by Enslyn. Use game type: Speed Jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - EN Noob.mvar",
+      "name": "EN Noob",
+      "description": "Created by Enslyn. Jumps for noobs.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - EN Speed.mvar",
+      "name": "EN Speed",
+      "description": "Created by Enslyn. Use game type: Speed Jumps.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - EN Surf (300% Player Speed).mvar",
+      "name": "EN Surf",
+      "description": "Created by Enslyn. Use speed jumps game mode. Kinda like csgo surfing.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - EN Torch.mvar",
+      "name": "EN Torch",
+      "description": "It's jump time",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - EN Wood.mvar",
+      "name": "EN Wood",
+      "description": "Many trees gave their lives for this",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - Jumpamanjaro v2.mvar",
+      "name": "Jumpamanjaro v2",
+      "description": "Funky jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - Jumptacular.mvar",
+      "name": "Jumptacular",
+      "description": "Chill jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - Jumptastrophe 2.mvar",
+      "name": "Jumptastrophe 2",
+      "description": "Cool jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - Jumptrocity v2.mvar",
+      "name": " Jumptrocity v2",
+      "description": "Chill jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "Enslyn - Wizard Tower.mvar",
+      "name": "Wizard Tower",
+      "description": "Climb the tower!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Enslyn"
+    },
+    {
+      "file": "essencefx - Jumper; Ghost.mvar",
+      "name": "Jumper Ghost",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "essencefx"
+    },
+    {
+      "file": "Exersy - WP Challenge.mvar",
+      "name": "WP Challenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Exersy"
+    },
+    {
+      "file": "Extivity - JE Jumpcourse.mvar",
+      "name": "JE Jumpcourse",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Extivity"
+    },
+    {
+      "file": "FFG x Wildcats - BB challenge.mvar",
+      "name": "BB challenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "FFG x Wildcats"
+    },
+    {
+      "file": "Fusion4988 - JT Gauntlet.mvar",
+      "name": "JT Gauntlet",
+      "description": "A trick jumping speed challenge by Jump Theory",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Fusion4988"
+    },
+    {
+      "file": "G1itch35 2008 - Incredibears.mvar",
+      "name": "Incredibears",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "G1itch35 2008"
+    },
+    {
+      "file": "GGT - ### Jump.mvar",
+      "name": "123 Jump",
+      "description": "Jump map 3 levels",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GGT"
+    },
+    {
+      "file": "GuitaRHerODudE - GHD 16+42 Ghost.mvar",
+      "name": "GHD 16+42 Ghost",
+      "description": "My 16 and 42 ghosts",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GuitaRHerODudE"
+    },
+    {
+      "file": "GuitaRHerODudE - GHD Ghosts.mvar",
+      "name": "GHD Ghosts",
+      "description": "Use with gametype \"GHD Jumps\" in my fileshare. I made teleporters so you can skip the second jump sequence and/or the 16 ghost.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GuitaRHerODudE"
+    },
+    {
+      "file": "GuitaRHerODudE - GHD Holy Ghost.mvar",
+      "name": "GHD Holy Ghost",
+      "description": "Have fun with some flying ghost jumps! Made with speedrunning in mind- use with any oddball jumping gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GuitaRHerODudE"
+    },
+    {
+      "file": "GuitaRHerODudE - GHD Jumps 2 V2.mvar",
+      "name": "GHD Jumps 2 V2",
+      "description": "Teleruns can be laggy so I made two ways to complete the second to last jump sequence. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GuitaRHerODudE"
+    },
+    {
+      "file": "GuitaRHerODudE - Ghost RockClimb.mvar",
+      "name": "Ghost RockClimb",
+      "description": "Yee",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GuitaRHerODudE"
+    },
+    {
+      "file": "GuNIPoinT - GPJ Allegro.mvar",
+      "name": "GPJ Allegro",
+      "description": "Intermediate level jump map. Use oddball gametype. Made by GuNIPoinT",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GuNIPoinT"
+    },
+    {
+      "file": "HARD Mr JoinT - Jump LK Ghost.mvar",
+      "name": "JUMP LK GHOST",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "HARD Mr JoinT"
+    },
+    {
+      "file": "Hi Its Rambo - Jump It!.mvar",
+      "name": "Jump it",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Hi Its Rambo"
+    },
+    {
+      "file": "iFrosty Warrior - wP Pro.mvar",
+      "name": "wP Pro",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "iFrosty Warrior"
+    },
+    {
+      "file": "im Sleepy - Your Bed V2.mvar",
+      "name": "Your Bed V2",
+      "description": "Remake of my old school halo 3 jump map. Play with oddball gt (go to sleep) made by im SIeepy",
+      "difficulty": 0,
+      "tags": [],
+      "author": "im Sleepy"
+    },
+    {
+      "file": "Infrasonic eNVy - NV Terrarium.mvar",
+      "name": "NV Terrarium",
+      "description": "This old facility once belonged to a collection of athedraqa. Their experiments remain confidential. (Made by Infrasonic eNVy)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Infrasonic eNVy"
+    },
+    {
+      "file": "Jagged Nade - alot of ghosts.mvar",
+      "name": "alot of ghosts",
+      "description": "welp this mightve gotten out of hand",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - Jagged Ascent.mvar",
+      "name": "Jagged Ascent",
+      "description": "Js Jumphouse hardest rendition yet",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - JGD Classic.mvar",
+      "name": "JGD Classic",
+      "description": "New jump map by Jagged Nade, Play 2-8 People. Tribute to old school jump maps!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - JGD Coaster.mvar",
+      "name": "JGD Coaster",
+      "description": "Jump map made by Jagged Nade. Supposed to be an easier fun map, ENJOY!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - JGD Expedition.mvar",
+      "name": "JGD Expedition ",
+      "description": "Multiple routes with jumps all over. Some obvious, some hidden. Made by Jagged Nade, HAVE FUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - JGD Graveyard.mvar",
+      "name": "JGD Graveyard",
+      "description": "Wasnt initially going to be an actual map, it was a map where I would just play around but ended up running out of objects lol",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - JGD HouseOfJumps.mvar",
+      "name": "JGDHouseOfJumps",
+      "description": "Map made on a tier system. Each area moves up in difficulty. Made by Jagged Nade, HAVE FUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - JGD Summit.mvar",
+      "name": "JGD Summit",
+      "description": "New trick jumping map by Jagged Nade. Have fun climbing to the summit :)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jagged Nade - JGD Technical.mvar",
+      "name": "JGD Technical",
+      "description": "New trick jumping map by Jagged Nade, can you ghost? ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "Jesse Ap1 - Jump Gym.mvar",
+      "name": "Jump Gym",
+      "description": "Jumping practice map for beginners. Dont be afraid to ask for help. Practice, practice, practice",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jesse Ap1"
+    },
+    {
+      "file": "JuicedStl - J Escalade.mvar",
+      "name": "J Escalade",
+      "description": "Jump map made by juiced in Sep.2022. Have fun",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "JuicedStl - JInfitastic.mvar",
+      "name": "JInfitastic",
+      "description": "Jump map made by JuicedStl, use any oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "JuicedStl - JTacticality.mvar",
+      "name": "JTacticality",
+      "description": "Jump map made by JuicedStl. Use any oddball gametype and have fun.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "Jumprs Friend - Jumprs Jump 5.mvar",
+      "name": "Jumprz Jump 5",
+      "description": "Hard trick jumping map!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "Jumprs Friend - Jumprs Jumps 4.mvar",
+      "name": "Jumprz Jumps 4",
+      "description": "Pt 4. Easy to hard",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "Jumprs Friend - Jumprz Jumpz ('17).mvar",
+      "name": "Jumprz Jumps",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "Jumprs Friend - Jumprz Jumpz ('19).mvar",
+      "name": "Jumprz Jumpz",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "Likely Faded - Can You Jump.mvar",
+      "name": "Can You Jump?",
+      "description": "Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - Faded's Dojo.mvar",
+      "name": "Faded's Dojo",
+      "description": "Made by Likely Faded 2021",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - Faded's Journey.mvar",
+      "name": "Faded's Journey",
+      "description": "Made by Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - Faded's Therapy.mvar",
+      "name": "Faded's Therapy",
+      "description": "Made by Likely Faded, thanks for playing! (Final)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - Fadeds Funhouse.mvar",
+      "name": "Fadeds Funhouse",
+      "description": "Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - FadedsSerotonin.mvar",
+      "name": "FadedsSerotonin",
+      "description": "Made by Likely Faded, thanks for playing!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF China Cat.mvar",
+      "name": "LF China Cat",
+      "description": "Made by Likely Faded 2022 :)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Escapade.mvar",
+      "name": "LF Escapade",
+      "description": "Made by Likely Faded with help from Jagged Nade",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Futz.mvar",
+      "name": "LF Futz",
+      "description": "Made by Likely Faded ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Reptar.mvar",
+      "name": "LF Reptar",
+      "description": "Made by Likely Faded, sequence by Jagged Nade",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Skylark.mvar",
+      "name": "LF Skylark",
+      "description": "Made by Likely Faded 2022",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Wojack.mvar",
+      "name": "LF Wojack",
+      "description": "Made by Likely Faded 2022",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Yeehaw.mvar",
+      "name": "LF Yeehaw",
+      "description": "Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "llLilNinjill & xl Facade - Reality.mvar",
+      "name": "Reality",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "llLilNinjill & xl Facade"
+    },
+    {
+      "file": "Maccy - maccy bongos.mvar",
+      "name": "maccy bongos",
+      "description": "This endless wasteland still holds many secrets. Some of them are held more deeply than others. 4-12 players",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Maccy"
+    },
+    {
+      "file": "MetaphoricalFoe - Escape Pt2.mvar",
+      "name": "EscapePt2",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "MetaphoricalFoe"
+    },
+    {
+      "file": "MetaphoricalFoe - Escape.mvar",
+      "name": "Escape",
+      "description": "Made by: MetaphoricalFoe",
+      "difficulty": 0,
+      "tags": [],
+      "author": "MetaphoricalFoe"
+    },
+    {
+      "file": "MountainMan1809 - (MTN) Ease.mvar",
+      "name": "(MTN) Ease",
+      "description": "Practice map for all skill levels",
+      "difficulty": 0,
+      "tags": [],
+      "author": "MountainMan1809"
+    },
+    {
+      "file": "MountainMan1809 - (MTN) Floats.mvar",
+      "name": "(MTN) Floats",
+      "description": "GLHF",
+      "difficulty": 0,
+      "tags": [],
+      "author": "MountainMan1809"
+    },
+    {
+      "file": "MountainMan1809 - (MTN) Grizzly.mvar",
+      "name": "(MTN) Grizzly",
+      "description": "GLHF",
+      "difficulty": 0,
+      "tags": [],
+      "author": "MountainMan1809"
+    },
+    {
+      "file": "MountainMan1809 - (MTN) Reality.mvar",
+      "name": "(MTN) Reality",
+      "description": "Created by Faulk Smash. Modified by aKidNamedMark.  ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "MountainMan1809"
+    },
+    {
+      "file": "Mowsa - Escape Velo v99.mvar",
+      "name": "Escape Velo v99",
+      "description": "Wow. Very fun. good jump, map. 1 - As many players as you want bby grl ;^)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Mowsa"
+    },
+    {
+      "file": "Nate Pahlow - Maso Chamber.mvar",
+      "name": "MasoChamber",
+      "description": "Made by Nate Pahlow - How long will you last before your left thumb grows weak?",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Nate Pahlow"
+    },
+    {
+      "file": "NialiNW - Serenity.mvar",
+      "name": "Serenity",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "NialiNW"
+    },
+    {
+      "file": "NiallNW - Jumping Flower.mvar",
+      "name": "Jumping Flower",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "NiallNW"
+    },
+    {
+      "file": "NiallNW - Mountain Climb.mvar",
+      "name": "Mountain Climb",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "NiallNW"
+    },
+    {
+      "file": "OG ChickenWings - Specterx50 v3.mvar",
+      "name": "Specterx50 v3 ",
+      "description": "50 consecutive ghosts built by OG ChickenWings : Inspiration from a 42 ghost built by GuitaRher0DudE ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OG ChickenWings"
+    },
+    {
+      "file": "OneHappyBlonde - Falling &Flying.mvar",
+      "name": "FALLING FLYING",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OneHappyBlonde"
+    },
+    {
+      "file": "OneHappyBlonde - JUMPINTAIT_pt2.mvar",
+      "name": "JUMPINTAITpt2",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OneHappyBlonde"
+    },
+    {
+      "file": "OneHappyBlonde - JUMPINTAIT_pt3.mvar",
+      "name": "JUMPINTAITpt3",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OneHappyBlonde"
+    },
+    {
+      "file": "OneHappyBlonde - JUMPINTAIT_pt4.mvar",
+      "name": "JUMPINTAITpt4",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OneHappyBlonde"
+    },
+    {
+      "file": "OneHappyBlonde - Pirates Shanty.mvar",
+      "name": "PIRATES SHANTY",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OneHappyBlonde"
+    },
+    {
+      "file": "OoGENOSYDEoO & Infrasonic eNVy - GENV Croutonix.mvar",
+      "name": "GENV Croutonix",
+      "description": ":: GENVY Croutonix :: Made by (OoGENOSYDEoO) & (Infrasonic eNVy). *Crunch*",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OoGENOSYDEoO & Infrasonic eNVy"
+    },
+    {
+      "file": "PILLOWCHUB - Jump Saga pt6-.mvar",
+      "name": "Jump Saga pt6",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "PILLOWCHUB"
+    },
+    {
+      "file": "Qoxe & CozyLuv - CC Pancake v3.mvar",
+      "name": "CC Pancake v3",
+      "description": "hehehehehhehehe",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Qoxe & CozyLuv"
+    },
+    {
+      "file": "qoxe - Jumpington 2.mvar",
+      "name": " Jumpington 2 ",
+      "description": " Warm Up Jumpington ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "qoxe"
+    },
+    {
+      "file": "RedXxXBuddha - My Tummy.mvar",
+      "name": "My Tummy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "RedXxXBuddha"
+    },
+    {
+      "file": "Roseville - SR Sinner.mvar",
+      "name": "SR Sinner",
+      "description": "Map made by Shkei & Roseville.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Roseville"
+    },
+    {
+      "file": "Ryishh - Crux.mvar",
+      "name": "Crux",
+      "description": "jump map - ryrishh dec 2021",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Ryishh"
+    },
+    {
+      "file": "Ryrishh - Climb v2.mvar",
+      "name": "Climb v2",
+      "description": "A journey from the crypt to the sky, don't look down.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Ryrishh"
+    },
+    {
+      "file": " ### Jump.mvar",
+      "name": "123 Jump",
+      "description": "Jump map 3 levels",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ### Jump.mv"
+    },
+    {
+      "file": " (MTN) Ease.mvar",
+      "name": "(MTN) Ease",
+      "description": "Practice map for all skill levels",
+      "difficulty": 0,
+      "tags": [],
+      "author": " (MTN) Ease.mv"
+    },
+    {
+      "file": " (MTN) Floats.mvar",
+      "name": "(MTN) Floats",
+      "description": "GLHF",
+      "difficulty": 0,
+      "tags": [],
+      "author": " (MTN) Floats.mv"
+    },
+    {
+      "file": " (MTN) Grizzly.mvar",
+      "name": "(MTN) Grizzly",
+      "description": "GLHF",
+      "difficulty": 0,
+      "tags": [],
+      "author": " (MTN) Grizzly.mv"
+    },
+    {
+      "file": " (MTN) Reality.mvar",
+      "name": "(MTN) Reality",
+      "description": "Created by Faulk Smash. Modified by aKidNamedMark.  ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " (MTN) Reality.mv"
+    },
+    {
+      "file": " 50 Ghosts.mvar",
+      "name": "50 Ghosts",
+      "description": "50 consecutive ghosts built by OG ChickenWings : edited by Adwuh",
+      "difficulty": 0,
+      "tags": [],
+      "author": " 50 Ghosts.mv"
+    },
+    {
+      "file": " ADW JMP V1.mvar",
+      "name": "ADW JMP V1",
+      "description": "Made By Adwuh",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ADW JMP V1.mv"
+    },
+    {
+      "file": " ADW JMP V2.mvar",
+      "name": "ADW JMP V2 ",
+      "description": "Made by Adwuh",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ADW JMP V2.mv"
+    },
+    {
+      "file": " Air Lab V2.mvar",
+      "name": " Air Lab V2",
+      "description": "Air device testing facility",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Air Lab V2.mv"
+    },
+    {
+      "file": " alot of ghosts.mvar",
+      "name": "alot of ghosts",
+      "description": "welp this mightve gotten out of hand",
+      "difficulty": 0,
+      "tags": [],
+      "author": " alot of ghosts.mv"
+    },
+    {
+      "file": " BB challenge.mvar",
+      "name": "BB challenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " BB challenge.mv"
+    },
+    {
+      "file": " Bells ColumnsV2.mvar",
+      "name": "Bells ColumnsV2",
+      "description": "As Advertised... With a few extras",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Bells ColumnsV2.mv"
+    },
+    {
+      "file": " Bells SpiresV2.mvar",
+      "name": "Bells SpiresV2",
+      "description": "Too many ghosts ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Bells SpiresV2.mv"
+    },
+    {
+      "file": " Box Parkour v2.mvar",
+      "name": "Box Parkour v2",
+      "description": "Box Parkour v2 - fixed",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Box Parkour v2.mv"
+    },
+    {
+      "file": " Can You Jump.mvar",
+      "name": "Can You Jump?",
+      "description": "Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Can You Jump.mv"
+    },
+    {
+      "file": " CC Pancake v3.mvar",
+      "name": "CC Pancake v3",
+      "description": "hehehehehhehehe",
+      "difficulty": 0,
+      "tags": [],
+      "author": " CC Pancake v3.mv"
+    },
+    {
+      "file": " Climb v2.mvar",
+      "name": "Climb v2",
+      "description": "A journey from the crypt to the sky, don't look down.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Climb v2.mv"
+    },
+    {
+      "file": " Climb4BriannaV2.mvar",
+      "name": "Climb4BriannaV2",
+      "description": "Original Map: 50 Ghost jumps, Ruined by Brianna Bell x",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Climb4BriannaV2.mv"
+    },
+    {
+      "file": " Crux.mvar",
+      "name": "Crux",
+      "description": "jump map - ryrishh dec 2021",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Crux.mv"
+    },
+    {
+      "file": " DeadmansCatwalk (V7).mvar",
+      "name": "DeadmansCatwalk",
+      "description": "Version 7 / FINAL - First jump map by ACEthetics",
+      "difficulty": 0,
+      "tags": [],
+      "author": " DeadmansCatwalk (V7).mv"
+    },
+    {
+      "file": " DIVIN3 HOPS.mvar",
+      "name": "DIVIN3 HOPS",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " DIVIN3 HOPS.mv"
+    },
+    {
+      "file": " DIVIN3 JUMPS {v2}.mvar",
+      "name": "DIVIN3 JUMPS",
+      "description": "Mid Tear Parkour by DIVIN3 JUSTICE ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " DIVIN3 JUMPS {v2}.mv"
+    },
+    {
+      "file": " Dopamine Jumps.mvar",
+      "name": "Dopamine Jumps ",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Dopamine Jumps.mv"
+    },
+    {
+      "file": " DV3 Jumpmate.mvar",
+      "name": "DV3 Jumpmate ",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " DV3 Jumpmate.mv"
+    },
+    {
+      "file": " DV3 Parkour.mvar",
+      "name": "DV3 Parkour ",
+      "description": "Mid Tear Parkour by DIVIN3 JUSTICE",
+      "difficulty": 0,
+      "tags": [],
+      "author": " DV3 Parkour.mv"
+    },
+    {
+      "file": " EklouvesEasiest.mvar",
+      "name": "EklouvesEasiest",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EklouvesEasiest.mv"
+    },
+    {
+      "file": " EklouvesEasy BB [BigBounceEnd].mvar",
+      "name": "EklouvesEasy BB",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EklouvesEasy BB [BigBounceEnd].mv"
+    },
+    {
+      "file": " EklouvesEasy.mvar",
+      "name": "EklouvesEasy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EklouvesEasy.mv"
+    },
+    {
+      "file": " EklouvesMiddle.mvar",
+      "name": "EklouvesMiddle",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EklouvesMiddle.mv"
+    },
+    {
+      "file": " EN Boom.mvar",
+      "name": "EN Boom",
+      "description": "Explosive jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EN Boom.mv"
+    },
+    {
+      "file": " EN Flow.mvar",
+      "name": "EN Flow",
+      "description": "Created by Enslyn. Use game type: Speed Jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EN Flow.mv"
+    },
+    {
+      "file": " EN Noob.mvar",
+      "name": "EN Noob",
+      "description": "Created by Enslyn. Jumps for noobs.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EN Noob.mv"
+    },
+    {
+      "file": " EN Speed.mvar",
+      "name": "EN Speed",
+      "description": "Created by Enslyn. Use game type: Speed Jumps.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EN Speed.mv"
+    },
+    {
+      "file": " EN Surf (300% Player Speed).mvar",
+      "name": "EN Surf",
+      "description": "Created by Enslyn. Use speed jumps game mode. Kinda like csgo surfing.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EN Surf (300% Player Speed).mv"
+    },
+    {
+      "file": " EN Torch.mvar",
+      "name": "EN Torch",
+      "description": "It's jump time",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EN Torch.mv"
+    },
+    {
+      "file": " EN Wood.mvar",
+      "name": "EN Wood",
+      "description": "Many trees gave their lives for this",
+      "difficulty": 0,
+      "tags": [],
+      "author": " EN Wood.mv"
+    },
+    {
+      "file": " Endorphin Jumps.mvar",
+      "name": "Endorphin Jumps",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Endorphin Jumps.mv"
+    },
+    {
+      "file": " Escape Pt2.mvar",
+      "name": "EscapePt2",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Escape Pt2.mv"
+    },
+    {
+      "file": " Escape Velo v99.mvar",
+      "name": "Escape Velo v99",
+      "description": "Wow. Very fun. good jump, map. 1 - As many players as you want bby grl ;^)",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Escape Velo v99.mv"
+    },
+    {
+      "file": " Escape.mvar",
+      "name": "Escape",
+      "description": "Made by: MetaphoricalFoe",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Escape.mv"
+    },
+    {
+      "file": " Faded's Dojo.mvar",
+      "name": "Faded's Dojo",
+      "description": "Made by Likely Faded 2021",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Faded's Dojo.mv"
+    },
+    {
+      "file": " Faded's Journey.mvar",
+      "name": "Faded's Journey",
+      "description": "Made by Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Faded's Journey.mv"
+    },
+    {
+      "file": " Faded's Therapy.mvar",
+      "name": "Faded's Therapy",
+      "description": "Made by Likely Faded, thanks for playing! (Final)",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Faded's Therapy.mv"
+    },
+    {
+      "file": " Fadeds Funhouse.mvar",
+      "name": "Fadeds Funhouse",
+      "description": "Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Fadeds Funhouse.mv"
+    },
+    {
+      "file": " FadedsSerotonin.mvar",
+      "name": "FadedsSerotonin",
+      "description": "Made by Likely Faded, thanks for playing!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " FadedsSerotonin.mv"
+    },
+    {
+      "file": " Falling &Flying.mvar",
+      "name": "FALLING FLYING",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Falling &Flying.mv"
+    },
+    {
+      "file": " Gazpacho.mvar",
+      "name": "Gazpacho",
+      "description": "Please serve cold. do NOT eat at room temp. Made with love, by CosyLuv.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Gazpacho.mv"
+    },
+    {
+      "file": " GENV Croutonix.mvar",
+      "name": "GENV Croutonix",
+      "description": ":: GENVY Croutonix :: Made by (OoGENOSYDEoO) & (Infrasonic eNVy). *Crunch*",
+      "difficulty": 0,
+      "tags": [],
+      "author": " GENV Croutonix.mv"
+    },
+    {
+      "file": " GHD 16+42 Ghost.mvar",
+      "name": "GHD 16+42 Ghost",
+      "description": "My 16 and 42 ghosts",
+      "difficulty": 0,
+      "tags": [],
+      "author": " GHD 16+42 Ghost.mv"
+    },
+    {
+      "file": " GHD Ghosts.mvar",
+      "name": "GHD Ghosts",
+      "description": "Use with gametype \"GHD Jumps\" in my fileshare. I made teleporters so you can skip the second jump sequence and/or the 16 ghost.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " GHD Ghosts.mv"
+    },
+    {
+      "file": " GHD Holy Ghost.mvar",
+      "name": "GHD Holy Ghost",
+      "description": "Have fun with some flying ghost jumps! Made with speedrunning in mind- use with any oddball jumping gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " GHD Holy Ghost.mv"
+    },
+    {
+      "file": " GHD Jumps 2 V2.mvar",
+      "name": "GHD Jumps 2 V2",
+      "description": "Teleruns can be laggy so I made two ways to complete the second to last jump sequence. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " GHD Jumps 2 V2.mv"
+    },
+    {
+      "file": " Ghost RockClimb.mvar",
+      "name": "Ghost RockClimb",
+      "description": "Yee",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Ghost RockClimb.mv"
+    },
+    {
+      "file": " GPJ Allegro.mvar",
+      "name": "GPJ Allegro",
+      "description": "Intermediate level jump map. Use oddball gametype. Made by GuNIPoinT",
+      "difficulty": 0,
+      "tags": [],
+      "author": " GPJ Allegro.mv"
+    },
+    {
+      "file": " Harmony Parkour.mvar",
+      "name": "Harmony Parkour",
+      "description": "Made by DIVIN3 JUSTICE ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Harmony Parkour.mv"
+    },
+    {
+      "file": " Incredibears.mvar",
+      "name": "Incredibears",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Incredibears.mv"
+    },
+    {
+      "file": " J Escalade.mvar",
+      "name": "J Escalade",
+      "description": "Jump map made by juiced in Sep.2022. Have fun",
+      "difficulty": 0,
+      "tags": [],
+      "author": " J Escalade.mv"
+    },
+    {
+      "file": " Jagged Ascent.mvar",
+      "name": "Jagged Ascent",
+      "description": "Js Jumphouse hardest rendition yet",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jagged Ascent.mv"
+    },
+    {
+      "file": " JE Jumpcourse.mvar",
+      "name": "JE Jumpcourse",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JE Jumpcourse.mv"
+    },
+    {
+      "file": " JGD Classic.mvar",
+      "name": "JGD Classic",
+      "description": "New jump map by Jagged Nade, Play 2-8 People. Tribute to old school jump maps!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JGD Classic.mv"
+    },
+    {
+      "file": " JGD Coaster.mvar",
+      "name": "JGD Coaster",
+      "description": "Jump map made by Jagged Nade. Supposed to be an easier fun map, ENJOY!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JGD Coaster.mv"
+    },
+    {
+      "file": " JGD Expedition.mvar",
+      "name": "JGD Expedition ",
+      "description": "Multiple routes with jumps all over. Some obvious, some hidden. Made by Jagged Nade, HAVE FUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JGD Expedition.mv"
+    },
+    {
+      "file": " JGD Graveyard.mvar",
+      "name": "JGD Graveyard",
+      "description": "Wasnt initially going to be an actual map, it was a map where I would just play around but ended up running out of objects lol",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JGD Graveyard.mv"
+    },
+    {
+      "file": " JGD HouseOfJumps.mvar",
+      "name": "JGDHouseOfJumps",
+      "description": "Map made on a tier system. Each area moves up in difficulty. Made by Jagged Nade, HAVE FUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JGD HouseOfJumps.mv"
+    },
+    {
+      "file": " JGD Summit.mvar",
+      "name": "JGD Summit",
+      "description": "New trick jumping map by Jagged Nade. Have fun climbing to the summit :)",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JGD Summit.mv"
+    },
+    {
+      "file": " JGD Technical.mvar",
+      "name": "JGD Technical",
+      "description": "New trick jumping map by Jagged Nade, can you ghost? ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JGD Technical.mv"
+    },
+    {
+      "file": " JInfitastic.mvar",
+      "name": "JInfitastic",
+      "description": "Jump map made by JuicedStl, use any oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JInfitastic.mv"
+    },
+    {
+      "file": " JL Yellow (3 07 2022 746pm).mvar",
+      "name": "JL YELLOW",
+      "description": "Jump Legacy Presents Yellow, a time trial trick jumping map. 1-16 Players",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JL Yellow (3 07 2022 746pm).mv"
+    },
+    {
+      "file": " Jnog Clover.mvar",
+      "name": "Jnog Clover",
+      "description": "Jumpnog 7 Clover",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jnog Clover.mv"
+    },
+    {
+      "file": " Jnog Goliath.mvar",
+      "name": "Jnog Goliath",
+      "description": "Jumpnog 6 Goliath",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jnog Goliath.mv"
+    },
+    {
+      "file": " JNOG Odyssey p1.mvar",
+      "name": "JNOG Odyssey p1",
+      "description": "JNOG Odyssey part one",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JNOG Odyssey p1.mv"
+    },
+    {
+      "file": " JNOG Odyssey p2.mvar",
+      "name": "JNOG Odyssey p2",
+      "description": "JNOG Odyssey part two",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JNOG Odyssey p2.mv"
+    },
+    {
+      "file": " JNOG Odyssey p3.mvar",
+      "name": "JNOG Odyssey p3",
+      "description": "JNOG Odyssey part three",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JNOG Odyssey p3.mv"
+    },
+    {
+      "file": " Jnog Pluto.mvar",
+      "name": "Jnog Pluto",
+      "description": "Jumpnog 9 Pluto",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jnog Pluto.mv"
+    },
+    {
+      "file": " Jnog Rosy.mvar",
+      "name": "Jnog Rosy",
+      "description": "Jumpnog 8 Rosy",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jnog Rosy.mv"
+    },
+    {
+      "file": " JNOG Trials.mvar",
+      "name": "JNOG Trials",
+      "description": "Jumpnog 11 Trials",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JNOG Trials.mv"
+    },
+    {
+      "file": " Jnog Uncharted.mvar",
+      "name": "Jnog Uncharted",
+      "description": "Jumpnog 10 Uncharted",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jnog Uncharted.mv"
+    },
+    {
+      "file": " JT Gauntlet.mvar",
+      "name": "JT Gauntlet",
+      "description": "A trick jumping speed challenge by Jump Theory",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JT Gauntlet.mv"
+    },
+    {
+      "file": " JTacticality.mvar",
+      "name": "JTacticality",
+      "description": "Jump map made by JuicedStl. Use any oddball gametype and have fun.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JTacticality.mv"
+    },
+    {
+      "file": " Jump Gym.mvar",
+      "name": "Jump Gym",
+      "description": "Jumping practice map for beginners. Dont be afraid to ask for help. Practice, practice, practice",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jump Gym.mv"
+    },
+    {
+      "file": " Jump It!.mvar",
+      "name": "Jump it",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jump It!.mv"
+    },
+    {
+      "file": " Jump LK Ghost.mvar",
+      "name": "JUMP LK GHOST",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jump LK Ghost.mv"
+    },
+    {
+      "file": " Jumpamanjaro v2.mvar",
+      "name": "Jumpamanjaro v2",
+      "description": "Funky jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumpamanjaro v2.mv"
+    },
+    {
+      "file": " Jumper; Ghost.mvar",
+      "name": "Jumper Ghost",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumper; Ghost.mv"
+    },
+    {
+      "file": " Jumping Flower.mvar",
+      "name": "Jumping Flower",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumping Flower.mv"
+    },
+    {
+      "file": " Jumpington 2.mvar",
+      "name": " Jumpington 2 ",
+      "description": " Warm Up Jumpington ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumpington 2.mv"
+    },
+    {
+      "file": " JUMPINTAIT_pt2.mvar",
+      "name": "JUMPINTAITpt2",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JUMPINTAIT_pt2.mv"
+    },
+    {
+      "file": " JUMPINTAIT_pt3.mvar",
+      "name": "JUMPINTAITpt3",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JUMPINTAIT_pt3.mv"
+    },
+    {
+      "file": " JUMPINTAIT_pt4.mvar",
+      "name": "JUMPINTAITpt4",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JUMPINTAIT_pt4.mv"
+    },
+    {
+      "file": " Jumpnog 4.mvar",
+      "name": "Jumpnog 4",
+      "description": "Jumpnog 4 harder",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumpnog 4.mv"
+    },
+    {
+      "file": " Jumpnog 5.mvar",
+      "name": "Jumpnog 5",
+      "description": "Jumpnog 5",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumpnog 5.mv"
+    },
+    {
+      "file": " Jumpnog 6.mvar",
+      "name": "Jumpnog 6",
+      "description": "Jumpnog 6",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumpnog 6.mv"
+    },
+    {
+      "file": " Jumpnog 7.mvar",
+      "name": "Jumpnog 7",
+      "description": "Jumpnog 7",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumpnog 7.mv"
+    },
+    {
+      "file": " Jumpnog noob.mvar",
+      "name": "Jumpnog noob",
+      "description": "Jump map",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumpnog noob.mv"
+    },
+    {
+      "file": " Jumprs Jump 5.mvar",
+      "name": "Jumprz Jump 5",
+      "description": "Hard trick jumping map!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumprs Jump 5.mv"
+    },
+    {
+      "file": " Jumprs Jumps 4.mvar",
+      "name": "Jumprz Jumps 4",
+      "description": "Pt 4. Easy to hard",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumprs Jumps 4.mv"
+    },
+    {
+      "file": " Jumptacular.mvar",
+      "name": "Jumptacular",
+      "description": "Chill jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumptacular.mv"
+    },
+    {
+      "file": " Jumptastrophe 2.mvar",
+      "name": "Jumptastrophe 2",
+      "description": "Cool jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumptastrophe 2.mv"
+    },
+    {
+      "file": " Jumptrocity v2.mvar",
+      "name": " Jumptrocity v2",
+      "description": "Chill jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumptrocity v2.mv"
+    },
+    {
+      "file": " Justice Parkour.mvar",
+      "name": "Justice Parkour",
+      "description": "Mid Tear Parkour Map ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Justice Parkour.mv"
+    },
+    {
+      "file": " Kitty Meow Meow.mvar",
+      "name": "Kitty Meow Meow",
+      "description": "NYA NYA jumpin like a lil kittyy... uwu. Easy ghost jump map yayyy c:",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Kitty Meow Meow.mv"
+    },
+    {
+      "file": " LF China Cat.mvar",
+      "name": "LF China Cat",
+      "description": "Made by Likely Faded 2022 :)",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF China Cat.mv"
+    },
+    {
+      "file": " LF Escapade.mvar",
+      "name": "LF Escapade",
+      "description": "Made by Likely Faded with help from Jagged Nade",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Escapade.mv"
+    },
+    {
+      "file": " LF Futz.mvar",
+      "name": "LF Futz",
+      "description": "Made by Likely Faded ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Futz.mv"
+    },
+    {
+      "file": " LF Reptar.mvar",
+      "name": "LF Reptar",
+      "description": "Made by Likely Faded, sequence by Jagged Nade",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Reptar.mv"
+    },
+    {
+      "file": " LF Skylark.mvar",
+      "name": "LF Skylark",
+      "description": "Made by Likely Faded 2022",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Skylark.mv"
+    },
+    {
+      "file": " LF Wojack.mvar",
+      "name": "LF Wojack",
+      "description": "Made by Likely Faded 2022",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Wojack.mv"
+    },
+    {
+      "file": " LF Yeehaw.mvar",
+      "name": "LF Yeehaw",
+      "description": "Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Yeehaw.mv"
+    },
+    {
+      "file": " maccy bongos.mvar",
+      "name": "maccy bongos",
+      "description": "This endless wasteland still holds many secrets. Some of them are held more deeply than others. 4-12 players",
+      "difficulty": 0,
+      "tags": [],
+      "author": " maccy bongos.mv"
+    },
+    {
+      "file": " mariposa v2.mvar",
+      "name": " mariposa v2",
+      "description": "made with luv.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " mariposa v2.mv"
+    },
+    {
+      "file": " Maso Chamber.mvar",
+      "name": "MasoChamber",
+      "description": "Made by Nate Pahlow - How long will you last before your left thumb grows weak?",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Maso Chamber.mv"
+    },
+    {
+      "file": " MLP Jump; Hard.mvar",
+      "name": "MLP Jump Hard",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " MLP Jump; Hard.mv"
+    },
+    {
+      "file": " MLP Jump;Expert.mvar",
+      "name": "MLP JumpExpert",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " MLP Jump;Expert.mv"
+    },
+    {
+      "file": " Mountain Climb.mvar",
+      "name": "Mountain Climb",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Mountain Climb.mv"
+    },
+    {
+      "file": " My Tummy.mvar",
+      "name": "My Tummy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " My Tummy.mv"
+    },
+    {
+      "file": " Nog Run Jump 2.mvar",
+      "name": "Nog Run Jump 2",
+      "description": "Nog run jump 2",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Nog Run Jump 2.mv"
+    },
+    {
+      "file": " Nog Run Jump 3.mvar",
+      "name": "Nog Run Jump 3",
+      "description": "Jump to survive!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Nog Run Jump 3.mv"
+    },
+    {
+      "file": " NV Terrarium.mvar",
+      "name": "NV Terrarium",
+      "description": "This old facility once belonged to a collection of athedraqa. Their experiments remain confidential. (Made by Infrasonic eNVy)",
+      "difficulty": 0,
+      "tags": [],
+      "author": " NV Terrarium.mv"
+    },
+    {
+      "file": " PA Big Kahuna.mvar",
+      "name": "PA Big Kahuna",
+      "description": "Either 2 ez or 2 hard. Play with Oddball. Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Big Kahuna.mv"
+    },
+    {
+      "file": " PA High Low++.mvar",
+      "name": " PA High Low++",
+      "description": "Created by Joshington. Use with oddball ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA High Low++.mv"
+    },
+    {
+      "file": " PA Levels v2++.mvar",
+      "name": "PA Levels v2++",
+      "description": "Jump course with over 60 jumps. Created by Joshington",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Levels v2++.mv"
+    },
+    {
+      "file": " PA Mutation.mvar",
+      "name": "PA Mutation",
+      "description": "Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Mutation.mv"
+    },
+    {
+      "file": " PA Nautilus.mvar",
+      "name": "PA Nautilus",
+      "description": "Created by Mark. Play with Oddball",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Nautilus.mv"
+    },
+    {
+      "file": " PA Pickles++.mvar",
+      "name": "PA Pickles++",
+      "description": "Created by Joshington. Use oddball gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Pickles++.mv"
+    },
+    {
+      "file": " PA Tempo++.mvar",
+      "name": "PA Tempo++",
+      "description": "Created By Joshington. Use with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Tempo++.mv"
+    },
+    {
+      "file": " PA Wagoo++.mvar",
+      "name": "PA Wagoo++",
+      "description": "Created By Joshington. Use with Oddball Gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Wagoo++.mv"
+    },
+    {
+      "file": " PA Zen++.mvar",
+      "name": "PA Zen++",
+      "description": "Jump map created by Joshington. Play with Oddball gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": " PA Zen++.mv"
+    },
+    {
+      "file": " Pirates Shanty.mvar",
+      "name": "PIRATES SHANTY",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Pirates Shanty.mv"
+    },
+    {
+      "file": " Potential.mvar",
+      "name": "Potential",
+      "description": "This a map forged by A Jewish Dino. This is Team Endorphin`s 1st Trick Jumping Map. Use with the gametype Endorphin Jumps.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Potential.mv"
+    },
+    {
+      "file": " Serenity.mvar",
+      "name": "Serenity",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Serenity.mv"
+    },
+    {
+      "file": " Serotinin Jumps.mvar",
+      "name": "Serotonin Jumps",
+      "description": "Made by DIVIN3 JUSTICE, Difficulty: Intermediate ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Serotinin Jumps.mv"
+    },
+    {
+      "file": " Specterx50 v3.mvar",
+      "name": "Specterx50 v3 ",
+      "description": "50 consecutive ghosts built by OG ChickenWings : Inspiration from a 42 ghost built by GuitaRher0DudE ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Specterx50 v3.mv"
+    },
+    {
+      "file": " SR Sinner.mvar",
+      "name": "SR Sinner",
+      "description": "Map made by Shkei & Roseville.",
+      "difficulty": 0,
+      "tags": [],
+      "author": " SR Sinner.mv"
+    },
+    {
+      "file": " ST arena tag.mvar",
+      "name": "ST arena tag",
+      "description": "RUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ST arena tag.mv"
+    },
+    {
+      "file": " ST CORE ORIGIN.mvar",
+      "name": " ST CORE ORIGIN",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ST CORE ORIGIN.mv"
+    },
+    {
+      "file": " ST CORE.mvar",
+      "name": "ST CORE",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ST CORE.mv"
+    },
+    {
+      "file": " ST REBORN.mvar",
+      "name": "ST REBORN",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ST REBORN.mv"
+    },
+    {
+      "file": " ST RESOLVE.mvar",
+      "name": "ST RESOLVE",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " ST RESOLVE.mv"
+    },
+    {
+      "file": " St Wave.mvar",
+      "name": " ST WAVE ",
+      "description": "Jump To Get The Oddball!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " St Wave.mv"
+    },
+    {
+      "file": " Wizard Tower.mvar",
+      "name": "Wizard Tower",
+      "description": "Climb the tower!",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Wizard Tower.mv"
+    },
+    {
+      "file": " WP Challenge.mvar",
+      "name": "WP Challenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " WP Challenge.mv"
+    },
+    {
+      "file": " Your Bed V2.mvar",
+      "name": "Your Bed V2",
+      "description": "Remake of my old school halo 3 jump map. Play with oddball gt (go to sleep) made by im SIeepy",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Your Bed V2.mv"
+    },
+    {
+      "file": "123_jump.mvar",
+      "name": "123 Jump",
+      "description": "Jump map 3 levels",
+      "difficulty": 0,
+      "tags": [],
+      "author": "123_jump.mv"
+    },
+    {
+      "file": "1337s_challenge.mvar",
+      "name": "1337s CHaLLeNGe",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "1337s_challenge.mv"
+    },
+    {
+      "file": "colum_jumps.mvar",
+      "name": "COLUM Jumps",
+      "description": "empty",
+      "difficulty": 0,
+      "tags": [],
+      "author": "colum_jumps.mv"
+    },
+    {
+      "file": "compound-faded.mvar",
+      "name": "Compound-Faded",
+      "description": "Made by Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "compoun"
+    },
+    {
+      "file": "eklouveseasy.mvar",
+      "name": "EklouvesEasy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "eklouveseasy.mv"
+    },
+    {
+      "file": "eklouveseasy_bb.mvar",
+      "name": "EklouvesEasy BB",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "eklouveseasy_bb.mv"
+    },
+    {
+      "file": "faded's_therapy.mvar",
+      "name": "Faded's Therapy",
+      "description": "Made by Likely Faded, thanks for playing! (Final)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "faded's_therapy.mv"
+    },
+    {
+      "file": "fadedsserotonin.mvar",
+      "name": "FadedsSerotonin",
+      "description": "Made by Likely Faded, thanks for playing!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "fadedsserotonin.mv"
+    },
+    {
+      "file": "fadeds_therapy.mvar",
+      "name": "Faded's Therapy",
+      "description": "Made by Likely Faded, thanks for playing! (Final)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "fadeds_therapy.mv"
+    },
+    {
+      "file": "falling_flying.mvar",
+      "name": "FALLING FLYING",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "falling_flying.mv"
+    },
+    {
+      "file": "ghostkungfu.mvar",
+      "name": "Ghost: KungFu",
+      "description": "Made by EvaduR.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "ghostkungfu.mv"
+    },
+    {
+      "file": "incredibears.mvar",
+      "name": "Incredibears",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "incredibears.mv"
+    },
+    {
+      "file": "infitastic_v3.mvar",
+      "name": "Infitastic v3",
+      "description": "Jump map made by JuicedStl, use any oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "infitastic_v3.mv"
+    },
+    {
+      "file": "it_b_jumpin!.mvar",
+      "name": "iT B JumPiN!",
+      "description": "easy then hard jump map, made by lsuckathalo 69 and iTBLuLzy                              Jumprs helped a little  :3",
+      "difficulty": 0,
+      "tags": [],
+      "author": "it_b_jumpin!.mv"
+    },
+    {
+      "file": "jgd_expedition_.mvar",
+      "name": "JGD Expedition ",
+      "description": "Multiple routes with jumps all over. Some obvious, some hidden. Made by Jagged Nade, HAVE FUN!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jgd_expedition_.mv"
+    },
+    {
+      "file": "jumpamanjaro_v2.mvar",
+      "name": "Jumpamanjaro v2",
+      "description": "Funky jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jumpamanjaro_v2.mv"
+    },
+    {
+      "file": "jumptacular.mvar",
+      "name": "Jumptacular",
+      "description": "Chill jumps",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jumptacular.mv"
+    },
+    {
+      "file": "jump_tower_xxxl.mvar",
+      "name": "Jump Tower XXXL",
+      "description": "jump as far as you can",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jump_tower_xxxl.mv"
+    },
+    {
+      "file": "masochamber.mvar",
+      "name": "MasoChamber",
+      "description": "Made by Nate Pahlow - How long will you last before your left thumb grows weak?",
+      "difficulty": 0,
+      "tags": [],
+      "author": "masochamber.mv"
+    },
+    {
+      "file": "parkour_4_noobs.mvar",
+      "name": "PARKOUR 4 NOOBS",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "parkour_4_noobs.mv"
+    },
+    {
+      "file": "pa_big_kahuna.mvar",
+      "name": "PA Big Kahuna",
+      "description": "Either 2 ez or 2 hard. Play with Oddball. Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_big_kahuna.mv"
+    },
+    {
+      "file": "pa_dimension.mvar",
+      "name": "PA Dimension",
+      "description": "Created By Joshington. Use with Oddball gametype. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_dimension.mv"
+    },
+    {
+      "file": "pa_high_low.mvar",
+      "name": "PA High Low",
+      "description": "Created by Joshington. Use with oddball ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_high_low.mv"
+    },
+    {
+      "file": "pa_levels_v2.mvar",
+      "name": "PA Levels V2",
+      "description": "Jump course with over 60 jumps. Created by Joshington",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_levels_v2.mv"
+    },
+    {
+      "file": "pa_mimic.mvar",
+      "name": "PA Mimic",
+      "description": "Created by Joshington. Play with Oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_mimic.mv"
+    },
+    {
+      "file": "pa_mutation.mvar",
+      "name": "PA Mutation",
+      "description": "Created by Mark",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_mutation.mv"
+    },
+    {
+      "file": "pa_nautilus.mvar",
+      "name": "PA Nautilus",
+      "description": "Created by Mark. Play with Oddball",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_nautilus.mv"
+    },
+    {
+      "file": "pa_nimbus.mvar",
+      "name": "PA Nimbus",
+      "description": "Created by Joshington. Use oddball gametype. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_nimbus.mv"
+    },
+    {
+      "file": "pa_pickles.mvar",
+      "name": "PA Pickles",
+      "description": "Created by Joshington. Use oddball gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_pickles.mv"
+    },
+    {
+      "file": "pa_stacka.mvar",
+      "name": "PA Stacka",
+      "description": "Created by Joshington. Use with Stack Jumper Oddball gametype ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_stacka.mv"
+    },
+    {
+      "file": "pa_tempo.mvar",
+      "name": "PA Tempo",
+      "description": "Created By Joshington. Use with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_tempo.mv"
+    },
+    {
+      "file": "pa_wagoo.mvar",
+      "name": "PA Wagoo",
+      "description": "Created By Joshington. Use with Oddball Gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_wagoo.mv"
+    },
+    {
+      "file": "pa_waka_waka.mvar",
+      "name": "PA Waka Waka",
+      "description": "Created By Joshington. Use with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pa_waka_waka.mv"
+    },
+    {
+      "file": "pirates_shanty.mvar",
+      "name": "PIRATES SHANTY",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "pirates_shanty.mv"
+    },
+    {
+      "file": "potential.mvar",
+      "name": "Potential",
+      "description": "This a map forged by A Jewish Dino. This is Team Endorphin`s 1st Trick Jumping Map. Use with the gametype Endorphin Jumps.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "potential.mv"
+    },
+    {
+      "file": "serotonin_jumps.mvar",
+      "name": "Serotonin Jumps",
+      "description": "DGF Jumps (DIVIN3 JUSTICE) ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "serotonin_jumps.mv"
+    },
+    {
+      "file": "slides.mvar",
+      "name": "Slides",
+      "description": "3 paths leading to one destination: More Slides. Have fun!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "slides.mv"
+    },
+    {
+      "file": "shkei - Hellbound.mvar",
+      "name": "Hellbound",
+      "description": "Playground full of monstrosity's",
+      "difficulty": 0,
+      "tags": [],
+      "author": "shkei"
+    },
+    {
+      "file": "shkei - Provocation.mvar",
+      "name": "Provocation ",
+      "description": "Made and tested by Shkei",
+      "difficulty": 0,
+      "tags": [],
+      "author": "shkei"
+    },
+    {
+      "file": "Shkei - SHCLassic.mvar",
+      "name": "SHClassic",
+      "description": "Map built and tested by Shkei, Enjoy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Shkei"
+    },
+    {
+      "file": "Shkei - sHrek's Swamp.mvar",
+      "name": " sHrek's Swamp",
+      "description": "Jump Map",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Shkei"
+    },
+    {
+      "file": "Skulk - Brioche Jumps.mvar",
+      "name": "Brioche Jumps",
+      "description": "...light and slightly puffy, more or less, according to the proportion of butter and eggs. Version 2 - By: SkuIk",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Skulk"
+    },
+    {
+      "file": "Skulk - Brute Loops.mvar",
+      "name": "Brute Loops",
+      "description": "part of a balanced breakfast.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Skulk"
+    },
+    {
+      "file": "Skulk - Brute'chetta.mvar",
+      "name": "Brute'chetta",
+      "description": "...consisting of grilled bread rubbed with garlic and topped with olive oil and salt. Map By: SkuIk - Gametype: \"Brute Jumper\"",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Skulk"
+    },
+    {
+      "file": "Skulk - The Brute Chute.mvar",
+      "name": "The Brute Chute",
+      "description": "Et tu, Brute Chute. Trick-jump to the oddball using \"Brute Jumper\" gametype. Made by SkuIk",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Skulk"
+    },
+    {
+      "file": "snappy8516 - PA Cherry (Created by Joshington).mvar",
+      "name": "PA Cherry",
+      "description": "Created by Joshington. Play with Stack Jumper gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Cherry.mvar",
+      "name": "PA Cherry",
+      "description": "Created by Joshington. Play with Stack Jumper gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Dimension.mvar",
+      "name": "PA Dimension",
+      "description": "Created By Joshington. Use with Oddball gametype. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Dipsy (Created by Joshington).mvar",
+      "name": "PA Dipsy",
+      "description": "Created By Joshington. Use with Oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Dipsy.mvar",
+      "name": "PA Dipsy",
+      "description": "Created By Joshington. Use with Oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Fishy.mvar",
+      "name": "PA Fishy",
+      "description": "Created by Joshington. Play with Oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Hamster.mvar",
+      "name": "PA Hamster",
+      "description": "Created By Joshington. Play with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA High Low.mvar",
+      "name": "PA High Low",
+      "description": "Created by Joshington. Use with oddball ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Levels V2.mvar",
+      "name": "PA Levels V2",
+      "description": "Jump course with over 60 jumps. Created by Joshington",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Lotus.mvar",
+      "name": "PA Lotus",
+      "description": "Created By Joshington. Use with oddball.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Mango.mvar",
+      "name": "PA Mango",
+      "description": "Created by Joshington. Use oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Mimic.mvar",
+      "name": "PA Mimic",
+      "description": "Created by Joshington. Play with Oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Nimbus.mvar",
+      "name": "PA Nimbus",
+      "description": "Created by Joshington. Use oddball gametype. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Pickles.mvar",
+      "name": "PA Pickles",
+      "description": "Created by Joshington. Use oddball gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Stacka (Created by Joshington).mvar",
+      "name": "PA Stacka",
+      "description": "Created by Joshington. Use with Stack Jumper Oddball gametype ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Tempo.mvar",
+      "name": "PA Tempo",
+      "description": "Created By Joshington. Use with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Wagoo.mvar",
+      "name": "PA Wagoo",
+      "description": "Created By Joshington. Use with Oddball Gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Waka Waka.mvar",
+      "name": "PA Waka Waka",
+      "description": "Created By Joshington. Use with oddball gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "snappy8516 - PA Zen.mvar",
+      "name": "PA Zen",
+      "description": "Jump map created by Joshington. Play with Oddball gametype",
+      "difficulty": 0,
+      "tags": [],
+      "author": "snappy8516"
+    },
+    {
+      "file": "Sobbed - Ghost; KungFu.mvar",
+      "name": "Ghost: KungFu",
+      "description": "Made by EvaduR.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Sobbed"
+    },
+    {
+      "file": "Stiirliing - Fun Jumps! v2.mvar",
+      "name": " Fun Jumps! v2",
+      "description": "Goodluck and Have fun! Created by Stiirliing, Play-tested by Mascot!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Stiirliing"
+    },
+    {
+      "file": "Stiirliing - Jumps for Birdy.mvar",
+      "name": "Jumps for Birdy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Stiirliing"
+    },
+    {
+      "file": "Stiirliing - Stir-Tacular!.mvar",
+      "name": "Stir-tacular!",
+      "description": "Jump Map w/ Multiple Routes! Created by Stiirliing!  Play-tested by Jagged Nade and Mascot! v8",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Stiirliing"
+    },
+    {
+      "file": "Supa Iion - SL Hesitation.mvar",
+      "name": "SL Hesitation",
+      "description": "Have fun, tried to be as unique as i could. Thank you for the testers with the help! N Mark the goat for the blessed teleporter",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Supa Iion"
+    },
+    {
+      "file": "SweetBunny84373 - Jump; 10 (Frotch Hops GameType).mvar",
+      "name": "Jump: 10",
+      "description": "Play with \"Frotch Hops\"   -CptnXxFROTCHxX       If completed message me      Record Times 1. cptnXxFROTCHxX...10:43 2. Alexj16",
+      "difficulty": 0,
+      "tags": [],
+      "author": "SweetBunny84373"
+    },
+    {
+      "file": "Synester gr - no or yes.mvar",
+      "name": "no or yes",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Synester gr"
+    },
+    {
+      "file": "t f aaren - Blurtex.mvar",
+      "name": "Blurtex",
+      "description": "Goodluck. Launch, bounce, overjump, ghost, & curve your way to the end.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "t f aaren"
+    },
+    {
+      "file": "t f aaren - Ghost # Trix.mvar",
+      "name": "GHOST � TRIX",
+      "description": "Ghost jump tricks.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "t f aaren"
+    },
+    {
+      "file": "Terminator Zero - #Jump Map#.mvar",
+      "name": "ºJump Mapº",
+      "description": "A trick jumping map made by SpooIV. 1-8 Players.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Terminator Zero"
+    },
+    {
+      "file": "The Only Static - Final Flight.mvar",
+      "name": "Final Flight",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "The Only Static"
+    },
+    {
+      "file": "The Only Static - The 1st Flight.mvar",
+      "name": "The 1st Flight",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "The Only Static"
+    },
+    {
+      "file": "The Only Static - The 2nd Flight.mvar",
+      "name": "The 2nd Flight",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "The Only Static"
+    },
+    {
+      "file": "The Only Static - The 3rd Flight.mvar",
+      "name": "The 3rd Flight",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "The Only Static"
+    },
+    {
+      "file": "TVTeTaLCoRe - JUTVTP YEEEEES.mvar",
+      "name": "JUTVTP YEEEEES",
+      "description": "Forged by TVTeTaLCoRe  Tested by H3 Claw",
+      "difficulty": 0,
+      "tags": [],
+      "author": "TVTeTaLCoRe"
+    },
+    {
+      "file": "Van Groud  - Jump Challenge.mvar",
+      "name": "Jumps Challenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Van Groud "
+    },
+    {
+      "file": "WaffleTheCopter - JH CHICANERY.mvar",
+      "name": "JH CHICANERY",
+      "description": "V2 by WaffleTheCopter -- Use with Jumphaus gametype. 2-16 players.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WaffleTheCopter - JH Descent.mvar",
+      "name": "JH DESCENT",
+      "description": "V2 by WaffleTheCopter - Use with Jumphaus gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WaffleTheCopter - JH DIVINITY.mvar",
+      "name": "JH DIVINITY",
+      "description": "V2 by WaffleTheCopter - Use with Jumphaus gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WaffleTheCopter - JH Element.mvar",
+      "name": "JH ELEMENT",
+      "description": "V3 by WaffleTheCopter - Use with gametype: Jumphaus. 2-16 players.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WaffleTheCopter - JH FLEX.mvar",
+      "name": "JH FLEX",
+      "description": "V1 by WaffleTheCopter - Use with Jumphaus gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WaffleTheCopter - JH LOHI.mvar",
+      "name": "JH LOHI",
+      "description": "V3 by WaffleTheCopter - Use with Jumphaus gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WaffleTheCopter - JH Redemption.mvar",
+      "name": "JH REDEMPTION",
+      "description": "V1 by WaffleTheTheCopter - Use with Jumphaus gametype. 2-16 players.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WaffleTheCopter - JHWIP.mvar",
+      "name": "JHWIP",
+      "description": "Wip",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WaffleTheCopter"
+    },
+    {
+      "file": "WickedSOADMAN2 - CUBErt.mvar",
+      "name": "CUBErt",
+      "description": "A Jump Voyage Trick Jump Map. Made by WickedSOADMAN. Use Gametype Shimmy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    },
+    {
+      "file": "x Joshington x - JY Easy.mvar",
+      "name": "JY Easy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "x Joshington x"
+    },
+    {
+      "file": "x Joshington x - PA Easy.mvar",
+      "name": "PA Easy",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "x Joshington x"
+    },
+    {
+      "file": "xlBuddy - BDY - Ghosts.mvar",
+      "name": "BDY - Ghosts",
+      "description": "Buddy's third jump map! Enjoy",
+      "difficulty": 0,
+      "tags": [],
+      "author": "xlBuddy"
+    },
+    {
+      "file": "YmaGod - BumbleBee.mvar",
+      "name": "BumbleBee",
+      "description": "Jump as far as you can!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Chatoyant.mvar",
+      "name": "Chatoyant",
+      "description": "Jump as far as you can!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Colum Jumps V2.mvar",
+      "name": " Colum Jumps V2",
+      "description": "Jump as far as you can!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Column Paradise.mvar",
+      "name": "Column Paradise",
+      "description": "Jump as far as you can!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Fantastic.mvar",
+      "name": "Fantastic",
+      "description": "Jump as far as you can",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Ghost City.mvar",
+      "name": "Ghost City",
+      "description": "Jump as far as you can!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Golfclub Jumps.mvar",
+      "name": "Golfclub Jumps",
+      "description": "Jump till the end",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Jump Maniacs.mvar",
+      "name": "Jump Maniacs",
+      "description": "Jump as far as you can!!!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Jump or Drive.mvar",
+      "name": "Jump or Drive",
+      "description": "Jump as far as you can!!!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Jump Tower XXXL.mvar",
+      "name": "Jump Tower XXXL",
+      "description": "jump as far as you can",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Longest Ladder.mvar",
+      "name": "Longest Ladder",
+      "description": "Jump as far as you can",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Playground.mvar",
+      "name": "Playground",
+      "description": "Jump as far as you can!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Sonic Jumps.mvar",
+      "name": "Sonic Jumps",
+      "description": "Jump as far as you can",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Tunnelvision.mvar",
+      "name": "Tunnelvision",
+      "description": "Jump as far as you can",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "YmaGod - Underground.mvar",
+      "name": "Underground",
+      "description": "Jump as far as you can!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "YmaGod"
+    },
+    {
+      "file": "Yo Hybrid - Jump Challenge (Salsa Gametype).mvar",
+      "name": "Jump Challenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Yo Hybrid"
+    },
+    {
+      "file": "ZR Jabuzy - Static Hype.mvar",
+      "name": "Static Hype",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "ZR Jabuzy"
+    },
+    {
+      "file": "ZR Jabuzy - Zigurous Jumps.mvar",
+      "name": "Zigurous Jumps",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "ZR Jabuzy"
+    }
+  ],
+  "Foundry": [
+    {
+      "file": "Airtik - Toast.mvar",
+      "name": "Toast",
+      "description": "Difficulty - Difficult Made by - Artic Eat with Cheese",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Airtik"
+    },
+    {
+      "file": "Bo mwwmwmwmm - Jump Basic.mvar",
+      "name": "Jump Basic",
+      "description": "Basic Training for the Recruits",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bo mwwmwmwmm"
+    },
+    {
+      "file": "Bo mwwmwmwmm - Jump Map Easy.mvar",
+      "name": "Jump Map Easy ",
+      "description": "For beginners to Learn the basics to jumping",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bo mwwmwmwmm"
+    },
+    {
+      "file": "Bo mwwmwmwmm - Jump Map Medium.mvar",
+      "name": "Jump Map Medium",
+      "description": "Medium trick jumping Map for Advanced Jumpers",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bo mwwmwmwmm"
+    },
+    {
+      "file": "Bob NLD - NLD JumpCourse.mvar",
+      "name": "NLD JumpCourse",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Bob NLD"
+    },
+    {
+      "file": "Desecrated - MLP Jump-INTMDT.mvar",
+      "name": "MLP JumpINTMDT",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Desecrated"
+    },
+    {
+      "file": "Extivity - JE Effective.mvar",
+      "name": "JE Effective",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Extivity"
+    },
+    {
+      "file": "Faze rePlaYs721 - HC; Jump map.mvar",
+      "name": "HC Jump map",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Faze rePlaYs721"
+    },
+    {
+      "file": " Jump Basic.mvar",
+      "name": "Jump Basic",
+      "description": "Basic Training for the Recruits",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jump Basic.mv"
+    },
+    {
+      "file": " Jump Map Easy.mvar",
+      "name": "Jump Map Easy ",
+      "description": "For beginners to Learn the basics to jumping",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jump Map Easy.mv"
+    },
+    {
+      "file": " Jump Map Medium.mvar",
+      "name": "Jump Map Medium",
+      "description": "Medium trick jumping Map for Advanced Jumpers",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jump Map Medium.mv"
+    },
+    {
+      "file": " NLD JumpCourse.mvar",
+      "name": "NLD JumpCourse",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " NLD JumpCourse.mv"
+    },
+    {
+      "file": " Toast.mvar",
+      "name": "Toast",
+      "description": "Difficulty - Difficult                                  Made by - Artic                                        Eat with Cheese",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Toast.mv"
+    },
+    {
+      "file": "ghostmastery.mvar",
+      "name": "Ghost: Mastery",
+      "description": "Made by EvaduR. Land the last pentaghost and send film to EvaduR for spot on the 'Ghost Mastery' list at twitch.tv/EvaduR_",
+      "difficulty": 0,
+      "tags": [],
+      "author": "ghostmastery.mv"
+    },
+    {
+      "file": "jtc_jump_race.mvar",
+      "name": "JTC Jump Race",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jtc_jump_race.mv"
+    },
+    {
+      "file": "jumpman_v1.mvar",
+      "name": "Jumpman v1",
+      "description": "You have 2 minutes to complete. Good luck Jump FX Productions.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jumpman_v1.mv"
+    },
+    {
+      "file": "jumprz_jumps_v1.mvar",
+      "name": "Jumprz Jumps v1",
+      "description": "New trick jumping map!! There are some secret routes and a hidden spiker. Hope everyone enjoys!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jumprz_jumps_v1.mv"
+    },
+    {
+      "file": "jump_basic.mvar",
+      "name": "Jump Basic",
+      "description": "Basic Training for the Recruits",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jump_basic.mv"
+    },
+    {
+      "file": "jump_journey_4.mvar",
+      "name": "Jump Journey #4",
+      "description": "Use gametype Puzzled Jumper   Made by WickedSOADMAN2",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jump_journey_4.mv"
+    },
+    {
+      "file": "jump_map_easy_.mvar",
+      "name": "Jump Map Easy ",
+      "description": "For beginners to Learn the basics to jumping",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jump_map_easy_.mv"
+    },
+    {
+      "file": "jump_map_medium.mvar",
+      "name": "Jump Map Medium",
+      "description": "Medium trick jumping Map for Advanced Jumpers",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jump_map_medium.mv"
+    },
+    {
+      "file": "jump_mexican.mvar",
+      "name": "Jump Mexican",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "jump_mexican.mv"
+    },
+    {
+      "file": "lf_day_shift.mvar",
+      "name": "LF Day Shift",
+      "description": "Made by Likely Faded, thanks for playing!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "lf_day_shift.mv"
+    },
+    {
+      "file": "m1.mvar",
+      "name": "M1",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "m1.mv"
+    },
+    {
+      "file": "new_jumpz.mvar",
+      "name": "New Jumpz",
+      "description": "Ooo",
+      "difficulty": 0,
+      "tags": [],
+      "author": "new_jumpz.mv"
+    },
+    {
+      "file": "peephole.mvar",
+      "name": "Peephole",
+      "description": "Another Jump Voyage Trick Jump map. Made by WickedSOADMAN. Use gametype Shimmy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "peephole.mv"
+    },
+    {
+      "file": "phyisck_menacer.mvar",
+      "name": "Phyisck Menacer",
+      "description": "Halo 3 physic & jump map made by. Phyisck and t f aaren. Settings 100% movement speed 100% jump height 100% damage/unchanged",
+      "difficulty": 0,
+      "tags": [],
+      "author": "phyisck_menacer.mv"
+    },
+    {
+      "file": "tentative.mvar",
+      "name": "Tentative",
+      "description": "A Jump Voyage trick jump map. Made by WickedSOADMAN. Use gametype Shimmy or any trick jump map gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "tentative.mv"
+    },
+    {
+      "file": "G1itch35 2008 - Magnificats.mvar",
+      "name": "Magnificats",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "G1itch35 2008"
+    },
+    {
+      "file": "GaNdHi HoPpPpPp - Why Jump.mvar",
+      "name": "Why Jump",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GaNdHi HoPpPpPp"
+    },
+    {
+      "file": "Gninja72 - «3 Ghosts.mvar",
+      "name": "«3 GHOSTS",
+      "description": "Challenge map made by: Gninja72 and WtK Yo. Tested by: BtB ChaotiK",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Gninja72"
+    },
+    {
+      "file": "GuitaRHerODudE - GHD Jumps [First Trick Jumping Map].mvar",
+      "name": "GHD Jumps",
+      "description": "Dedicated to my jumping buddies, Snipxn and Outvade. My first trick jumping map, jumps vary in difficulty. GLHF",
+      "difficulty": 0,
+      "tags": [],
+      "author": "GuitaRHerODudE"
+    },
+    {
+      "file": "im Sleepy - Jump Fast.mvar",
+      "name": "Jump fast",
+      "description": "made by im Sleepy. Play with VIP gametype(Vip%) ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "im Sleepy"
+    },
+    {
+      "file": "ixDash - JT ProChallenge.mvar",
+      "name": "JT ProChallenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "ixDash"
+    },
+    {
+      "file": "Jagged Nade - JGD Challenge.mvar",
+      "name": "JGD Challenge",
+      "description": "Trick jumping map made by Jagged Nade, play with 2-10 people. First ever foundry map, good luck! Now includes tele barriers! ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jagged Nade"
+    },
+    {
+      "file": "JuicedStl - JManipulate.mvar",
+      "name": "JManipulate ",
+      "description": "Jump map made by JuicedStl. Use any oddball jump gametype. Enjoy !",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "JuicedStl - JMedusa.mvar",
+      "name": "JMedusa",
+      "description": "I hope you liked the forge style! Def not built for huge lobbies. Made by Juicedstl",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "JuicedStl - JOppressing.mvar",
+      "name": "JOppressing",
+      "description": "Use the gametype 'Jump to hill' with this map. Made by JuicedStl.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "Jumprs Friend - Hard Jump Map!!.mvar",
+      "name": "Hard Jump Map!!",
+      "description": "Experts ~",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "Jumprs Friend - Jumprz Jumps v1.mvar",
+      "name": "Jumprz Jumps v1",
+      "description": "New trick jumping map!! There are some secret routes and a hidden spiker. Hope everyone enjoys!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "Jumprs Friend - New Jumpz.mvar",
+      "name": "New Jumpz",
+      "description": "Ooo",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs Friend"
+    },
+    {
+      "file": "Jumprs v2 - M1.mvar",
+      "name": "M1",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Jumprs v2"
+    },
+    {
+      "file": "l KILLERxJAKE l - JTC Jump Race.mvar",
+      "name": "JTC Jump Race",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "l KILLERxJAKE l"
+    },
+    {
+      "file": "Likely Faded - LF Day Shift.mvar",
+      "name": "LF Day Shift",
+      "description": "Made by Likely Faded, thanks for playing!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "ll Taco - 2nd-Try.mvar",
+      "name": "2ndTry",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "ll Taco"
+    },
+    {
+      "file": "Mowsa - MW Fundry -.mvar",
+      "name": "MW Fundry :^)",
+      "description": "Best best best map good price good quality finest material",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Mowsa"
+    },
+    {
+      "file": "Mowsa - MW Gauntlet 1.mvar",
+      "name": "MW Gauntlet 1",
+      "description": "First of the MW Guantlet maps.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Mowsa"
+    },
+    {
+      "file": "NialiNW - Jumper; Mini.mvar",
+      "name": "Jumper Mini",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "NialiNW"
+    },
+    {
+      "file": "OneHappyBlonde - FIG JAM.mvar",
+      "name": "FIG JAM",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OneHappyBlonde"
+    },
+    {
+      "file": "OOOOOYOOOOO - rage stroll.mvar",
+      "name": "rage stroll",
+      "description": "take a stroll of rage",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OOOOOYOOOOO"
+    },
+    {
+      "file": "qoxe - EK Pacman.mvar",
+      "name": "EK Pacman",
+      "description": "Now with hidden equipment!",
+      "difficulty": 0,
+      "tags": [],
+      "author": "qoxe"
+    },
+    {
+      "file": " FIG JAM.mvar",
+      "name": "FIG JAM",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " FIG JAM.mv"
+    },
+    {
+      "file": " HC; Jump map.mvar",
+      "name": "HC Jump map",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " HC; Jump map.mv"
+    },
+    {
+      "file": " JE Effective.mvar",
+      "name": "JE Effective",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JE Effective.mv"
+    },
+    {
+      "file": " JT ProChallenge.mvar",
+      "name": "JT ProChallenge",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " JT ProChallenge.mv"
+    },
+    {
+      "file": " Jumper; Mini.mvar",
+      "name": "Jumper Mini",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Jumper; Mini.mv"
+    },
+    {
+      "file": " Magnificats.mvar",
+      "name": "Magnificats",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Magnificats.mv"
+    },
+    {
+      "file": " MLP Jump-INTMDT.mvar",
+      "name": "MLP JumpINTMDT",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " MLP Jum"
+    },
+    {
+      "file": " Why Jump.mvar",
+      "name": "Why Jump",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": " Why Jump.mv"
+    },
+    {
+      "file": "Shkei & Likely Faded - Hikikomori.mvar",
+      "name": "Hikikomori",
+      "description": "Made by Shkei & Likely Faded ####",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Shkei & Likely Faded"
+    },
+    {
+      "file": "shkei - Shkei Joomps.mvar",
+      "name": "Shkei Joomps",
+      "description": "trick jump",
+      "difficulty": 0,
+      "tags": [],
+      "author": "shkei"
+    },
+    {
+      "file": "shuteyebeats - Jump Mexican.mvar",
+      "name": "Jump Mexican",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "shuteyebeats"
+    },
+    {
+      "file": "Sobbed - Ghost; Mastery.mvar",
+      "name": "Ghost: Mastery",
+      "description": "Made by EvaduR. Land the last pentaghost and send film to EvaduR for spot on the 'Ghost Mastery' list at twitch.tv/EvaduR_",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Sobbed"
+    },
+    {
+      "file": "UC GOLLUM - Hone Your Jump2.mvar",
+      "name": "Hone Your Jump2",
+      "description": "Part 2 of the journey to master the lost art of jumping.   Â«ChallengeÂ»",
+      "difficulty": 0,
+      "tags": [],
+      "author": "UC GOLLUM"
+    },
+    {
+      "file": "Versatile Verve - Jump VOL (VOL Gametype).mvar",
+      "name": "Jump VOL",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Versatile Verve"
+    },
+    {
+      "file": "WedgedBuffalo - hardcor parkour.mvar",
+      "name": "hardcor parkour",
+      "description": "porkaour",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WedgedBuffalo"
+    },
+    {
+      "file": "WickedSOADMAN2 - Jump Journey #4 [Use Gametype 'Puzzled Jumper'].mvar",
+      "name": "Jump Journey #4",
+      "description": "Use gametype Puzzled Jumper   Made by WickedSOADMAN2",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    },
+    {
+      "file": "WickedSOADMAN2 - Peephole [Use Gametype 'Shimmy'].mvar",
+      "name": "Peephole",
+      "description": "Another Jump Voyage Trick Jump map. Made by WickedSOADMAN. Use gametype Shimmy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    },
+    {
+      "file": "WickedSOADMAN2 - Tentative.mvar",
+      "name": "Tentative",
+      "description": "A Jump Voyage trick jump map. Made by WickedSOADMAN. Use gametype Shimmy or any trick jump map gametype.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    },
+    {
+      "file": "WickedSOADMAN2 - WickedPac-Man.mvar",
+      "name": "WickedPacMan",
+      "description": "",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    },
+    {
+      "file": "x1337xBLAZ3R - Jumpman v1.mvar",
+      "name": "Jumpman v1",
+      "description": "You have 2 minutes to complete. Good luck Jump FX Productions.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "x1337xBLAZ3R"
+    }
+  ],
+  "Avalanche": [
+    {
+      "file": "innervision.mvar",
+      "name": "Innervision",
+      "description": "A Jump Voyage Trick Jump Map. Made by WickedSOADMAN. Use Gametype Shimmy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN"
+    },
+    {
+      "file": "lf_snowblind.mvar",
+      "name": "LF Snowblind",
+      "description": "Made by Likely Faded 2022 with a lil help from Naraku & Jagged Nade",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "bloomshi - bloom jump v2.mvar",
+      "name": "bloom jump v2",
+      "description": "jump map",
+      "difficulty": 0,
+      "tags": [],
+      "author": "bloomshi"
+    },
+    {
+      "file": "JuicedStl - JMountain.mvar",
+      "name": "JMountain",
+      "description": "Jump map made by JuicedStl. Use any oddball gametype. Have fun",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "Likely Faded - Frostbite.mvar",
+      "name": "Frostbite",
+      "description": "Made by Likely Faded 2021 <333",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Snowblind.mvar",
+      "name": "LF Snowblind",
+      "description": "Made by Likely Faded 2022 with a lil help from Naraku & Jagged Nade",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "WickedSOADMAN2 - Innervision.mvar",
+      "name": "Innervision",
+      "description": "A Jump Voyage Trick Jump Map. Made by WickedSOADMAN. Use Gametype Shimmy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    }
+  ],
+  "Blackout": [
+    {
+      "file": "Flaming Ninjas.mvar",
+      "name": "Flaming Ninjas",
+      "description": "Crees poder pasar este mapa? Vamos Intentalo =)",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Flaming Ninjas.mv"
+    },
+    {
+      "file": "Likely Faded - LF Dopesick.mvar",
+      "name": "LF Dopesick",
+      "description": "Made by Likely Faded, thanks for playing! Use magnum",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    }
+  ],
+  "Icebox": [
+    {
+      "file": "lfys_icy_nipz.mvar",
+      "name": "LF-YS Icy Nipz",
+      "description": "Made by Likely Faded & Ysplatty, enjoy! ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "lfys_icy_nipz.mv"
+    },
+    {
+      "file": "Likely Faded and Ysplatty - LF-YS Icy Nipz.mvar",
+      "name": "LF-YS Icy Nipz",
+      "description": "Made by Likely Faded & Ysplatty, enjoy! ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded and Ysplatty"
+    }
+  ],
+  "Waterfall": [
+    {
+      "file": "JuicedStl - J Frozen.mvar",
+      "name": "J Frozen",
+      "description": "Jump map made by JuicedStl. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    },
+    {
+      "file": "Likely Faded - LF Cold Toes.mvar",
+      "name": "LF Cold Toes",
+      "description": "Made by Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "Likely Faded - LF Gonzo.mvar",
+      "name": "LF Gonzo",
+      "description": "Likely Faded 2022",
+      "difficulty": 0,
+      "tags": [],
+      "author": "Likely Faded"
+    },
+    {
+      "file": "OOOOOYOOOOO - endurance.mvar",
+      "name": "endurance",
+      "description": "jump map",
+      "difficulty": 0,
+      "tags": [],
+      "author": "OOOOOYOOOOO"
+    },
+    {
+      "file": " endurance.mvar",
+      "name": "endurance",
+      "description": "jump map",
+      "difficulty": 0,
+      "tags": [],
+      "author": " endurance.mv"
+    },
+    {
+      "file": " J Frozen.mvar",
+      "name": "J Frozen",
+      "description": "Jump map made by JuicedStl. ",
+      "difficulty": 0,
+      "tags": [],
+      "author": " J Frozen.mv"
+    },
+    {
+      "file": " LF Cold Toes.mvar",
+      "name": "LF Cold Toes",
+      "description": "Made by Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Cold Toes.mv"
+    },
+    {
+      "file": " LF Gonzo.mvar",
+      "name": "LF Gonzo",
+      "description": "Likely Faded 2022",
+      "difficulty": 0,
+      "tags": [],
+      "author": " LF Gonzo.mv"
+    },
+    {
+      "file": "lf_cold_toes.mvar",
+      "name": "LF Cold Toes",
+      "description": "Made by Likely Faded",
+      "difficulty": 0,
+      "tags": [],
+      "author": "lf_cold_toes.mv"
+    }
+  ],
+  "Edge": [
+    {
+      "file": "JuicedStl - J Land.mvar",
+      "name": "J Land",
+      "description": "Short jump map made by JuicedStl",
+      "difficulty": 0,
+      "tags": [],
+      "author": "JuicedStl"
+    }
+  ],
+  "Orbital": [
+    {
+      "file": "WickedSOADMAN2 - Darts.mvar",
+      "name": "Darts",
+      "description": "A Jump Voyage Trick Jump Map. Made by WickedSOADMAN. Use with gametype Shimmy.",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    }
+  ],
+  "Ghost Town": [
+    {
+      "file": "WickedSOADMAN2 - Jump Journey #2 [Use Gametype 'Puzzled Jumper'].mvar",
+      "name": "Jump Journey #2",
+      "description": "Use Gametype puzzled jumper. Made by WickedSOADMAN2",
+      "difficulty": 0,
+      "tags": [],
+      "author": "WickedSOADMAN2"
+    }
+  ]
+}
