@@ -242,7 +242,7 @@
             const urlParams = new URLSearchParams(queryString);
             const product = urlParams.get('game')
             if(!urlParams.has('game') && !urlParams.has('search')){
-                window.location.href = "./index?game=3";
+                window.location.href = "./videos?game=3";
             } else {
                 $('.dropdown_title').text('Halo ' + product);
                 $( "#page_title" ).text(`Halo ${product} Videos`);
