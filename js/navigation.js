@@ -9,7 +9,7 @@ const nav = {
     },
     "leaderboard":{
         "title":"Leaderboard",
-        "url":"./index"
+        "url":"./speedruns"
     },
     "submit":{
         "title":"Submit Run",
@@ -24,7 +24,7 @@ const nav = {
 let page = window.location.pathname.split("/").pop();
 
 for(var i in nav){
-    page = page.replace('.html','')
+    //page = page.replace('.html','')
     if(nav[i].url.includes(page)){
         $( "#nav" ).append(buildSideNav(nav[i],true));
     } else {
