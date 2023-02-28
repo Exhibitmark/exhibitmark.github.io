@@ -1,0 +1,363 @@
+<html class="dark" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./favicon.ico">
+    <title>GHST Videos</title>
+    <link href="./main.min.css" rel="stylesheet">
+    <link href="./css/fa.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/lazysizes.min.js" async=""></script>
+    <style>
+        .red {
+            color:#e61748;
+        }
+        .blue {
+            color:#6769eb;
+        }
+        .hidden {
+            display:none;
+        }
+        .blue-bg {
+            background-color:#6769eb !important;
+        }
+        .grid-container {
+            display: grid;
+            column-gap: 50px;
+        }
+        .grey {
+            background-color:#1f1e25;
+        }
+        .text-light{
+            color:rgb(226, 232, 240);
+        }
+        .pointer{
+            cursor:pointer;
+        }
+        .top-bar {
+            display:none;
+        }
+
+        @media screen and (max-width: 900px) {
+            .top-bar {
+                display:flex;
+            }
+            .side-nav {
+                display:none;
+            }
+        }
+        .navbar-nav {
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            margin-bottom: -1px
+        }
+        .navbar-nav>li>a {
+            font-weight:600;
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            padding: 1.25rem .9375rem!important;
+            position: relative;
+            border-bottom: 0px solid #2d303e;
+        }
+        .navbar-nav>li>a i {
+            font-size: .75rem;
+            margin-left: .625rem
+        }
+        .navbar-nav>li>a.active, .navbar-nav>li>a:hover {
+            border-color: #2d303e;
+            border-bottom:0px solid;
+        }
+        .navbar-nav li {
+            position: relative
+        }
+        .navbar-nav.active>li>a {
+            opacity: 0;
+            visibility: hidden
+        }
+        .navbar-collapse {
+            position: relative
+        }
+            
+        .megadropdown {
+            background-color: #181620;
+            border-top: 2px solid #4773f5;
+            border-radius: 0px 0px 5px 5px;
+            position: absolute;
+            top: 100%;
+            visibility: hidden;
+            opacity: 0;
+            margin-top: .625rem;
+            transition: all .15s ease-in-out;
+            -moz-transition: all .15s ease-in-out;
+            -webkit-transition: all .15s ease-in-out;
+            -o-transition: all .15s ease-in-out;
+            display: flex;
+            padding: 0 1rem
+        }
+        .megadropdown .dropdown-box {
+            padding: .75rem 1rem;
+            width: 100%
+        }
+        .megadropdown span {
+            display: block;
+            color: #666;
+            font-size: .9375rem;
+            font-weight: 400;
+            padding-bottom: .75rem;
+            margin-bottom: .75rem;
+        }
+        .megadropdown ul>li {
+            display: block;
+            margin-bottom: .5rem;
+            font-size: 16px;
+            font-weight: 500
+        }
+        .megadropdown ul>li a {
+            display: block;
+            color: #f2f2f2;
+            font-size: 16px;
+            font-weight: 500
+        }
+        .megadropdown ul>li>a:hover {
+            color: #4773f5
+        }
+        li:hover>.megadropdown {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -1px
+        }
+        @media (max-width:1199px) {
+            .megadropdown {
+                width: 53rem;
+                left: -7.25rem
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body class="main">
+    <div id="app">
+        <div>
+            <div class="flex">
+                <nav class="side-nav">
+                    <a href="/" class="router-link-active intro-x flex items-center pl-5 pt-4">
+                        <img style="width:4rem" src="./logo.png">
+                    </a>
+                    <div class="side-nav__devider my-6"></div>
+                    <ul id="nav">
+                    </ul>
+                </nav>
+                <div class="content">
+                    <!--TOP BAR COMMENTED OUT-->
+                    <div class="top-bar">
+                        <a href="/" class="router-link-active intro-x flex items-center pt-4">
+                            <img style="width:4rem" src="./logo.png">
+                        </a>
+                    </div>
+                    <!--MAIN CONTENT-->
+                    <div>
+                        <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-10">
+                            <h2 id="page_title" class="intro-y text-lg font-medium">Halo 3 Videos</h2>
+                            <div class="ml-4 relative inline-block mb-20">
+                                <!-- Dropdown toggle button -->
+                                <button id="dropdown_toggle" style="border-color:transparent" class="relative z-10 flex items-center p-2 text-sm border rounded-md bg-gray-800">
+                                    <span id="dropdown_toggle" class="dropdown_title mx-1">Halo 3</span>
+                                    <svg id="dropdown_toggle" class="w-5 h-5 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z" fill="currentColor"></path>
+                                    </svg>
+                                </button>
+                        
+                                <!-- Dropdown menu -->
+                                <div id="dropdown" style="background-color: #25242b; display: none;" class="absolute right-0 z-20 w-56 py-2 mt-2 overflow-hidden bg-gray-800 rounded-md shadow-xl dark:bg-gray-800">
+                                    <a href="./index?game=ce" id="ce" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo CE
+                                    </a>
+                                    <a href="./index?game=2" id="2" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo 2
+                                    </a>
+                                    <a href="./index?game=3" id="3" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo 3
+                                    </a>
+                                    <a href="./index?game=reach" id="reach" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo Reach
+                                    </a>
+                                    <a href="./index?game=4" id="4" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo 4
+                                    </a>
+                                    <a href="./index?game=5" id="5" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo 5
+                                    </a>
+                                    <a href="./index?game=infinite" id="infinite" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                        Halo Infinite
+                                    </a>
+                                </div>
+                            </div>
+                            <h2 id="random" class="intro-y text-sm ml-auto mr-4 font-medium pointer justify-end " onclick="getRandom()">Random Videos</h2>
+                            <div id="search_div" class="hidden w-full sm:w-auto mt-3 sm:mt-0 ml-8">
+                                <div class="form-group has-search justify-end ">
+                                    <span class="fa fa-search form-control-feedback"></span>
+                                    <input autocomplete="off" id="search" type="text" class="form-control" placeholder="Search">
+                                </div>
+                            </div>
+                            <div id="status" class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+                                <div style="display:flex" class="w-56 relative text-gray-700 dark:text-gray-300 justify-end">
+                                    <h3 class="intro-y text-sm font-medium red">Server Loading</h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="video_grid" class="video_grid grid justify-center grid-cols-2 gap-3 my-10">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let videos;
+
+        $('#dropdown_toggle').click(function(){
+            $('#dropdown').show();
+        });
+
+        $('.drop_element').click(function(e){
+            console.log(e)
+        });
+
+        $( "#search" ).change(function() {
+            returnVids($(this).val())
+        });
+        
+        const queryString = window.location.search
+            const urlParams = new URLSearchParams(queryString);
+            const product = urlParams.get('game')
+            if(!urlParams.has('game') && !urlParams.has('search')){
+                window.location.href = "./index?game=3";
+            } else {
+                $('.dropdown_title').text('Halo ' + product);
+                $( "#page_title" ).text(`Halo ${product} Videos`);
+                get(product)
+            }
+
+        let data;
+        let vids = []
+
+        function videoElement(e){
+            return `
+            <div class="grid grid-element grey rounded-lg shadow-md overflow-hidden grid-cols-2">
+                <div class="py-3 px-3">
+                    <a href="https://youtu.be/${e.l}">
+                        <img class="rounded-lg lazyload" data-src="https://i.ytimg.com/vi/${e.l}/hqdefault.jpg">
+                    </a>
+                </div>
+                <div class="flex items-center py-6 px-3">
+                    <div>
+                        <h3 id="${e.t}" class="font-semibold text-xl leading-6 text-light my-2">
+                            <a href="https://youtu.be/${e.l}">${e.t}</a>
+                        </h3>
+                        <div class="text-gray-600 text-sm py-2">by ${e.author}</div>
+                    </div>
+                </div>
+            </div>
+            `
+        }
+
+        function get(id){
+            fetch(`https://acute-ginger-appeal.glitch.me/vids`)
+                .then(response => response.json())
+                .then(commits => {
+                    data = commits
+                    $('#status').toggleClass('hidden')
+                    $('#search_div').toggleClass('hidden')
+                    build(id)
+            });
+        }
+
+        function detectMobile() {
+            if(window.innerWidth <= 600){
+                $('#video_grid').removeClass('grid-cols-2').addClass('grid-cols-1');
+                $('#navbar-collapse').delete();
+            }
+        }
+        detectMobile()
+        $(function() {
+            $(document).on('click', function(e) {
+                if (e.target.id === 'dropdown_toggle') {
+                    $('#dropdown').show();
+                } else {
+                    $('#dropdown').hide();
+                }
+
+            })
+        });
+
+        function getRandom(){
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * max);
+            }
+            $( ".video_grid" ).empty();
+
+            for(var i = 0; i < 3; i++){
+                let e = vids[getRandomInt(vids.length-1)]
+                $( "#video_grid" ).append(videoElement(e)); 
+            }
+        }
+
+        
+        function build(id){
+            let build_data = data[id]
+            $( "#video_grid" ).empty();
+            $( "#page_title" ).text(`Halo ${id} Videos`);
+            vids = []
+            Object.keys(build_data).forEach((e, i) => {
+                build_data[e].forEach(function(x){
+                    vids.push(x)
+                    x.author = e
+                    $( "#video_grid" ).append(videoElement(x)); 
+                });
+            });
+            shuffle()
+        }
+
+        function shuffle() {
+            var item = document.querySelector('.video_grid');
+            for (var i = item.children.length; i >= 0; i--) {
+                item.appendChild(item.children[Math.random() * i | 0]);
+            }
+        }
+
+        function returnVids(term){
+            $( "#page_title" ).text(`Search results for ${term}`);
+            $( "#video_grid" ).empty();
+            let authors = []
+            Object.keys(data[product]).forEach(function(e){
+                let f = e.toLowerCase()
+                let title = term.toLowerCase()
+                if(f.includes(title)){
+                    data[product][e].forEach(function(x){
+                        $( "#video_grid" ).append(videoElement(x)); 
+                    });
+                }
+
+                data[product][e].forEach(function(y){
+                    let n = y.t.toLowerCase()
+                    if(n.includes(title)){
+                        $( "#video_grid" ).append(videoElement(y)); 
+                    }
+                })
+            })
+        }
+    </script>
+    <script src="./js/navigation.js"></script>
+</body>
+</html>

@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="./favicon.ico">
-    <title>GHST Videos</title>
+    <title>Speedrun Leaderboard</title>
     <link href="./main.min.css" rel="stylesheet">
     <link href="./css/fa.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/lazysizes.min.js" async=""></script>
     <style>
         .red {
             color:#e61748;
@@ -20,125 +19,16 @@
         .hidden {
             display:none;
         }
-        .blue-bg {
-            background-color:#6769eb !important;
+        .slate {
+            background-color:#2f353d;
         }
-        .grid-container {
-            display: grid;
-            column-gap: 50px;
+        .on-top {
+            position:relative;
+            z-index:9999;
         }
-        .grey {
-            background-color:#1f1e25;
-        }
-        .text-light{
-            color:rgb(226, 232, 240);
-        }
-        .pointer{
+        .clickable {
             cursor:pointer;
         }
-        .top-bar {
-            display:none;
-        }
-
-        @media screen and (max-width: 900px) {
-            .top-bar {
-                display:flex;
-            }
-            .side-nav {
-                display:none;
-            }
-        }
-        .navbar-nav {
-            transition: all .2s ease-in-out;
-            -moz-transition: all .2s ease-in-out;
-            -webkit-transition: all .2s ease-in-out;
-            -o-transition: all .2s ease-in-out;
-            margin-bottom: -1px
-        }
-        .navbar-nav>li>a {
-            font-weight:600;
-            transition: all .2s ease-in-out;
-            -moz-transition: all .2s ease-in-out;
-            -webkit-transition: all .2s ease-in-out;
-            -o-transition: all .2s ease-in-out;
-            padding: 1.25rem .9375rem!important;
-            position: relative;
-            border-bottom: 0px solid #2d303e;
-        }
-        .navbar-nav>li>a i {
-            font-size: .75rem;
-            margin-left: .625rem
-        }
-        .navbar-nav>li>a.active, .navbar-nav>li>a:hover {
-            border-color: #2d303e;
-            border-bottom:0px solid;
-        }
-        .navbar-nav li {
-            position: relative
-        }
-        .navbar-nav.active>li>a {
-            opacity: 0;
-            visibility: hidden
-        }
-        .navbar-collapse {
-            position: relative
-        }
-            
-        .megadropdown {
-            background-color: #181620;
-            border-top: 2px solid #4773f5;
-            border-radius: 0px 0px 5px 5px;
-            position: absolute;
-            top: 100%;
-            visibility: hidden;
-            opacity: 0;
-            margin-top: .625rem;
-            transition: all .15s ease-in-out;
-            -moz-transition: all .15s ease-in-out;
-            -webkit-transition: all .15s ease-in-out;
-            -o-transition: all .15s ease-in-out;
-            display: flex;
-            padding: 0 1rem
-        }
-        .megadropdown .dropdown-box {
-            padding: .75rem 1rem;
-            width: 100%
-        }
-        .megadropdown span {
-            display: block;
-            color: #666;
-            font-size: .9375rem;
-            font-weight: 400;
-            padding-bottom: .75rem;
-            margin-bottom: .75rem;
-        }
-        .megadropdown ul>li {
-            display: block;
-            margin-bottom: .5rem;
-            font-size: 16px;
-            font-weight: 500
-        }
-        .megadropdown ul>li a {
-            display: block;
-            color: #f2f2f2;
-            font-size: 16px;
-            font-weight: 500
-        }
-        .megadropdown ul>li>a:hover {
-            color: #4773f5
-        }
-        li:hover>.megadropdown {
-            visibility: visible;
-            opacity: 1;
-            margin-top: -1px
-        }
-        @media (max-width:1199px) {
-            .megadropdown {
-                width: 53rem;
-                left: -7.25rem
-            }
-        }
-        
 
     </style>
 </head>
@@ -156,17 +46,14 @@
                     </ul>
                 </nav>
                 <div class="content">
-                    <!--TOP BAR COMMENTED OUT-->
-                    <div class="top-bar">
-                        <a href="/" class="router-link-active intro-x flex items-center pt-4">
-                            <img style="width:4rem" src="./logo.png">
-                        </a>
-                    </div>
-                    <!--MAIN CONTENT-->
                     <div>
-                        <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-10">
-                            <h2 id="page_title" class="intro-y text-lg font-medium">Halo 3 Videos</h2>
-                            <div class="ml-4 relative inline-block mb-20">
+                        <div style="z-index: 9999999; position: relative;" class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
+                            <svg style="cursor:pointer; overflow:visible; margin-top:2rem" id="back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left mr-5" viewBox="0 0 10 10">
+                                <path fill-rule="evenodd" stroke-width="3" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+
+                            <h2 id="leaderboard_title" class="intro-y text-lg font-medium mt-10">Leaderboard</h2>
+                            <div class="ml-4 relative inline-block mb-20 mt-10">
                                 <!-- Dropdown toggle button -->
                                 <button id="dropdown_toggle" style="border-color:transparent" class="relative z-10 flex items-center p-2 text-sm border rounded-md bg-gray-800">
                                     <span id="dropdown_toggle" class="dropdown_title mx-1">Halo 3</span>
@@ -176,46 +63,33 @@
                                 </button>
                         
                                 <!-- Dropdown menu -->
-                                <div id="dropdown" style="background-color: #25242b; display: none;" class="absolute right-0 z-20 w-56 py-2 mt-2 overflow-hidden bg-gray-800 rounded-md shadow-xl dark:bg-gray-800">
-                                    <a href="./index?game=ce" id="ce" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                                        Halo CE
-                                    </a>
-                                    <a href="./index?game=2" id="2" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                                        Halo 2
-                                    </a>
-                                    <a href="./index?game=3" id="3" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                <div id="dropdown" style="background-color: #25242b; display: none;" class="absolute right-0 w-56 py-2 mt-2 overflow-hidden bg-gray-800 rounded-md shadow-xl dark:bg-gray-800">
+                                    <div href="" id="3" class="clickable drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                                         Halo 3
-                                    </a>
-                                    <a href="./index?game=reach" id="reach" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                                        Halo Reach
-                                    </a>
-                                    <a href="./index?game=4" id="4" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                                        Halo 4
-                                    </a>
-                                    <a href="./index?game=5" id="5" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                                        Halo 5
-                                    </a>
-                                    <a href="./index?game=infinite" id="infinite" class="drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                    </div>
+                                    <div href="" id="infinite" class="clickable drop_element block px-4 py-3 text-sm text-gray-600 capitalize dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                                         Halo Infinite
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
-                            <h2 id="random" class="intro-y text-sm ml-auto mr-4 font-medium pointer justify-end " onclick="getRandom()">Random Videos</h2>
-                            <div id="search_div" class="hidden w-full sm:w-auto mt-3 sm:mt-0 ml-8">
-                                <div class="form-group has-search justify-end ">
-                                    <span class="fa fa-search form-control-feedback"></span>
-                                    <input autocomplete="off" id="search" type="text" class="form-control" placeholder="Search">
-                                </div>
-                            </div>
-                            <div id="status" class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+                            <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
                                 <div style="display:flex" class="w-56 relative text-gray-700 dark:text-gray-300 justify-end">
-                                    <h3 class="intro-y text-sm font-medium red">Server Loading</h3>
+                                    <h3 id="status" class="intro-y text-sm font-medium mt-10 red">Server Loading</h3>
                                 </div>
                             </div>
-                            
                         </div>
-                        
-                        <div id="video_grid" class="video_grid grid justify-center grid-cols-2 gap-3 my-10">
+
+                        <div class="grid gap-6 mt-5">
+                            <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
+                                <table style="z-index: -1; " class="table table-report -mt-2">
+                                    <thead>
+                                        <tr id="table_header"><th class="whitespace-nowrap">Record Holder</th><th class="text-center whitespace-nowrap">Time</th><th class="text-center whitespace-nowrap">Video</th><th class="text-center whitespace-nowrap">Date</th></tr>
+                                    </thead>
+                                    <tbody id="table_body">
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
 
                     </div>
@@ -224,72 +98,23 @@
         </div>
     </div>
     <script>
-        let videos;
+        let run_data;
+        get(`https://acute-ginger-appeal.glitch.me/runs`, build, '3')
+
+        $('#back').click(function(e){
+            build(run_data, '3')
+        });
 
         $('#dropdown_toggle').click(function(){
             $('#dropdown').show();
         });
 
         $('.drop_element').click(function(e){
-            console.log(e)
+            let id = e.target.id
+            $('.dropdown_title').text(`Halo ${id}`)
+            get(`https://acute-ginger-appeal.glitch.me/runs`, build,id)
         });
 
-        $( "#search" ).change(function() {
-            returnVids($(this).val())
-        });
-        
-        const queryString = window.location.search
-            const urlParams = new URLSearchParams(queryString);
-            const product = urlParams.get('game')
-            if(!urlParams.has('game') && !urlParams.has('search')){
-                window.location.href = "./index?game=3";
-            } else {
-                $('.dropdown_title').text('Halo ' + product);
-                $( "#page_title" ).text(`Halo ${product} Videos`);
-                get(product)
-            }
-
-        let data;
-        let vids = []
-
-        function videoElement(e){
-            return `
-            <div class="grid grid-element grey rounded-lg shadow-md overflow-hidden grid-cols-2">
-                <div class="py-3 px-3">
-                    <a href="https://youtu.be/${e.l}">
-                        <img class="rounded-lg lazyload" data-src="https://i.ytimg.com/vi/${e.l}/hqdefault.jpg">
-                    </a>
-                </div>
-                <div class="flex items-center py-6 px-3">
-                    <div>
-                        <h3 id="${e.t}" class="font-semibold text-xl leading-6 text-light my-2">
-                            <a href="https://youtu.be/${e.l}">${e.t}</a>
-                        </h3>
-                        <div class="text-gray-600 text-sm py-2">by ${e.author}</div>
-                    </div>
-                </div>
-            </div>
-            `
-        }
-
-        function get(id){
-            fetch(`https://acute-ginger-appeal.glitch.me/vids`)
-                .then(response => response.json())
-                .then(commits => {
-                    data = commits
-                    $('#status').toggleClass('hidden')
-                    $('#search_div').toggleClass('hidden')
-                    build(id)
-            });
-        }
-
-        function detectMobile() {
-            if(window.innerWidth <= 600){
-                $('#video_grid').removeClass('grid-cols-2').addClass('grid-cols-1');
-                $('#navbar-collapse').delete();
-            }
-        }
-        detectMobile()
         $(function() {
             $(document).on('click', function(e) {
                 if (e.target.id === 'dropdown_toggle') {
@@ -301,61 +126,189 @@
             })
         });
 
-        function getRandom(){
-            function getRandomInt(max) {
-                return Math.floor(Math.random() * max);
+        //For the high level leaderboard elements
+        function mainLeaderboardElement(data,game){
+            if(data.records[0] == undefined){
+                data.records.push({
+                    "gamertag":"No Records",
+                    "time":"00:00:00.00"
+                });
             }
-            $( ".video_grid" ).empty();
-
-            for(var i = 0; i < 3; i++){
-                let e = vids[getRandomInt(vids.length-1)]
-                $( "#video_grid" ).append(videoElement(e)); 
+            return `<tr class="intro-x">
+                    <td game="${game}" class="w-40 table_item">
+                        <div game="${game}" style="cursor:pointer;" id=${data.id} class="font-medium whitespace-nowrap">${data.name}</div>
+                    </td>
+                    <td>
+                        <div href="" class="font-medium whitespace-nowrap tooltip">${data.author}</div>
+                        <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">${data.fileshare}</div>
+                    </td>
+                    <td class="text-center">👑 ${data.records[0].gamertag}</td>
+                    <td class="w-40">
+                        <div class="flex items-center justify-center">${data.record_time}</div>
+                    </td>
+                    <td class=" w-56">
+                        <div class="flex justify-center items-center">
+                            <a href="${data.link}" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                        </div>
+                    </td>
+                </tr>`
+        }
+         
+        //For the individual run elements
+        function recordItem(data,index){
+            let full_date = new Date(Date.parse(data.time_submitted)).toString()
+            if(index == 0){
+                data.gamertag = "👑 " + data.gamertag
             }
+            return `
+            <tr class="intro-x">
+                <td class="w-40">
+                    <div href="" class="font-medium whitespace-nowrap">${data.gamertag}</div>
+                    <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">${ordinal_suffix_of(index+1)} place</div>
+                </td>
+                <td class="w-40">
+                    <div class="flex items-center justify-center">${msToTime(data.time)}</div>
+                </td>
+                <td class="w-40">
+                    <div class="flex items-center justify-center">
+                        <a href="https://www.youtube.com/watch?v=${data.link}" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                    </div>
+                </td>
+                <td class="items-center justify-center" >${full_date.slice(0,full_date.lastIndexOf(":")+3)}</td>
+            </tr>`
         }
 
-        
-        function build(id){
-            let build_data = data[id]
-            $( "#video_grid" ).empty();
-            $( "#page_title" ).text(`Halo ${id} Videos`);
-            vids = []
-            Object.keys(build_data).forEach((e, i) => {
-                build_data[e].forEach(function(x){
-                    vids.push(x)
-                    x.author = e
-                    $( "#video_grid" ).append(videoElement(x)); 
+        let map_table_fields = [
+            {
+                "class":"whitespace-nowrap",
+                "name":"Record Holder"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Time"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Video"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Date"
+            }
+        ]
+
+        let leaderboard_fields = [
+            {
+                "class":"whitespace-nowrap",
+                "name":"Map"
+            },
+            {
+                "class":"whitespace-nowrap",
+                "name":"Map Author"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Record Holder"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Time"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Record Run"
+            }
+        ]
+
+        function buildTableHeader(data){
+            let head_string = ''
+            data.forEach(function(e){
+                head_string += `<th class="${e.class}">${e.name}</th>`
+            })
+            return head_string
+        }
+
+        function get(url,cb, id){
+            $('#status').removeClass('blue')
+            fetch(url)
+                .then(response => response.json())
+                .then(commits => {
+                    run_data = commits
+                    $('#status').toggleClass('blue').text('Server Online')
+                    cb(commits,id)
+                });
+        }
+
+        function build(data,id){
+            let runs = data[id]
+            console.log(id)
+            console.log(runs)
+            $('#leaderboard_title').text("Leaderboard")
+            $('#back').toggle()
+            $( "#table_body" ).empty();
+            $("#table_header").empty()
+            $( "#table_header" ).prepend(buildTableHeader(leaderboard_fields)); 
+            Object.keys(runs).forEach((e, i) => {
+                if(runs[e].records[0] == undefined){
+                    runs[e].records.push({
+                        "gamertag":"No Records",
+                        "time":"00:00:00.00"
+                    })
+                }
+               e.record = runs[e].records[0].gamertag
+               $( "#table_body" ).append(mainLeaderboardElement(runs[e],'3')); 
+            });
+
+            let elements = document.getElementsByClassName("table_item");
+            $(".table_item").each(function(e) {
+                this.addEventListener("click", function(e){
+                    build_map_records(run_data[e.target.getAttribute('game').toString()][this.firstElementChild.id])
                 });
             });
-            shuffle()
         }
 
-        function shuffle() {
-            var item = document.querySelector('.video_grid');
-            for (var i = item.children.length; i >= 0; i--) {
-                item.appendChild(item.children[Math.random() * i | 0]);
+        function build_map_records(data, game){
+            let d = data.records
+            $('#back').toggle()
+            $('#leaderboard_title').text(data.name + " Leaderboard")
+            $("#table_header").empty();
+            $( "#table_body" ).empty();
+            
+            $( "#table_header" ).prepend(buildTableHeader(map_table_fields)); 
+            Object.keys(d).forEach((e, i) => {
+                $( "#table_body" ).append(recordItem(d[e],i)); 
+            });
+        }
+
+        function msToTime(s) {
+            function pad(n, z) {
+                z = z || 2;
+                return ('00' + n).slice(-z);
             }
+
+            let ms = s % 1000;
+            s = (s - ms) / 1000;
+            let secs = s % 60;
+            s = (s - secs) / 60;
+            let mins = s % 60;
+            let hrs = (s - mins) / 60;
+
+            return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
         }
 
-        function returnVids(term){
-            $( "#page_title" ).text(`Search results for ${term}`);
-            $( "#video_grid" ).empty();
-            let authors = []
-            Object.keys(data[product]).forEach(function(e){
-                let f = e.toLowerCase()
-                let title = term.toLowerCase()
-                if(f.includes(title)){
-                    data[product][e].forEach(function(x){
-                        $( "#video_grid" ).append(videoElement(x)); 
-                    });
-                }
-
-                data[product][e].forEach(function(y){
-                    let n = y.t.toLowerCase()
-                    if(n.includes(title)){
-                        $( "#video_grid" ).append(videoElement(y)); 
-                    }
-                })
-            })
+        function ordinal_suffix_of(i) {
+            let j = i % 10,
+                k = i % 100;
+            if (j == 1 && k != 11) {
+                return i + "st";
+            }
+            if (j == 2 && k != 12) {
+                return i + "nd";
+            }
+            if (j == 3 && k != 13) {
+                return i + "rd";
+            }
+            return i + "th";
         }
     </script>
     <script src="./js/navigation.js"></script>

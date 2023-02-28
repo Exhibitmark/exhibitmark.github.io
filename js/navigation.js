@@ -1,7 +1,7 @@
 const nav = {
     "videos":{
         "title":"Videos",
-        "url":"./index"
+        "url":"./videos"
     },
     "fileshare":{
         "title":"Fileshare",
@@ -9,7 +9,7 @@ const nav = {
     },
     "leaderboard":{
         "title":"Leaderboard",
-        "url":"./speedruns"
+        "url":"./index"
     },
     "submit":{
         "title":"Submit Run",
