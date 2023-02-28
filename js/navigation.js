@@ -1,7 +1,7 @@
 const nav = {
     "videos":{
         "title":"Videos",
-        "url":"./videos"
+        "url":"./index"
     },
     "fileshare":{
         "title":"Fileshare",
