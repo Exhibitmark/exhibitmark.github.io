@@ -1,0 +1,317 @@
+<html class="dark" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./favicon.ico">
+    <title>GHST Contribute</title>
+    <link href="./main.css" rel="stylesheet">
+    <link href="./css/fa.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/lazysizes.min.js" async=""></script>
+    <style>
+        .red {
+            color:#e61748;
+        }
+        .blue {
+            color:#6769eb;
+        }
+
+        .border-blue {
+            border-color:#6769eb !important;
+        }
+        .hidden {
+            display:none;
+        }
+        .blue-bg {
+            background-color:#6769eb !important;
+        }
+        .grid-container {
+            display: grid;
+            column-gap: 50px;
+        }
+        .grey {
+            background-color:#1f1e25;
+        }
+        .text-light{
+            color:rgb(226, 232, 240);
+        }
+        .pointer{
+            cursor:pointer;
+        }
+        .top-bar {
+            display:none;
+        }
+
+        @media screen and (max-width: 900px) {
+            .top-bar {
+                display:flex;
+            }
+            .side-nav {
+                display:none;
+            }
+        }
+        .navbar-nav {
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            margin-bottom: -1px
+        }
+        .navbar-nav>li>a {
+            font-weight:600;
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            padding: 1.25rem .9375rem!important;
+            position: relative;
+            border-bottom: 0px solid #2d303e;
+        }
+        .navbar-nav>li>a i {
+            font-size: .75rem;
+            margin-left: .625rem
+        }
+        .navbar-nav>li>a.active, .navbar-nav>li>a:hover {
+            border-color: #2d303e;
+            border-bottom:0px solid;
+        }
+        .navbar-nav li {
+            position: relative
+        }
+        .navbar-nav.active>li>a {
+            opacity: 0;
+            visibility: hidden
+        }
+        .navbar-collapse {
+            position: relative
+        }
+            
+        .megadropdown {
+            background-color: #181620;
+            border-top: 2px solid #4773f5;
+            border-radius: 0px 0px 5px 5px;
+            position: absolute;
+            top: 100%;
+            visibility: hidden;
+            opacity: 0;
+            margin-top: .625rem;
+            transition: all .15s ease-in-out;
+            -moz-transition: all .15s ease-in-out;
+            -webkit-transition: all .15s ease-in-out;
+            -o-transition: all .15s ease-in-out;
+            display: flex;
+            padding: 0 1rem
+        }
+        .megadropdown .dropdown-box {
+            padding: .75rem 1rem;
+            width: 100%
+        }
+        .megadropdown span {
+            display: block;
+            color: #666;
+            font-size: .9375rem;
+            font-weight: 400;
+            padding-bottom: .75rem;
+            margin-bottom: .75rem;
+        }
+        .megadropdown ul>li {
+            display: block;
+            margin-bottom: .5rem;
+            font-size: 16px;
+            font-weight: 500
+        }
+        .megadropdown ul>li a {
+            display: block;
+            color: #f2f2f2;
+            font-size: 16px;
+            font-weight: 500
+        }
+        .megadropdown ul>li>a:hover {
+            color: #4773f5
+        }
+        li:hover>.megadropdown {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -1px
+        }
+        @media (max-width:1199px) {
+            .megadropdown {
+                width: 53rem;
+                left: -7.25rem
+            }
+        }
+
+                
+        .select-hidden {
+            display: none;
+            visibility: hidden;
+            padding-right: 10px;
+        }
+
+        .select {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            font-size: 16px;
+            color: #fff;
+            width: 400px;
+            height: 45px;
+        }
+
+        .select-styled {
+            border-radius: 5px;
+            border: 1px solid #cccccc12;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #25242b;
+            padding: 8px 15px;
+            -moz-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .select-styled:hover {
+            background-color: #302f36;
+        }
+        .select-styled:active, .select-styled.active {
+            background-color: #302f36;
+        }
+
+        .select-options {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            z-index: 999;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #25242b;
+        }
+        .select-options li {
+            margin: 0;
+            padding: 12px 0;
+            text-indent: 15px;
+            border-top: 1px solid #cccccc12;
+            -moz-transition: all 0.15s ease-in;
+            -o-transition: all 0.15s ease-in;
+            -webkit-transition: all 0.15s ease-in;
+            transition: all 0.15s ease-in;
+        }
+        .select-options li:hover {
+            color: #4773f5;
+        }
+        .select-options li[rel="hide"] {
+            display: none;
+        }
+
+        
+        .active {
+            border-bottom-width: 2px !important;
+            border-color: #6769eb !important;
+            opacity:1 !important;
+        }
+        .inactive {
+            border-bottom-width: 2px !important;
+            border-color: rgba(226, 232, 240, 0.25);
+            opacity:0.25;
+        }
+        .tab-button {
+            outline: none;
+        }
+        .text-form {
+            border:1px solid #cccccc12 !important;
+            border-radius:5px;
+            background-color: #25242b;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <div id="app">
+        <div>
+            <div class="flex">
+                <nav class="side-nav">
+                    <a href="/" class="router-link-active intro-x flex items-center pl-5 pt-4">
+                        <img style="width:4rem" src="./logo.png">
+                    </a>
+                    <div class="side-nav__devider my-6"></div>
+                    <ul id="nav">
+                    </ul>
+                </nav>
+                <div class="content">
+                    <!--TOP BAR COMMENTED OUT-->
+                    <div class="top-bar">
+                        <a href="/" class="router-link-active intro-x flex items-center pt-4">
+                            <img style="width:4rem" src="./logo.png">
+                        </a>
+                    </div>
+                    <!--MAIN CONTENT-->
+                    <div>
+                        <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center my-10">
+                            <h2 id="page_title" class="intro-y text-lg font-medium">JOIN GHST</h2>
+                        </div>
+                        <div id="video_info" class="info mt-4">
+                            <p class="max-w-2xl mx-auto mt-4 text-gray-300 text-base ">
+                                This form is for submitting sponsor videos to the GHST Acquisition team.
+                            </p>            
+                        </div>
+                        
+                        <div id="main_grid" class="grid justify-center grid-cols-2 gap-3 my-10">
+                            <div id="video_submission" class="info relative z-10 flex flex-col items-start justify-start shadow-2xl rounded-xl">
+                                <form class="relative w-full">
+                                   <div class="relative mb-8">
+                                        <label class="-mt-8 font-medium text-gray-600">Gamertag</label>
+                                        <input type="text" id="video_title" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="Rush">
+                                   </div>
+                                   <div class="relative mb-8">
+                                        <label class="-mt-8 font-medium text-gray-600">First Name</label>
+                                        <input type="text" id="author" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="ex.Gary UK">
+                                    </div>
+                                    <div class="relative mb-8">
+                                        <label class="-mt-8 font-medium text-gray-600">Email</label>
+                                        <input type="text" id="link" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" >
+                                    </div>
+                                    <div class="relative mb-8">
+                                        <label class="-mt-8 font-medium text-gray-600">JPM (Average jumps per minute)</label>
+                                        <input type="text" id="link" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" >
+                                    </div>
+                                    <button id="submit" type="button" class="btn blue-bg w-24" onclick="submit_video()">Submit</button>
+                                </form>
+                             </div>
+                             <div id="map_submission" class="hidden info relative z-10 flex flex-col items-start justify-start shadow-2xl rounded-xl">
+                                <form class="relative w-full">
+                                    <div class="relative mb-8">
+                                        <label class="-mt-8 font-medium text-gray-600">Map File Upload</label>
+                                        <div class="flex justify-center items-center w-full">
+                                            <label for="dropzone-file" class="flex flex-col justify-center items-center w-full h-64 bg-gray-50 rounded-lg border-2 border-gray-300 border-dashed mt-8 cursor-pointer dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                                                <div class="flex flex-col justify-center items-center pt-5 pb-6">
+                                                    <svg class="mb-3 w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                                                    <p class="text-xs text-gray-500 dark:text-gray-400">.MVAR Files Only</p>
+                                                </div>
+                                                <input id="dropzone-file" type="file" accept=".mvar" class="hidden" />
+                                            </label>
+                                        </div> 
+                                    </div>
+                                    <button id="submit" type="button" class="btn blue-bg w-24" onclick="submit_video()">Submit</button>
+                                </form>
+                             </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/navigation.js"></script>
+</body>
+</html>
