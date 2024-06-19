@@ -9,7 +9,6 @@
     <link href="./main.css" rel="stylesheet">
     <link href="./css/fa.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/lazysizes.min.js" async=""></script>
     <style>
         .red {
             color:#e61748;
@@ -259,21 +258,13 @@
                             <h2 id="page_title" class="intro-y text-lg font-medium">Contribute to GHST</h2>
                         </div>
                         <nav class="flex flex-col sm:flex-row pb-4">
-                            <button class="tab-button text-light py-4 px-6 block font-medium hover:text-blue-500 inactive active">
-                                Submit Video
-                            </button>
-                            <button class="tab-button text-light py-4 px-6 ml-4 block font-medium hover:text-blue-500 inactive">
+                            <button class="tab-button text-light py-4 px-6 block font-medium hover:text-blue-500 active">
                                 Submit Map
                             </button>
                         </nav>
-                        <div id="video_info" class="info mt-4">
+                        <div id="map_info" class="info  mt-4">
                             <p class="max-w-2xl mx-auto mt-4 text-gray-300 text-base ">
-                                This form is for submitting videos to the GHST Video Archive. Any speedrun video submissions should be submitted to <a href="./speedrun_submit.html" class="blue underline">Speedrun Submit</a>
-                            </p>            
-                        </div>
-                        <div id="map_info" class="info hidden mt-4">
-                            <p class="max-w-2xl mx-auto mt-4 text-gray-300 text-base ">
-                                This form is for submitting maps to the GHST Fileshare. Any speedrun map recommendations should be submitted to <a href="" class="blue underline">Speedrun Map Submit</a>
+                                This form is for submitting maps to the GHST Leaderboard
                             </p>            
                         </div>
                         
@@ -281,50 +272,29 @@
                             <div id="video_submission" class="info relative z-10 flex flex-col items-start justify-start shadow-2xl rounded-xl">
                                 <form class="relative w-full">
                                    <div class="relative mb-8">
-                                        <label class="-mt-8 font-medium text-gray-600">Video title</label>
-                                        <input type="text" id="video_title" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="Rush">
+                                        <label class="-mt-8 font-medium text-gray-600">Map Name (as it appears on the fileshare)</label>
+                                        <input type="text" id="map_title" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="PA Wagoo">
                                    </div>
                                    <div class="relative mb-8">
-                                        <label class="-mt-8 font-medium text-gray-600">Author</label>
-                                        <input type="text" id="author" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="ex.Gary UK">
+                                        <label class="-mt-8 font-medium text-gray-600">Gamertag (which is hosting the map)</label>
+                                        <input type="text" id="gamertag" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="ex.snappy8516">
                                     </div>
                                     <div class="relative mb-8">
-                                        <label class="-mt-8 font-medium text-gray-600">Video URL</label>
-                                        <input type="text" id="link" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="ex.https://www.youtube.com/watch?v=eoV-2YCQhm4">
+                                        <label class="-mt-8 font-medium text-gray-600">Author Name</label>
+                                        <input type="text" id="author" class="text-form block w-full px-4 py-3 mt-2 text-base placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:border-black" placeholder="ex.https://www.youtube.com/watch?v=eoV-2YCQhm4">
                                     </div>
                                     <div class="relative mb-8">
                                         <label class="-mt-8 font-medium text-gray-600">Game Select</label>
                                         <div class="block w-full mt-2 text-base ">
                                             <select class="text-base border border-gray-300 " id="game">
                                                 <option value="hide">Game</option>
-                                                <option value="ce">Halo CE</option>
-                                                <option value="2">Halo 2</option>
                                                 <option value="3">Halo 3</option>
                                                 <option value="reach">Halo Reach</option>
-                                                <option value="4">Halo 4</option>
-                                                <option value="5">Halo 5</option>
+                                                <option value="infinite">Halo Infinite</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <button id="submit" type="button" class="btn blue-bg w-24" onclick="submit_video()">Submit</button>
-                                </form>
-                             </div>
-                             <div id="map_submission" class="hidden info relative z-10 flex flex-col items-start justify-start shadow-2xl rounded-xl">
-                                <form class="relative w-full">
-                                    <div class="relative mb-8">
-                                        <label class="-mt-8 font-medium text-gray-600">Map File Upload</label>
-                                        <div class="flex justify-center items-center w-full">
-                                            <label for="dropzone-file" class="flex flex-col justify-center items-center w-full h-64 bg-gray-50 rounded-lg border-2 border-gray-300 border-dashed mt-8 cursor-pointer dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
-                                                <div class="flex flex-col justify-center items-center pt-5 pb-6">
-                                                    <svg class="mb-3 w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
-                                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
-                                                    <p class="text-xs text-gray-500 dark:text-gray-400">.MVAR Files Only</p>
-                                                </div>
-                                                <input id="dropzone-file" type="file" accept=".mvar" class="hidden" />
-                                            </label>
-                                        </div> 
-                                    </div>
-                                    <button id="submit" type="button" class="btn blue-bg w-24" onclick="submit_video()">Submit</button>
+                                    <button id="submit" type="button" class="btn blue-bg w-24" onclick="submit_map()">Submit</button>
                                 </form>
                              </div>
                         </div>
@@ -336,15 +306,13 @@
     </div>
     <script>
         const submit = {
-            "entry":{
-                "game": '',
-                "author":'',
-                "data":{
-                    "t":'',
-                    "l":''
-                }
-            }
+            "game": '',
+            "author":'',
+            "gamertag":'',
+            "map":''
         }
+
+
 
         $('.tab-button').click(function(e) {
             $('.tab-button').toggleClass('active');
@@ -387,7 +355,7 @@
                     $styledSelect.text($(this).text()).removeClass('active');
                     $this.val($(this).attr('rel'));
                     $list.hide();
-                    submit.entry.game = $this.val()
+                    submit.game = $this.val()
                 });
             
                 $(document).click(function() {
@@ -397,19 +365,22 @@
             });
 
         $( "#author" ).change(function(e) {
-            submit.entry[e.target.id] = e.target.value
+            submit['author'] = e.target.value
+            console.log(e)
         });
 
-        $( "#link" ).change(function(e) {
-            submit.entry.data['l'] = e.target.value
+        $( "#gamertag" ).change(function(e) {
+            submit.gamertag = e.target.value
+            console.log(submit)
         });
 
-        $( "#title" ).change(function(e) {
-            submit.entry.data['t'] = e.target.value
+        $( "#map_title" ).change(function(e) {
+            submit['map'] = e.target.value
+            console.log(submit)
         });
 
-        function submit_video(){
-            post("https://acute-ginger-appeal.glitch.me/submit", JSON.stringify(submit))
+        function submit_map(){
+            post("https://acute-ginger-appeal.glitch.me/submit_map", JSON.stringify(submit))
         }
 
         function post(url, data) {
