@@ -1,0 +1,304 @@
+<html class="dark" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./favicon.ico">
+    <title>PA Parkour</title>
+    <link href="./main.min.css" rel="stylesheet">
+    <link href="./css/fa.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .red {
+            color:#e61748;
+        }
+        .blue {
+            color:#6769eb;
+        }
+        .hidden {
+            display:none;
+        }
+        .slate {
+            background-color:#2f353d;
+        }
+        .on-top {
+            position:relative;
+            z-index:9999;
+        }
+        .clickable {
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+
+<body class="main">
+    <div id="app">
+        <div>
+            <div class="flex">
+                <nav class="side-nav">
+                    <a href="/" class="router-link-active intro-x flex items-center pl-5 pt-4">
+                        <img style="width:4rem" src="./logo.png">
+                    </a>
+                    <div class="side-nav__devider my-6"></div>
+                    <ul id="nav">
+                    </ul>
+                </nav>
+                <div class="content">
+                    <div>
+                        <div style="z-index: 9999999; position: relative;" class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
+                            <svg style="cursor:pointer; overflow:visible; margin-top:2rem" id="back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left mr-5" viewBox="0 0 10 10">
+                                <path fill-rule="evenodd" stroke-width="3" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+
+                            <h2 id="leaderboard_title" class="intro-y text-lg font-medium mt-10">PA Parkour leaderboard</h2>
+                            <div class="ml-4 relative inline-block mb-20 mt-10">
+                            </div>
+                            <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+                                <div style="display:flex" class="w-56 relative text-gray-700 dark:text-gray-300 justify-end">
+                                    <h3 id="status" class="intro-y text-sm font-medium mt-10 red">Server Loading</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-6 mt-5">
+                            <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
+                                <table style="z-index: -1; " class="table table-report -mt-2">
+                                    <thead>
+                                        <tr id="table_header"><th class="whitespace-nowrap">Record Holder</th><th class="text-center whitespace-nowrap">Time</th><th class="text-center whitespace-nowrap">Video</th><th class="text-center whitespace-nowrap">Date</th></tr>
+                                    </thead>
+                                    <tbody id="table_body">
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let run_data;
+        get(`https://acute-ginger-appeal.glitch.me/runs`, build, 'infinite')
+
+        $('#back').click(function(e){
+            build(run_data, '3')
+        });
+
+        $('#dropdown_toggle').click(function(){
+            $('#dropdown').show();
+        });
+
+        $('.drop_element').click(function(e){
+            let id = e.target.id
+            $('.dropdown_title').text(`Halo ${id}`)
+            get(`https://acute-ginger-appeal.glitch.me/runs`, build,id)
+        });
+
+        $(function() {
+            $(document).on('click', function(e) {
+                if (e.target.id === 'dropdown_toggle') {
+                    $('#dropdown').show();
+                } else {
+                    $('#dropdown').hide();
+                }
+
+            })
+        });
+
+        //For the high level leaderboard elements
+        function mainLeaderboardElement(data,game){
+            if(data.records[0] == undefined){
+                data.records.push({
+                    "gamertag":"No Records",
+                    "time":"00:00:00.00"
+                });
+            }
+            return `<tr class="intro-x">
+                    <td game="${game}" class="w-40 table_item">
+                        <div game="${game}" style="cursor:pointer;" id=${data.id} class="font-medium whitespace-nowrap">${data.name}</div>
+                    </td>
+                    <td>
+                        <div href="" class="font-medium whitespace-nowrap tooltip">${data.author}</div>
+                        <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">${data.fileshare}</div>
+                    </td>
+                    <td class="text-center">👑 ${data.records[0].gamertag}</td>
+                    <td class="w-40">
+                        <div class="flex items-center justify-center">${data.record_time}</div>
+                    </td>
+                    <td class=" w-56">
+                        <div class="flex justify-center items-center">
+                            <a href="${data.link}" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                        </div>
+                    </td>
+                </tr>`
+        }
+         
+        //For the individual run elements
+        function recordItem(data,index){
+            let full_date = new Date(Date.parse(data.time_submitted)).toString()
+            if(index == 0){
+                data.gamertag = "👑 " + data.gamertag
+            }
+            return `
+            <tr class="intro-x">
+                <td class="w-40">
+                    <div href="" class="font-medium whitespace-nowrap">${data.gamertag}</div>
+                    <div class="text-gray-600 text-xs whitespace-nowrap mt-0.5">${ordinal_suffix_of(index+1)} place</div>
+                </td>
+                <td class="w-40">
+                    <div class="flex items-center justify-center">${msToTime(data.time)}</div>
+                </td>
+                <td class="w-40">
+                    <div class="flex items-center justify-center">
+                        <a href="https://www.youtube.com/watch?v=${data.link}" style="color:#6769eb;" class="font-medium whitespace-nowrap">Video</a>
+                    </div>
+                </td>
+                <td class="items-center justify-center" >${full_date.slice(0,full_date.lastIndexOf(":")+3)}</td>
+            </tr>`
+        }
+
+        let map_table_fields = [
+            {
+                "class":"whitespace-nowrap",
+                "name":"Record Holder"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Time"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Video"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Date"
+            }
+        ]
+
+        let leaderboard_fields = [
+            {
+                "class":"whitespace-nowrap",
+                "name":"Map"
+            },
+            {
+                "class":"whitespace-nowrap",
+                "name":"Map Author"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Record Holder"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Time"
+            },
+            {
+                "class":"text-center whitespace-nowrap",
+                "name":"Record Run"
+            }
+        ]
+
+        function buildTableHeader(data){
+            let head_string = ''
+            data.forEach(function(e){
+                head_string += `<th class="${e.class}">${e.name}</th>`
+            })
+            return head_string
+        }
+
+        function get(url,cb, id){
+            $('#status').removeClass('blue')
+            fetch(url)
+                .then(response => response.json())
+                .then(commits => {
+                    run_data = commits
+                    $('#status').toggleClass('blue').text('Server Online')
+                    cb(commits,id)
+                });
+        }
+
+        function build(data,id){
+            let runs = data[id]
+            build_map_records(run_data['infinite']['pa_parkour'])
+            // $('#back').toggle()
+            // $( "#table_body" ).empty();
+            // $("#table_header").empty()
+            // $( "#table_header" ).prepend(buildTableHeader(leaderboard_fields)); 
+            // Object.keys(runs).forEach((e, i) => {
+            //     if(runs[e].records[0] == undefined){
+            //         runs[e].records.push({
+            //             "gamertag":"No Records",
+            //             "time":"00:00:00.00"
+            //         })
+            //     }
+            //    e.record = runs[e].records[0].gamertag
+            //    $( "#table_body" ).append(mainLeaderboardElement(runs[e],id)); 
+            // });
+
+            // let elements = document.getElementsByClassName("table_item");
+            // $(".table_item").each(function(e) {
+            //     this.addEventListener("click", function(e){
+            //         build_map_records(run_data[e.target.getAttribute('game').toString()][this.firstElementChild.id])
+            //     });
+            // });
+        }
+
+        function build_map_records(data, game){
+            let d = data.records
+            $('#back').toggle()
+            $('#leaderboard_title').text(data.name + " Leaderboard")
+            $("#table_header").empty();
+            $( "#table_body" ).empty();
+
+            let runners = []
+            
+            $( "#table_header" ).prepend(buildTableHeader(map_table_fields)); 
+            Object.keys(d).forEach((e, i) => {
+                
+                if(!runners.includes(d[e].gamertag)){
+
+                    runners.push(d[e].gamertag)
+                    $( "#table_body" ).append(recordItem(d[e],i)); 
+                }
+            });
+        }
+
+        function msToTime(s) {
+            function pad(n, z) {
+                z = z || 2;
+                return ('00' + n).slice(-z);
+            }
+
+            let ms = s % 1000;
+            s = (s - ms) / 1000;
+            let secs = s % 60;
+            s = (s - secs) / 60;
+            let mins = s % 60;
+            let hrs = (s - mins) / 60;
+
+            return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 2);
+        }
+
+        function ordinal_suffix_of(i) {
+            let j = i % 10,
+                k = i % 100;
+            if (j == 1 && k != 11) {
+                return i + "st";
+            }
+            if (j == 2 && k != 12) {
+                return i + "nd";
+            }
+            if (j == 3 && k != 13) {
+                return i + "rd";
+            }
+            return i + "th";
+        }
+    </script>
+    <script src="./js/navigation.js"></script>
+</body>
+</html>
